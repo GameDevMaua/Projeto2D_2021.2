@@ -7,7 +7,7 @@ public class Element : MonoBehaviour
     [SerializeField] private ElementType element;
     public enum ElementType
     {
-        None,
+        NONE,
         GEO,
         HYDRO,
         ELECTRO,
