@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moviment : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public KeyCode UpKey;
+   public KeyCode DownKey;
+   public KeyCode LeftKey;
+   public KeyCode RightKey;
+   public float Speed = 2.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+   private Rigidbody2D Rigidbody2DReference;
+
+
+
+   private void Awake()
+   {
+      if (UpKey == KeyCode.None)
+         UpKey = KeyCode.W;
+      if (DownKey == KeyCode.None)
+         DownKey = KeyCode.S;
+      if (LeftKey == KeyCode.None)
+         LeftKey = KeyCode.A;
+      if (RightKey == KeyCode.None)
+         RightKey = KeyCode.D;
+
+   }
+
 }
