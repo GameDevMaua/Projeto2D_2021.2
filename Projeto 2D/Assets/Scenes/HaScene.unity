@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 180483774}
   - component: {fileID: 180483773}
   - component: {fileID: 180483775}
+  - component: {fileID: 180483776}
   m_Layer: 0
   m_Name: PlayerTeste
   m_TagString: Untagged
@@ -356,6 +357,18 @@ MonoBehaviour:
   direita: 100
   cima: 119
   baixo: 115
+--- !u!114 &180483776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180483770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6999d09b06d14a6795411654113810f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &254463281
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +437,7 @@ GameObject:
   - component: {fileID: 400946801}
   - component: {fileID: 400946800}
   - component: {fileID: 400946802}
+  - component: {fileID: 400946803}
   m_Layer: 0
   m_Name: PyroTrap
   m_TagString: Untagged
@@ -523,6 +537,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.02}
   m_EdgeRadius: 0
+--- !u!114 &400946803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400946799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 4
 --- !u!1 &623317096
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +844,7 @@ GameObject:
   - component: {fileID: 2106740700}
   - component: {fileID: 2106740699}
   - component: {fileID: 2106740701}
+  - component: {fileID: 2106740702}
   m_Layer: 0
   m_Name: HydroTrap
   m_TagString: Untagged
@@ -916,3 +944,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.02}
   m_EdgeRadius: 0
+--- !u!114 &2106740702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106740698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  element: 2
