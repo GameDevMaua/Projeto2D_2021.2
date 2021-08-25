@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class ElementalObjects : MonoBehaviour
 {
-    private List<Element.ElementType> elementList;
+    private Element currentElement;
+     
 }

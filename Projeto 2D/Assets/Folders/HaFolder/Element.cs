@@ -13,4 +13,9 @@ public class Element : MonoBehaviour
         ELECTRO,
         PYRO 
     }
+
+    public ElementType GetElementType()
+    {
+        return element;
+    }
 }
