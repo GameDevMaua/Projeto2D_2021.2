@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 866440725}
   - component: {fileID: 866440724}
+  - component: {fileID: 866440726}
+  - component: {fileID: 866440727}
   m_Layer: 0
   m_Name: RaphaCircle
   m_TagString: Untagged
@@ -180,7 +182,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 1395359945177258177, guid: 9c49f045bd40dcc47b49e232d5d4fd88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -205,6 +207,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &866440726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866440723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c55926caba723fb4f88bab1956c01176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  electroAnimationPack: []
+  geoAnimationPack: []
+  hydroAnimationPack: []
+  noneAnimationPack: []
+  pyroAnimationPack: []
+  playerDirection: 0
+  playerCurrentElement: 0
+--- !u!95 &866440727
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866440723}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd9900dc403451c4a86b066f92199e9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1566360966
 GameObject:
   m_ObjectHideFlags: 0
