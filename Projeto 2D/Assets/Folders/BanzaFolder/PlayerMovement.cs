@@ -25,13 +25,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(LeftKey))
             transform.Translate(Vector2.left * Speed);
             
-        if (Input.GetKey(RightKey))
-        transform.Translate(Vector2.right * Speed);
-        
+        if (Input.GetKey(RightKey)) 
+            transform.Translate(Vector2.right * Speed);
 
 
         Rigidbody2DReference = GetComponent<Rigidbody2D>();
-
+            
     }
     
     
