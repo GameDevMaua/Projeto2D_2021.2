@@ -32,7 +32,7 @@ namespace Folders.HaFolder
         private void OnTriggerEnter2D (Collider2D collider)
         {
             Element element = collider.GetComponent<Element>();
-            if (element != null)
+            if (element != null & elementList.Count==0)
             {
                 AddElement(element.GetElementType());
                 Destroy(element.gameObject);
