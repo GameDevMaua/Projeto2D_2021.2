@@ -38,6 +38,7 @@ namespace Folders.HaFolder
                 Destroy(element.gameObject);
             }
 
+            
             TrapScript elementDoor = collider.GetComponent<TrapScript>();
             if (elementDoor != null)
             {
@@ -45,6 +46,17 @@ namespace Folders.HaFolder
                 {
                     elementDoor.OpenTrap();
                     RemoveElement(elementDoor.GetElementType());
+                }
+                else
+                {
+                    // Permakill player:
+                    //elementDoor.KillPlayer(this.gameObject);
+                    
+                    // Respawn player (checkpoint):
+                    //elementDoor.RespawnPlayer(this.gameObject);
+                    
+                    // LoadScene:
+                    elementDoor.LoadScene();
                 }
             }
         }

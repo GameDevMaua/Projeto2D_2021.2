@@ -7,3 +7,4 @@ public abstract class ElementalObjects : MonoBehaviour
     private Element currentElement;
      
 }
+// NAO USEI
