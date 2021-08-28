@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/// <summary>
+///Main Menu com um bacckground animado
+/// </summary>
 public class MainMenuAnimation : MonoBehaviour
 {
     public Sprite[] animatedImages;
