@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HaScene.unity
     guid: 236df1b629e05594eaf0525e70114fc1
+  - enabled: 1
+    path: Assets/Scenes/CindyScene.unity
+    guid: 71f9edeb9b6c5ed458beeebeb7aa2d41
   m_configObjects: {}
