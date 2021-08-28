@@ -8,6 +8,7 @@ public class TrapScript : MonoBehaviour
     public int sceneLoad;
     [SerializeField] private Element.ElementType element;
     [SerializeField] private Transform respawnPoint;
+
     
 
     public Element.ElementType GetElementType()
@@ -19,11 +20,7 @@ public class TrapScript : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
-
-    public void KillPlayer(GameObject player)
-    {
-        Destroy(player);
-    }
+    
 
     public void RespawnPlayer(GameObject player)
     {

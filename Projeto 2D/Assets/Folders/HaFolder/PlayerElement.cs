@@ -32,26 +32,23 @@ namespace Folders.HaFolder
         private void OnTriggerEnter2D (Collider2D collider)
         {
             Element element = collider.GetComponent<Element>();
-            if (element != null & elementList.Count==0)
-            {
+            if (element != null)
+            { 
+                elementList.Clear();
                 AddElement(element.GetElementType());
-                Destroy(element.gameObject);
             }
 
             
             TrapScript elementDoor = collider.GetComponent<TrapScript>();
+            
             if (elementDoor != null)
             {
                 if (ContainsElement(elementDoor.GetElementType()))
                 {
-                    elementDoor.OpenTrap();
                     RemoveElement(elementDoor.GetElementType());
                 }
                 else
                 {
-                    // Permakill player:
-                    //elementDoor.KillPlayer(this.gameObject);
-                    
                     // Respawn player (checkpoint):
                     //elementDoor.RespawnPlayer(this.gameObject);
                     
