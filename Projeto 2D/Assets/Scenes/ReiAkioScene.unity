@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 114571637}
+  isPaused: 0
 --- !u!1 &114571637
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,8 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba527b968ab39274fb0d546c0ec13bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 114571637}
-  setSelectedButton: {fileID: 0}
+  setSelectedButton: {fileID: 1285274097}
 --- !u!1 &611750353
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,9 +478,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114571641}
-        m_TargetAssemblyTypeName: PauseButtons, Assembly-CSharp
-        m_MethodName: resumeButton
+      - m_Target: {fileID: 82348932}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ResumeButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -540,7 +540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba527b968ab39274fb0d546c0ec13bab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 114571637}
   setSelectedButton: {fileID: 1285274097}
 --- !u!1 &1826148548
 GameObject:

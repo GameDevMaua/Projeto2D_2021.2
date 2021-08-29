@@ -6,7 +6,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] public GameObject pauseMenu;
-    public static bool isPaused;
+    public bool isPaused;
     
     /// <summary>
     /// Quando chamado, ira ativar o painel do menuPause, e pausar o estado do jogo
@@ -31,6 +31,16 @@ public class PauseMenu : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        isPaused = false;
+    }
+    
+    /// <summary>
+    /// Quando chamado, o metodo ira desativar o painel do pauseMenu e voltar o jogo ao seu devido tempo.
+    /// </summary>
+    public void ResumeButton()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
         isPaused = false;
     }
 
