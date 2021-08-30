@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// States of the directions that an object can be facing
+/// </summary>
 public enum Direction
 {
     DOWN,

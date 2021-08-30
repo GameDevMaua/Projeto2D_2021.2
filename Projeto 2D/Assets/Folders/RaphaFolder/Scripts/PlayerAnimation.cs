@@ -6,6 +6,7 @@ using UnityEngine.PlayerLoop;
 public abstract class PlayerAnimation : MonoBehaviour
 {
     [Header("Animation Packs (Insert archive name - alphabetic order):")]
+    // Animation packs to fit the player's current element animations with the same system
     public List<string> electroAnimationPack;
     public List<string> geoAnimationPack;
     public List<string> hydroAnimationPack;
@@ -13,19 +14,22 @@ public abstract class PlayerAnimation : MonoBehaviour
     public List<string> pyroAnimationPack;
     
     // Private variables
-    private List<string> currentAnimationPack;
-    private Animator animator;
+    private List<string> currentAnimationPack; // Actual animation pack selected
+    private Animator animator; // Instance of the player animator
     
     [Header("Initial test param")]
-    public Direction playerDirection;
-    public Element.ElementType playerCurrentElement;
+    public Direction playerDirection; // The direction the player is facing (test param, will change with other class)
+    public Element.ElementType playerCurrentElement; // The current element of the player (test param, will change with other class)
 
+    /// <summary>
+    /// Awake call for the PlayerAnimation class, start variables with standard values
+    /// </summary>
     protected void AnimationAwake()
     {
         // Getting references
         animator = GetComponent<Animator>();
 
-        // Setting the animation packs
+        // Setting standard the animation packs
         if (electroAnimationPack.Count == 0)
             electroAnimationPack = new List<string>{ };
         if (geoAnimationPack.Count == 0)
@@ -51,7 +55,9 @@ public abstract class PlayerAnimation : MonoBehaviour
         currentAnimationPack = noneAnimationPack;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Update call for the PlayerAnimation class, executes the PlayerAnimation's function
+    /// </summary>
     protected void AnimationUpdate()
     {
         UpdateAttributes();
@@ -59,6 +65,9 @@ public abstract class PlayerAnimation : MonoBehaviour
         PlayAnimation();
     }
 
+    /// <summary>
+    /// Update playerDirection and currentElement attributes
+    /// </summary>
     private void UpdateAttributes()
     {
         // Update:
@@ -67,6 +76,9 @@ public abstract class PlayerAnimation : MonoBehaviour
         //playerCurrentElement = 
     }
 
+    /// <summary>
+    /// Update the selected animation pack according to the player current element
+    /// </summary>
     private void UpdateAnimationPack()
     {
         switch (playerCurrentElement)
@@ -94,6 +106,9 @@ public abstract class PlayerAnimation : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Plays the animation according to the direction the player is on
+    /// </summary>
     private void PlayAnimation()
     {
         switch (playerDirection)
