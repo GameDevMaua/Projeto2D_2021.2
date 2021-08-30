@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public abstract class PlayerAnimation : MonoBehaviour
+public abstract class PlayerAnimation : ObjectAnimation
 {
     [Header("Animation Packs (Insert archive name - alphabetic order):")]
     // Animation packs to fit the player's current element animations with the same system
@@ -15,8 +15,7 @@ public abstract class PlayerAnimation : MonoBehaviour
     
     // Private variables
     private List<string> currentAnimationPack; // Actual animation pack selected
-    private Animator animator; // Instance of the player animator
-    
+
     [Header("Initial test param")]
     public Direction playerDirection; // The direction the player is facing (test param, will change with other class)
     public Element.ElementType playerCurrentElement; // The current element of the player (test param, will change with other class)
@@ -26,9 +25,6 @@ public abstract class PlayerAnimation : MonoBehaviour
     /// </summary>
     protected void AnimationAwake()
     {
-        // Getting references
-        animator = GetComponent<Animator>();
-
         // Setting standard the animation packs
         if (electroAnimationPack.Count == 0)
             electroAnimationPack = new List<string>{ };
