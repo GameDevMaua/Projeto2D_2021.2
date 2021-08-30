@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public abstract class ObjectAnimation : MonoBehaviour
 {
     [SerializeField]
-    private string animation;
-    protected Animator animator;
-    protected bool attachedAnimationString;
+    private string animation; // Name or path of the animation that will be displayed
+    protected Animator animator; // Instance of the object animator
+    private bool attachedAnimationString; // true if there's some value for the animation attribute
     
     /// <summary>
     /// Awake call for the ObjectAnimation class, start variables with standard values
@@ -38,5 +38,4 @@ public abstract class ObjectAnimation : MonoBehaviour
         if (verify is null) return false;
         return verify.Length != 0;
     }
-
 }

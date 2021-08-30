@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.LowLevel;
 using UnityEngine.PlayerLoop;
 
-public class GenericScript : PlayerAnimation 
+public class PlayerGenericScript : PlayerAnimation
 {
     private void Awake()
     {

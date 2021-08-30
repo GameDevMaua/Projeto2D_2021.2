@@ -13,18 +13,23 @@ public abstract class PlayerAnimation : ObjectAnimation
     public List<string> noneAnimationPack;
     public List<string> pyroAnimationPack;
     
-    // Private variables
+    // Private attributes
     private List<string> currentAnimationPack; // Actual animation pack selected
-
-    [Header("Initial test param")]
-    public Direction playerDirection; // The direction the player is facing (test param, will change with other class)
-    public Element.ElementType playerCurrentElement; // The current element of the player (test param, will change with other class)
+    private PlayerStatus playerStatus; // Holds the instance of it's status
+    private Direction playerDirection; // The direction the player is facing (test param, will change with other class)
+    private Element.ElementType playerCurrentElement; // The current element of the player (test param, will change with other class)
 
     /// <summary>
     /// Awake call for the PlayerAnimation class, start variables with standard values
     /// </summary>
     protected void AnimationAwake()
     {
+        // Calls the awake statement of it's father's class
+        AwakeObjectAnimation();
+        
+        // Try get PlayerStatus class instance
+        playerStatus = GetComponent<PlayerStatus>();
+        
         // Setting standard the animation packs
         if (electroAnimationPack.Count == 0)
             electroAnimationPack = new List<string>{ };
@@ -66,10 +71,12 @@ public abstract class PlayerAnimation : ObjectAnimation
     /// </summary>
     private void UpdateAttributes()
     {
-        // Update:
-        
-        //playerDirection =
-        //playerCurrentElement = 
+        if (!(playerStatus is null))
+        {
+            playerDirection = playerStatus.getPlayerDirection();
+            playerCurrentElement = playerStatus.getObjectElement();
+        }
+        else Debug.Log("PlayerStatus instance not found on player object");
     }
 
     /// <summary>
