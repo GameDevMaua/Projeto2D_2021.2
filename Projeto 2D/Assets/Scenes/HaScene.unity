@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 180483773}
   - component: {fileID: 180483775}
   - component: {fileID: 180483776}
+  - component: {fileID: 180483777}
   m_Layer: 0
   m_Name: PlayerTeste
   m_TagString: Player
@@ -286,7 +287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180483770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.54, y: 1.63, z: 0}
+  m_LocalPosition: {x: 7.95, y: 1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -369,6 +370,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6999d09b06d14a6795411654113810f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &180483777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180483770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4003dc2511e55c84b95205f24babc673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectElement: 0
+  hasActivity: 0
+  playerDirection: 0
+  isDead: 0
 --- !u!1 &400946799
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +398,7 @@ GameObject:
   - component: {fileID: 400946800}
   - component: {fileID: 400946802}
   - component: {fileID: 400946803}
+  - component: {fileID: 400946804}
   m_Layer: 0
   m_Name: PyroTrap
   m_TagString: Untagged
@@ -488,12 +506,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 400946799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50012bc74e287104783b1b33a22af4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: 1
-  element: 4
-  respawnPoint: {fileID: 1398270512}
+  objectElement: 4
+  hasActivity: 1
+--- !u!114 &400946804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400946799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23980476ea0dd6c4e992af09f910a312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
 --- !u!1 &440466843
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +536,7 @@ GameObject:
   - component: {fileID: 440466846}
   - component: {fileID: 440466845}
   - component: {fileID: 440466844}
+  - component: {fileID: 440466848}
   m_Layer: 0
   m_Name: ElectroTrap
   m_TagString: Untagged
@@ -522,12 +553,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 440466843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50012bc74e287104783b1b33a22af4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: 1
-  element: 3
-  respawnPoint: {fileID: 1398270512}
+  objectElement: 3
+  hasActivity: 1
 --- !u!61 &440466845
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -619,6 +649,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &440466848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440466843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23980476ea0dd6c4e992af09f910a312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
 --- !u!1 &608555190
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,8 +673,8 @@ GameObject:
   - component: {fileID: 608555195}
   - component: {fileID: 608555194}
   - component: {fileID: 608555193}
-  - component: {fileID: 608555192}
   - component: {fileID: 608555191}
+  - component: {fileID: 608555192}
   m_Layer: 0
   m_Name: GeoElement
   m_TagString: Untagged
@@ -639,22 +682,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &608555191
-CircleCollider2D:
+--- !u!114 &608555191
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608555190}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9abbe9d6dcd4b5408b7dbb64023babe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectElement: 1
+  hasActivity: 1
 --- !u!114 &608555192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,10 +705,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 608555190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5006c8c8a59dd5c4782d586d03e59ab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3809e7ffd60546388d12c79bc3b8bb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 1
+  status: {fileID: 0}
 --- !u!58 &608555193
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -843,10 +884,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 623317096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5006c8c8a59dd5c4782d586d03e59ab7, type: 3}
+  m_Script: {fileID: 11500000, guid: f9abbe9d6dcd4b5408b7dbb64023babe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 2
+  objectElement: 2
+  hasActivity: 1
 --- !u!58 &623317100
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -863,22 +905,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!58 &623317101
-CircleCollider2D:
+--- !u!114 &623317101
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623317096}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809e7ffd60546388d12c79bc3b8bb37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
 --- !u!1 &902362299
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +930,7 @@ GameObject:
   - component: {fileID: 902362302}
   - component: {fileID: 902362301}
   - component: {fileID: 902362300}
+  - component: {fileID: 902362304}
   m_Layer: 0
   m_Name: 'GeoTrap '
   m_TagString: Untagged
@@ -907,12 +947,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 902362299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50012bc74e287104783b1b33a22af4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: 1
-  element: 1
-  respawnPoint: {fileID: 1398270512}
+  objectElement: 1
+  hasActivity: 1
 --- !u!61 &902362301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1004,6 +1043,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &902362304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902362299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23980476ea0dd6c4e992af09f910a312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
 --- !u!1 &1137610335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,10 +1150,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1137610335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5006c8c8a59dd5c4782d586d03e59ab7, type: 3}
+  m_Script: {fileID: 11500000, guid: f9abbe9d6dcd4b5408b7dbb64023babe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 4
+  objectElement: 4
+  hasActivity: 1
 --- !u!58 &1137610339
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1118,22 +1171,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!58 &1137610340
-CircleCollider2D:
+--- !u!114 &1137610340
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137610335}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3809e7ffd60546388d12c79bc3b8bb37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
 --- !u!1 &1398270511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1214,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1423111571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423111573}
+  - component: {fileID: 1423111572}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1423111572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423111571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9958e49ff5987ae409e7a291c77e0630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: {fileID: 102900000, guid: 71f9edeb9b6c5ed458beeebeb7aa2d41, type: 3}
+--- !u!4 &1423111573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423111571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.2544823, y: 2.7629097, z: -0.29780087}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1907331693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1271,7 @@ GameObject:
   - component: {fileID: 1907331696}
   - component: {fileID: 1907331695}
   - component: {fileID: 1907331694}
+  - component: {fileID: 1907331699}
   m_Layer: 0
   m_Name: ElectroElement (1)
   m_TagString: Untagged
@@ -1196,8 +1291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3809e7ffd60546388d12c79bc3b8bb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentElement: 3
-  elementList: 
+  status: {fileID: 0}
 --- !u!58 &1907331695
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1295,6 +1389,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907331699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907331693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9abbe9d6dcd4b5408b7dbb64023babe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectElement: 3
+  hasActivity: 1
 --- !u!1 &2053105662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1415,7 @@ GameObject:
   - component: {fileID: 2053105665}
   - component: {fileID: 2053105664}
   - component: {fileID: 2053105663}
+  - component: {fileID: 2053105667}
   m_Layer: 0
   m_Name: ElectroTrap (1)
   m_TagString: Untagged
@@ -1326,7 +1435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23980476ea0dd6c4e992af09f910a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentElement: 2
+  status: {fileID: 0}
 --- !u!61 &2053105664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1418,6 +1527,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053105667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053105662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50012bc74e287104783b1b33a22af4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectElement: 3
+  hasActivity: 1
 --- !u!1 &2063535531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,8 +1552,8 @@ GameObject:
   - component: {fileID: 2063535536}
   - component: {fileID: 2063535535}
   - component: {fileID: 2063535534}
-  - component: {fileID: 2063535533}
   - component: {fileID: 2063535532}
+  - component: {fileID: 2063535533}
   m_Layer: 0
   m_Name: ElectroElement
   m_TagString: Untagged
@@ -1438,22 +1561,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &2063535532
-CircleCollider2D:
+--- !u!114 &2063535532
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063535531}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9abbe9d6dcd4b5408b7dbb64023babe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectElement: 3
+  hasActivity: 1
 --- !u!114 &2063535533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,10 +1584,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2063535531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5006c8c8a59dd5c4782d586d03e59ab7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3809e7ffd60546388d12c79bc3b8bb37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  element: 3
+  status: {fileID: 0}
 --- !u!58 &2063535534
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1560,6 +1681,7 @@ GameObject:
   - component: {fileID: 2106740699}
   - component: {fileID: 2106740701}
   - component: {fileID: 2106740702}
+  - component: {fileID: 2106740703}
   m_Layer: 0
   m_Name: HydroTrap
   m_TagString: Untagged
@@ -1667,9 +1789,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2106740698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f35ac36aa4bf2347926c8ba3c3750b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50012bc74e287104783b1b33a22af4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoad: 1
-  element: 2
-  respawnPoint: {fileID: 1398270512}
+  objectElement: 2
+  hasActivity: 1
+--- !u!114 &2106740703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106740698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23980476ea0dd6c4e992af09f910a312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 0}
