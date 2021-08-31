@@ -39,7 +39,7 @@ namespace Folders.HaFolder
             }
 
             
-            TrapScript elementDoor = collider.GetComponent<TrapScript>();
+            TrapScriptTemp elementDoor = collider.GetComponent<TrapScriptTemp>();
             
             if (elementDoor != null)
             {

@@ -1,34 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Folders.HaFolder;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class TrapScript : MonoBehaviour
+public class TrapScript : ElementalObjects
 {
-    public int sceneLoad;
-    [SerializeField] private Element.ElementType element;
-    [SerializeField] private Transform respawnPoint;
 
-    
-
-    public Element.ElementType GetElementType()
+    private void Awake()
     {
-        return element;
-    }
-
-    public void OpenTrap()
-    {
-        Destroy(this.gameObject);
+        status = gameObject.GetComponent<TrapStatus>();
     }
     
-
-    public void RespawnPlayer(GameObject player)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        player.transform.position = respawnPoint.transform.position;
-    }
-
-    public void LoadScene()
-    {
-        SceneManager.LoadScene(sceneLoad);
+        PlayerStatus playerStatus = other.GetComponent<PlayerStatus>();
+        if (playerStatus)
+        {
+            if (playerStatus.getObjectElement() != status.getObjectElement())
+            {
+                playerStatus.setPlayerDead();
+                Debug.Log("Morte");
+            }
+            else
+            {
+                Debug.Log("Passou pela trap de: " + status.getObjectElement());
+            }
+        }
     }
 }

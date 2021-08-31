@@ -4,28 +4,5 @@ using UnityEngine;
 
 public abstract class ElementalObjects : MonoBehaviour
 {
-    public Element.ElementType currentElement;
-    
-    
-    protected void ElementAwake()
-    {
-        
-    }
-
-    public void SetElement(Element.ElementType setElement)
-    {
-        currentElement = setElement;
-    }
-    
-    public void AddElement(List<Element.ElementType> list)
-    {
-        list.Add(currentElement);
-    }
-
-    public void ClearElement(List<Element.ElementType> list)
-    {
-        list.Clear();
-    }
-    
-
+    public ObjectStatus status;
 }
