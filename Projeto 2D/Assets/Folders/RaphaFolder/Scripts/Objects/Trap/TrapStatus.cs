@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TrapStatus : ObjectStatus
 {
-    // Unique trap status behaviour
+    // Comportamento único da classe TrapStatus
     public void Awake()
     {
         AwakeObjectStatus();

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GenericTrapScript : TrapAnimation
 {
+    // Script de testes
     private void Awake()
     {
         AwakeTrapAnimation();

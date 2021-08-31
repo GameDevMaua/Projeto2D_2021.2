@@ -7,6 +7,7 @@ using UnityEngine.PlayerLoop;
 
 public class PlayerGenericScript : PlayerAnimation
 {
+    // Script de teste
     private void Awake()
     {
         AnimationAwake();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// States of the directions that an object can be facing
+/// Estados das direções que um objeto pode estar voltado
 /// </summary>
 public enum Direction
 {

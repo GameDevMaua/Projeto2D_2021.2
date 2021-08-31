@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public abstract class ObjectAnimation : MonoBehaviour
 {
     [SerializeField]
-    private string animation; // Name or path of the animation that will be displayed
-    protected Animator animator; // Instance of the object animator
-    private bool attachedAnimationString; // true if there's some value for the animation attribute
+    private string animation; // Nome ou path da animação que será exibida neste objeto
+    protected Animator animator; // Instância do objeto Animator
+    private bool attachedAnimationString; // true se existir algum valor atribuído ao atributo animation
     
     /// <summary>
-    /// Awake call for the ObjectAnimation class, start variables with standard values
+    /// Chamada do Awake para a classe ObjectAnimation, incializa variáveis com valores padrões
     /// </summary>
     protected void AwakeObjectAnimation()
     {
@@ -21,7 +21,7 @@ public abstract class ObjectAnimation : MonoBehaviour
     }
 
     /// <summary>
-    /// Executes the designed animation to the object
+    /// Executa a animação atribuída ao objeto
     /// </summary>
     private void PlayObjectAnimation()
     {
@@ -29,10 +29,10 @@ public abstract class ObjectAnimation : MonoBehaviour
     }
 
     /// <summary>
-    /// Verify if the string has some value
+    /// Verifica se existe algum valor atribuído à string
     /// </summary>
-    /// <param name="verify">string to be verified</param>
-    /// <returns>true case the string has some value, false case the string is empty or null</returns>
+    /// <param name="verify">string a ser verificada</param>
+    /// <returns>true caso a string tenha algum valor, false caso a string esteja vazia or null</returns>
     private static bool VerifyStringStatus(string verify)
     {
         if (verify is null) return false;

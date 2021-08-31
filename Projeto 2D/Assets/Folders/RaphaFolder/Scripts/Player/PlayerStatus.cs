@@ -6,8 +6,12 @@ using UnityEngine;
 
 public class PlayerStatus : ObjectStatus
 {
-    [SerializeField] private Direction playerDirection; // player current direction
+    [SerializeField] private Direction playerDirection; // Direção para a qual o player está voltado atualmente
     [SerializeField] private bool isDead; // estado do jogador (vivo/morto)
+    
+    /// <summary>
+    /// Inicializa variáveis com valores padrões
+    /// </summary>
     private void Awake()
     {
         setObjectElement(Element.ElementType.NONE);
@@ -16,14 +20,14 @@ public class PlayerStatus : ObjectStatus
     }
     
     /// <summary>
-    /// Gets the direction of the current object (player)
+    /// Lê a direção atual do objeto (player)
     /// </summary>
-    /// <returns>Direction of the object (player)</returns>
+    /// <returns>Direction do objeto (player)</returns>
     public Direction getPlayerDirection() => playerDirection;
     /// <summary>
-    /// Set the object Direction to the param
+    /// Define a direção do objeto como o passado por parâmetro
     /// </summary>
-    /// <param name="element">Direction, desired direction of the object</param>
+    /// <param name="element">Direction, direção desejada para o objeto</param>
     public void setPlayerDirection(Direction direction) => playerDirection = direction;
     /// <summary>
     /// Verifica se o player está morto

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ElementStatus : ObjectStatus
 {
-    // Unique trap status behaviour
+    // Comportamento único da classe ElementStatus
     private void Awake()
     {
         AwakeObjectStatus();

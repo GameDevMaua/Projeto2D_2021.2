@@ -6,31 +6,31 @@ using UnityEngine.PlayerLoop;
 public abstract class PlayerAnimation : ObjectAnimation
 {
     [Header("Animation Packs (Insert archive name - alphabetic order):")]
-    // Animation packs to fit the player's current element animations with the same system
+    // Packs de animações para alterarem os sprites do elemento atual do player com o mesmo sistema
     public List<string> electroAnimationPack;
     public List<string> geoAnimationPack;
     public List<string> hydroAnimationPack;
     public List<string> noneAnimationPack;
     public List<string> pyroAnimationPack;
     
-    // Private attributes
-    private List<string> currentAnimationPack; // Actual animation pack selected
-    private PlayerStatus playerStatus; // Holds the instance of it's status
-    private Direction playerDirection; // The direction the player is facing (test param, will change with other class)
-    private Element.ElementType playerCurrentElement; // The current element of the player (test param, will change with other class)
+    // Atributos privados
+    private List<string> currentAnimationPack; // Animation pack selecionado atualmente
+    private PlayerStatus playerStatus; // Instancia do status do jogador
+    private Direction playerDirection; // A direção para a qual o player está voltado
+    private Element.ElementType playerCurrentElement; // O tipo elemental atual do jogador
 
     /// <summary>
-    /// Awake call for the PlayerAnimation class, start variables with standard values
+    /// Chamada do Awake para a classe PlayerAnimation, incializa variáveis com valores padrões
     /// </summary>
     protected void AnimationAwake()
     {
-        // Calls the awake statement of it's father's class
+        // Inicializa os parâmetros da classe pai
         AwakeObjectAnimation();
         
-        // Try get PlayerStatus class instance
+        // Tenta instanciar a classe PlayerStatus
         playerStatus = GetComponent<PlayerStatus>();
         
-        // Setting standard the animation packs
+        // Define animation packs padrões
         if (electroAnimationPack.Count == 0)
             electroAnimationPack = new List<string>{ };
         if (geoAnimationPack.Count == 0)
@@ -52,12 +52,12 @@ public abstract class PlayerAnimation : ObjectAnimation
         if (pyroAnimationPack.Count == 0)
             pyroAnimationPack = new List<string>{ };
 
-        // Starting the first animation pack
+        // Inicializa o primeiro animation pack
         currentAnimationPack = noneAnimationPack;
     }
 
     /// <summary>
-    /// Update call for the PlayerAnimation class, executes the PlayerAnimation's function
+    /// Chamada do Update para a classe PlayerAnimation, executa as funções principais da classe
     /// </summary>
     protected void AnimationUpdate()
     {
@@ -67,7 +67,7 @@ public abstract class PlayerAnimation : ObjectAnimation
     }
 
     /// <summary>
-    /// Update playerDirection and currentElement attributes
+    /// Atualiza a direção do player e seu tipo elemental
     /// </summary>
     private void UpdateAttributes()
     {
@@ -80,7 +80,7 @@ public abstract class PlayerAnimation : ObjectAnimation
     }
 
     /// <summary>
-    /// Update the selected animation pack according to the player current element
+    /// Atualiza a animation pack selecionada de acordo com o tipo elemental atual do jogador
     /// </summary>
     private void UpdateAnimationPack()
     {
@@ -110,7 +110,7 @@ public abstract class PlayerAnimation : ObjectAnimation
     }
 
     /// <summary>
-    /// Plays the animation according to the direction the player is on
+    /// Toca as animações do animation pack de acordo com a direção para a qual o player está voltado
     /// </summary>
     private void PlayAnimation()
     {

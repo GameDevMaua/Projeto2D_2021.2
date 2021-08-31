@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ElementAnimation : ObjectAnimation
 {
-    // Unique element animation behaviour
+    // Comportamento único da classe ElementAnimation
     protected void AwakeElementAnimation()
     {
         AwakeObjectAnimation();

@@ -6,12 +6,12 @@ using UnityEngine;
 public abstract class ObjectStatus : MonoBehaviour
 {
     [SerializeField]
-    private Element.ElementType objectElement; // Element type of the object
+    private Element.ElementType objectElement; // Tipo elemental do objeto
     [SerializeField]
-    private bool hasActivity; // If the object is active or not
+    private bool hasActivity; // Se o objeto está ativo ou não
 
     /// <summary>
-        /// Awake call for the ObjectStatus class, start variables with standard values
+    /// Chamada do Awake para a classe ObjectStatus, incializa variáveis com valores padrões
     /// </summary>
     protected void AwakeObjectStatus()
     {
@@ -19,26 +19,26 @@ public abstract class ObjectStatus : MonoBehaviour
     }
 
     /// <summary>
-    /// Gets the element type of the current object
+    /// Lê o tipo elemental do objeto
     /// </summary>
-    /// <returns>Element.ElementType of the object</returns>
+    /// <returns>Element.ElementType, tipo elemental do objeto</returns>
     public Element.ElementType getObjectElement() => objectElement;
     
     /// <summary>
-    /// Set the object element type to the param
+    /// Define o tipo elemental do objeto como o passado por parâmetro
     /// </summary>
-    /// <param name="element">Element.ElementType, desired element type of the object</param>
+    /// <param name="element">Element.ElementType, tipo elemental desejado do objeto</param>
     public void setObjectElement(Element.ElementType element) => objectElement = element;
 
     /// <summary>
-    /// Gets the object activity of the current object
+    /// Lê a atividade do objeto
     /// </summary>
-    /// <returns>bool of the object activity</returns>
+    /// <returns>bool, atividade do objeto</returns>
     public bool getObjectActivity() => hasActivity;
     
     /// <summary>
-    /// Set the object activity to the param
+    /// Define a atividade do objeto como a passada por parâmetro
     /// </summary>
-    /// <param name="element">bool, desired activity of the object</param>
+    /// <param name="element">bool, atividade desejada para o objeto</param>
     public void setObjectActivity(bool status) => hasActivity = status;
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TrapAnimation : ObjectAnimation
 {
-    // Unique trap animation behaviour
+    // Comportamento único da classe TrapAnimation
     protected void AwakeTrapAnimation()
     {
         AwakeObjectAnimation();

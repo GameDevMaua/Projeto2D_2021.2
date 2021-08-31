@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GenericElementScript : ElementAnimation
 {
+    // Script de testes
     private void Awake()
     {
         AwakeElementAnimation();
