@@ -25,15 +25,13 @@ public class PlayerStatus : ObjectStatus
     /// </summary>
     /// <param name="element">Direction, desired direction of the object</param>
     public void setPlayerDirection(Direction direction) => playerDirection = direction;
-
     /// <summary>
     /// Verifica se o player está morto
     /// </summary>
     /// <returns>true - caso o player esteja morto</returns>
     public bool isPlayerDead() => isDead;
     /// <summary>
-    /// Altera o estado de morte do jogador
+    /// Altera o estado de morte do jogador para true
     /// </summary>
-    /// <param name="isDead">true caso o player tenha morrido</param>
-    public void setPlayerDead(bool isDead) => this.isDead = isDead;
+    public void setPlayerDead() => isDead = true;
 }
