@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Element : MonoBehaviour
-{
-    [SerializeField] private ElementType element;
+{ 
     public enum ElementType
     {
         NONE,
@@ -12,10 +11,5 @@ public class Element : MonoBehaviour
         HYDRO,
         ELECTRO,
         PYRO 
-    }
-
-    public ElementType GetElementType()
-    {
-        return element;
     }
 }

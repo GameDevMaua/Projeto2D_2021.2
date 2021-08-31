@@ -35,7 +35,7 @@ namespace Folders.HaFolder
             if (element != null)
             { 
                 elementList.Clear();
-                AddElement(element.GetElementType());
+             //   AddElement(element.GetElementType());
             }
 
             
