@@ -9,5 +9,6 @@ public class ElementStatus : ObjectStatus
     private void Awake()
     {
         AwakeObjectStatus();
+        
     }
 }

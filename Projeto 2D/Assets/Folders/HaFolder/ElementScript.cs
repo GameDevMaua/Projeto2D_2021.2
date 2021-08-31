@@ -8,14 +8,17 @@ namespace Folders.HaFolder
     public class ElementScript : ElementalObjects
     {
         public List<Element.ElementType> elementList;
+        public ElementStatus status;
         private void Awake()
         {
+            status = gameObject.GetComponent<ElementStatus>();
             elementList = new List<Element.ElementType>();
         }
 
         public List<Element.ElementType> GetList()
         {
             return elementList;
+
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -28,6 +31,11 @@ namespace Folders.HaFolder
                 
                 Debug.Log("Element: " + currentElement);
             }
+        }
+
+        public void Update()
+        {
+            currentElement = status.getObjectElement();
         }
     }
 }
