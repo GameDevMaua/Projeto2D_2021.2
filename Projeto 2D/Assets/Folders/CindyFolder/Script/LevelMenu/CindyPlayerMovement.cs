@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
+/// <summary>
+/// PlayerMovement so para o player mover
+/// </summary>
 public class CindyPlayerMovement : MonoBehaviour
 {
     private float moveX;
