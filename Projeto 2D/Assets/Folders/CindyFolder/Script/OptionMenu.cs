@@ -30,15 +30,12 @@ public class OptionMenu : MonoBehaviour
     }
      
     /// <summary>
-    /// Caso não tenha um botão selecionado, selecionar o firstButton
+    /// realiza a ação da função do SelectFirstButton, na classe FirstButton
     /// </summary>
     public void Update()
     {
-        if (ReferenceEquals(EventSystem.current.currentSelectedGameObject, null))
-        {
- 
-            EventSystem.current.SetSelectedGameObject((optionFirstButton));
-        }
+        FirstButton fb = new FirstButton();
+        fb.SelectFirstButton(optionFirstButton);
  
     }
 }
