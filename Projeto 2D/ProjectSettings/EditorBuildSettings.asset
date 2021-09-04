@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CindyScene.unity
     guid: 71f9edeb9b6c5ed458beeebeb7aa2d41
+  - enabled: 1
+    path: Assets/Scenes/CindyLevelMenu.unity
+    guid: c7df2f4dfa76857469760f75649fd6af
   m_configObjects: {}
