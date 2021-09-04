@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
         public class NextLevel : MonoBehaviour
         {
             public String levelName;
-            private bool playerInRange;
+            public bool playerInRange;
 
             public void Update()
             {
@@ -22,10 +22,17 @@ using UnityEngine.SceneManagement;
                     this.gameObject.transform.localScale = new Vector3(2, 2, 2);
                     playerInRange = true;
                 }
-                else
+
+            }
+
+            private void OnTriggerExit2D(Collider2D other)
+            {
+                if (other.attachedRigidbody)
                 {
                     this.gameObject.transform.localScale = new Vector3(1, 1, 1);
                     playerInRange = false;
                 }
             }
         }
+
+
