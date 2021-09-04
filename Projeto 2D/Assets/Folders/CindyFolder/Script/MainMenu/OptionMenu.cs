@@ -34,7 +34,7 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        FirstButton fb = new FirstButton();
+        FirstButton fb = optionMenu.AddComponent<FirstButton>();
         fb.SelectFirstButton(optionFirstButton);
  
     }
