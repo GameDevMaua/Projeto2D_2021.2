@@ -29,11 +29,16 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Recarrega a fase atual
     /// </summary>
-    public void ReloadOnDeath() => SceneManager.LoadScene(actualScene.name);
+    public void ReloadOnDeath() => SceneManager.LoadScene(SaveSystem.LoadData().savedScene);
+
     /// <summary>
     /// Salva o jogo
     /// </summary>
-    public void SaveGame() => Debug.Log("Game Saved");
+    public void SaveGame()
+    {
+        PlayerData data = new PlayerData(actualScene);
+        SaveSystem.SaveGame(data);
+    }
 
     // Temporário para testes
     private void Update()

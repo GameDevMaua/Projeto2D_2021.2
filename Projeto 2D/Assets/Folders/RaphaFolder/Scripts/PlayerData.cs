@@ -2,20 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [Serializable]
 public class PlayerData
 {
     // Atributos que serão salvos
-    public string currentScene;
-    public List<string> accessedScenes;
+    public string savedScene;
+    //public List<string> accessedScenes;
 
     /// <summary>
     /// Construtor de classe, utilizado para gerar um PlayerData a ser salvo
     /// </summary>
-    public PlayerData(UnityEngine.SceneManagement.Scene actualScene, List<string> accessedScenes)
+    public PlayerData(UnityEngine.SceneManagement.Scene actualScene)
     {
-        currentScene = actualScene.name;
-        this.accessedScenes = accessedScenes;
+        savedScene = actualScene.name;
+        //this.accessedScenes = accessedScenes;
     }
 }
