@@ -8,12 +8,14 @@ public class OptionMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject optionMenu;
     public GameObject optionButton;
+    private FirstButton fb;
      
     /// <summary>
     /// Quando começar essa classe, chamar o optionFirstButton
     /// </summary>
     public void Start()
     {
+        fb = optionMenu.AddComponent<FirstButton>();
         EventSystem.current.SetSelectedGameObject(optionFirstButton);
         optionMenu.SetActive(true);
         mainMenu.SetActive(false);
@@ -34,7 +36,6 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        FirstButton fb = optionMenu.AddComponent<FirstButton>();
         fb.SelectFirstButton(optionFirstButton);
  
     }

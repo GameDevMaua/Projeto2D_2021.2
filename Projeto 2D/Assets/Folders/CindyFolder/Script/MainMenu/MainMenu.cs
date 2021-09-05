@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -8,13 +9,19 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject optionMenu;
     public GameObject firstOptionButton;
-    
+    private FirstButton fb;
+
+    public void Start()
+    {
+        fb = mainMenu.AddComponent<FirstButton>();
+    }
+
     /// <summary>
     /// Criação da ação do botão PLAY
     /// </summary>
-    public void PlayGame()
+    public void PlayGame(String newScene)
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene(newScene);
     }
 
     /// <summary>
@@ -42,7 +49,6 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        FirstButton fb = optionMenu.AddComponent<FirstButton>();
         fb.SelectFirstButton(firstButton);
 
     }

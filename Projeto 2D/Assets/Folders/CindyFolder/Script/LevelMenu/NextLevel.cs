@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
             public String levelName;
             public bool playerInRange;
 
+            /// <summary>
+            /// Quando apertar "Z" dentro da área e o player estiver dentro da área, muda a cena para o local do nome da cena
+            /// </summary>
             public void Update()
             {
                 if (Input.GetKeyDown(KeyCode.Z) && playerInRange == true)
@@ -15,6 +18,10 @@ using UnityEngine.SceneManagement;
                 }
             }
         
+            /// <summary>
+            /// Quando o player estiver dentro da área, aumenta o Gameobject da cena para saber que o player pode apertar "Z"
+            /// </summary>
+            /// <param name="other"></param>
             private void OnTriggerEnter2D(Collider2D other)
             {
                 if (other.attachedRigidbody)
@@ -25,6 +32,10 @@ using UnityEngine.SceneManagement;
 
             }
 
+            /// <summary>
+            /// Quando o player estiver fora da área, diminui o Gameobject da cena para saber que o player não consegue apertar "Z"
+            /// </summary>
+            /// <param name="other"></param>
             private void OnTriggerExit2D(Collider2D other)
             {
                 if (other.attachedRigidbody)
