@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Recarrega a fase atual
     /// </summary>
-    public void ReloadOnDeath() => SceneManager.LoadScene(SaveSystem.LoadData().savedScene);
+    public void ReloadOnDeath() => SceneManager.LoadScene(actualScene.name);
 
     /// <summary>
     /// Salva o jogo
