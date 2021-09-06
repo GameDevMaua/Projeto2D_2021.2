@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   setSelectedButton: {fileID: 1285274097}
+  pM: {fileID: 82348932}
 --- !u!1 &611750353
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +408,6 @@ GameObject:
   - component: {fileID: 1285274101}
   - component: {fileID: 1285274100}
   - component: {fileID: 1285274099}
-  - component: {fileID: 1285274102}
   m_Layer: 5
   m_Name: Resume Button
   m_TagString: Untagged
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 82348932}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 114571641}
+        m_TargetAssemblyTypeName: PauseButtons, Assembly-CSharp
         m_MethodName: ResumeButton
         m_Mode: 1
         m_Arguments:
@@ -529,19 +529,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285274097}
   m_CullTransparentMesh: 1
---- !u!114 &1285274102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285274097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba527b968ab39274fb0d546c0ec13bab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setSelectedButton: {fileID: 1285274097}
 --- !u!1 &1826148548
 GameObject:
   m_ObjectHideFlags: 0
