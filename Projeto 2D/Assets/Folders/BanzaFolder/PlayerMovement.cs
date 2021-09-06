@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode DownKey;
     public KeyCode LeftKey;
     public KeyCode RightKey;
+    public KeyCode newKey;
     public float Speed = 2.5f;
 
     private Direction LastDirection;
@@ -53,6 +54,12 @@ public class PlayerMovement : MonoBehaviour
             
         
     }
+
+    public void ChangeUpKey(KeyCode newKey)
+    {
+        
+    }
+    
 }
 
     

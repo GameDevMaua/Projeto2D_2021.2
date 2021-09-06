@@ -223,7 +223,7 @@ MonoBehaviour:
   DownKey: 115
   LeftKey: 97
   RightKey: 100
-  Speed: 0.02
+  Speed: 2.5
 --- !u!50 &39569845
 Rigidbody2D:
   serializedVersion: 4
