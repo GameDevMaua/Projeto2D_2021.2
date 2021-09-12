@@ -1,4 +1,5 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -19,9 +20,9 @@ public class MainMenu : MonoBehaviour
     /// <summary>
     /// Criação da ação do botão PLAY
     /// </summary>
-    public void PlayGame(String newScene)
+    public void PlayGame(SceneAsset newScene)
     {
-        SceneManager.LoadScene(newScene);
+        SceneManager.LoadScene(newScene.name);
     }
 
     /// <summary>
