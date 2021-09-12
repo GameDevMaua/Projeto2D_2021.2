@@ -5,8 +5,10 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dm;
     private bool playerInRange;
-    public GameObject Dialogue;
 
+    /// <summary>
+    /// Caso seja uma cutscene, começa o dialogo
+    /// </summary>
     public void Start()
     {
         if (dm.isCutscene == true)
@@ -15,23 +17,31 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Funcao para comecar o diálogo
+    /// </summary>
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
     /// <summary>
-    /// Quando apertar "Z" dentro da área e o player estiver dentro da área, muda a cena para o local do nome da cena
+    /// Quando apertar "Z" dentro da área e o player estiver dentro da área, comeca o diálogo
     /// </summary>
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && playerInRange == true && dm.isCutscene == false)
+        if (Input.GetKeyDown(dm.key) && playerInRange == true && dm.isCutscene == false)
         {
             Time.timeScale = 0f;
-            if(dm.isDialogue == false)
+            if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
             else
-                dm.DisplayNextSentence();
+                dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
+        }
+        
+        if (Input.GetKeyDown(dm.key) && dm.isCutscene == true)
+        {
+            dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
         }
     }
         
