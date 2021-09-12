@@ -9,11 +9,10 @@ public class PlayerMovement : MonoBehaviour
     public KeyCode DownKey;
     public KeyCode LeftKey;
     public KeyCode RightKey;
-    public KeyCode newKey;
     public float Speed = 2.5f;
 
-    private Direction LastDirection;
     private Rigidbody2D Rigidbody2DReference;
+    
 
     private void Start()
     {
@@ -54,10 +53,22 @@ public class PlayerMovement : MonoBehaviour
             
         
     }
-
+    
     public void ChangeUpKey(KeyCode newKey)
     {
-        
+        UpKey = newKey;
+    }
+    public void ChangeDownKey(KeyCode newKey)
+    {
+        DownKey = newKey;
+    }
+    public void ChangeRightKey(KeyCode newKey)
+    {
+        RightKey = newKey;
+    }
+    public void ChangeLeftKey(KeyCode newKey)
+    {
+        LeftKey = newKey;
     }
     
 }
