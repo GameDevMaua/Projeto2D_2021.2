@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -52,6 +53,12 @@ namespace MainProject.Abstract
         /// <returns>True - caso o Animator seja capaz de executar a animação, False - caso contrário</returns>
         private static bool VerifyAnimationInAnimator(string animation, Animator animator)
         {
+            if (!animator.runtimeAnimatorController)
+            {
+                Debug.Log("ERRO: Nenhum controlador atribuído ao Animator: " + animator);
+                return false;
+            }
+
             var animationsInController = animator.runtimeAnimatorController.animationClips;
             return animationsInController.Any(an => an.name.Equals(animation));
         }

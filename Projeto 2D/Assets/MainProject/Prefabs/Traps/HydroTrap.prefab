@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c951b294d14288a6a8e226405eaa02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: 
+  animation: HydroTrapAnimation
 --- !u!61 &5732181412792354763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Animator:
   m_GameObject: {fileID: 5732181412792354761}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30cf21aa19febf9419d857e044334fc0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

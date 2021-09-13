@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593db13e90dc43fdafea25c6f2160b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: 
+  animation: ElectroElementAnimation
 --- !u!61 &5207810564975942577
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Animator:
   m_GameObject: {fileID: 5207810564975942575}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41bfcbd8183845b47ab0e23bf602efe6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

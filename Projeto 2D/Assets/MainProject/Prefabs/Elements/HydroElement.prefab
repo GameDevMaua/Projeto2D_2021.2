@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593db13e90dc43fdafea25c6f2160b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: 
+  animation: HydroElementAnimation
 --- !u!61 &106903874123685165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Animator:
   m_GameObject: {fileID: 106903874123685171}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f328d620ec6d8041a69d6cc8ae70932, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
