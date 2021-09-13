@@ -915,13 +915,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - characterId: 1
+  - characterId: 0
     text: Yoo
-  - characterId: 2
+  - characterId: 1
     text: Oiii
+  - characterId: 0
+    text: Hi
+  - characterId: 1
+    text: Hi
+  - characterId: 0
+    text: Affe
   Characters:
   - name: Akio
-    sprite: {fileID: 0}
+    sprite: {fileID: 3187181684004449642, guid: 9c49f045bd40dcc47b49e232d5d4fd88, type: 3}
   - name: Cindy
     sprite: {fileID: 0}
 --- !u!114 &1661284818
