@@ -9,6 +9,7 @@ public class ManagerDialogue : MonoBehaviour
     public Image characterSprite;
     public Text characterName;
     public Text dialogueText;
+    public GameObject dialogueBox;
 
     DialogueText[] currentDialogue;
     Character[] currentCharacter;
@@ -18,6 +19,7 @@ public class ManagerDialogue : MonoBehaviour
 
     public void OpenDialogue(DialogueText[] dialogue, Character[] character)
     {
+        dialogueBox.SetActive(true);
         currentDialogue = dialogue;
         currentCharacter = character;
         activeDialogue = 0;
@@ -48,6 +50,7 @@ public class ManagerDialogue : MonoBehaviour
         {
             Debug.Log("Conversation ended!");
             isActive = false;
+            dialogueBox.SetActive(false);
         }
 
     }
