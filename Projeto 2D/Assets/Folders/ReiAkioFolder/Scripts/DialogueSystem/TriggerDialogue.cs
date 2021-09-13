@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class TriggerDialogue : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public DialogueText[] Dialogues;
+    public Character[] Characters;
 
-    // Update is called once per frame
-    void Update()
+    public void StartDialogue()
     {
-        
+        FindObjectOfType<ManagerDialogue>().OpenDialogue(Dialogues, Characters);
     }
+    
+    
 }
