@@ -30,9 +30,14 @@ public class ManagerDialogue : MonoBehaviour
     public void DisplayDialogue()
     {
         DialogueText dialogueTextToDisplay = currentDialogue[activeDialogue];
+        
+        
         dialogueText.text = dialogueTextToDisplay.text;
-
+        
+        if (dialogueTextToDisplay.characterId >= currentCharacter.Length) return;
+        
         Character characterToDisplay = currentCharacter[dialogueTextToDisplay.characterId];
+        
         characterName.text = characterToDisplay.name;
         characterSprite.sprite = characterToDisplay.sprite;
     }
