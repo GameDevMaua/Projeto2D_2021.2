@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,7 +26,9 @@ public abstract class ObjectAnimation : MonoBehaviour
     /// </summary>
     private void PlayObjectAnimation()
     {
-        if (attachedAnimationString) animator.Play(animation);
+        if (!attachedAnimationString) return;
+        if (VerifyAnimationInAnimator(animation, animator)) animator.Play(animation);
+        else Debug.Log("ERRO: A animação desejada não foi encontrada no controlador do objeto: " + gameObject);
     }
 
     /// <summary>
@@ -37,5 +40,17 @@ public abstract class ObjectAnimation : MonoBehaviour
     {
         if (verify is null) return false;
         return verify.Length != 0;
+    }
+
+    /// <summary>
+    /// Verifica se a animação está presente no animator do objeto
+    /// </summary>
+    /// <param name="animation">Nome da animação desejada</param>
+    /// <param name="animator">Referência do Animator a executar a animação desejada</param>
+    /// <returns>True - caso o Animator seja capaz de executar a animação, False - caso contrário</returns>
+    private static bool VerifyAnimationInAnimator(string animation, Animator animator)
+    {
+        var animationsInController = animator.runtimeAnimatorController.animationClips;
+        return animationsInController.Any(an => an.name.Equals(animation));
     }
 }

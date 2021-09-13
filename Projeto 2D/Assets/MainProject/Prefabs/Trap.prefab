@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectElement: 0
-  hasActivity: 0
+  hasActivity: 1
 --- !u!114 &1649167132724693526
 MonoBehaviour:
   m_ObjectHideFlags: 0
