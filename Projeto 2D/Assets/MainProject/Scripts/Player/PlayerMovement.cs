@@ -12,7 +12,7 @@ namespace MainProject.Scripts.Player
         public KeyCode DownKey;
         public KeyCode LeftKey;
         public KeyCode RightKey;
-        public float Speed = 2.5f;
+        public float Speed;
 
         // Variáveis privadas
         private MainProject.Enums.Direction lastDirection;
@@ -23,18 +23,14 @@ namespace MainProject.Scripts.Player
         private void Awake()
         {
             // Definindo configurações padrões de atalhos de teclado
-            if (UpKey == KeyCode.None)
-                UpKey = KeyCode.W;
-            if (DownKey == KeyCode.None)
-                DownKey = KeyCode.S;
-            if (LeftKey == KeyCode.None)
-                LeftKey = KeyCode.A;
-            if (RightKey == KeyCode.None)
-                RightKey = KeyCode.D;
+            if (UpKey == KeyCode.None) UpKey = KeyCode.W;
+            if (DownKey == KeyCode.None) DownKey = KeyCode.S;
+            if (LeftKey == KeyCode.None) LeftKey = KeyCode.A;
+            if (RightKey == KeyCode.None) RightKey = KeyCode.D;
             
-            // Definindo direções iniciais padrões
-            if (lastDirection.Equals(null))
-                lastDirection = MainProject.Enums.Direction.NONE;
+            // Definindo valores iniciais padrões
+            if (lastDirection.Equals(null)) lastDirection = MainProject.Enums.Direction.NONE;
+            if (Speed == 0f) Speed = 3.5f;
             
             // Atribuindo referência
             Rigidbody2DReference = GetComponent<Rigidbody2D>();
@@ -54,7 +50,7 @@ namespace MainProject.Scripts.Player
         /// </summary>
         private void MoveCharacter()
         {
-            Rigidbody2DReference.velocity = movementVector * Time.deltaTime * Speed;
+            Rigidbody2DReference.velocity = movementVector * Speed;
         }
 
         /// <summary>
