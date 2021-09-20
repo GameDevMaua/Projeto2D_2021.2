@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     public bool isDialogue = false;
     public KeyCode key = KeyCode.Z;
     
-    private Queue<String> sentences;
+    private Queue<Dialogue.Info> dInfos;
 
     /// <summary>
     /// Cria a Queue sentences e sempre começa sem o canvas do diálogo (caso não seja uma cutscene)
@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         gameObjectDialogue.SetActive(false);
-        sentences = new Queue<string>();
+        dInfos = new Queue<Dialogue.Info>();
     }
 
     /// <summary>
@@ -36,15 +36,13 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogue = true; /// O Sistema saber que o diálogo foi inicializado
         gameObjectDialogue.SetActive(true); /// Ativa o canvas do diálogo
-        nameText.text = dialogue.dialogueInfo[0].characterprofile.Name; /// Referencia o nome do canvas ao nome do character profile
-        characterSprite.sprite = dialogue.dialogueInfo[0].characterprofile.Image; /// Referencia o sprite do canvas ao sprite do character profile
-        
-        sentences.Clear(); /// Limpa a Queue caso tenha algo dentro
 
-        /// Para cada sentença, coloca essa dentro da Queue
-        foreach (Dialogue.Info sentence in dialogue.dialogueInfo)
+        dInfos.Clear(); /// Limpa a Queue caso tenha algo dentro
+
+        /// Para cada Dialogue.Info (Array com characterprofile e sentenca), coloca essa dentro da Queue
+        foreach (Dialogue.Info info in dialogue.dialogueInfo)
         {
-            sentences.Enqueue(sentence.sentences);
+            dInfos.Enqueue(info);
         }
 
         DisplayNextSentence(); /// Vai para a próxima sentença
@@ -56,15 +54,17 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextSentence()
     {
         // Caso não tenha mais sentenças dentro da Queue, acaba o diálogo
-        if (sentences.Count == 0)
+        if (dInfos.Count == 0)
         {
             EndDialogue();
             return;
         }
-
-        string sentence = sentences.Dequeue(); // Tira a sentenca da Queue e coloca na string "sentence"
+        
+        Dialogue.Info dInfo = dInfos.Dequeue(); // Tira o Dialogue.Info da Queue e coloca no nome, sprite e sentenca
+        nameText.text = dInfo.characterprofile.Name; /// Referencia o nome do canvas ao nome do character profile
+        characterSprite.sprite = dInfo.characterprofile.Image; /// Referencia o sprite do canvas ao sprite do character profile
         StopAllCoroutines(); // Para todas as corrotinas
-        StartCoroutine(TypeSentence(sentence)); // Começa a corrotina de TypeSentence
+        StartCoroutine(TypeSentence(dInfo.sentences)); // Começa a corrotina de TypeSentence
     }
 
     /// <summary>

@@ -674,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e24995c249cb0448b2f566cd9f6c195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: c8498fd5f3b5ebd4eb57494dcc2dffd0, type: 2}
+  dialogue: {fileID: 11400000, guid: cf3f31171a1823d40a9aeefb02bbae0f, type: 2}
   dm: {fileID: 1675081558}
 --- !u!61 &901272111
 BoxCollider2D:
