@@ -30,7 +30,7 @@ public class DialogueTrigger : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        if (Input.GetKeyDown(dm.key) && playerInRange == true && dm.isCutscene == false)
+        if (Input.GetKeyDown(dm.key) && playerInRange == true && dm.isVNDialogue == true)
         {
             Time.timeScale = 0f;
             if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
@@ -39,9 +39,18 @@ public class DialogueTrigger : MonoBehaviour
                 dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
         }
         
+        if (playerInRange == true && dm.isCharacterDialogue == true)
+        {
+            Debug.Log("true");
+            if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
+                TriggerDialogue();
+
+        }
+
         if (Input.GetKeyDown(dm.key) && dm.isCutscene == true)
         {
             dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
+                
         }
     }
         
@@ -67,6 +76,9 @@ public class DialogueTrigger : MonoBehaviour
         if (other.attachedRigidbody)
         {
             playerInRange = false;
+            
+            if(dm.isCharacterDialogue == true)
+                dm.EndDialogue();
         }
     }
 }
