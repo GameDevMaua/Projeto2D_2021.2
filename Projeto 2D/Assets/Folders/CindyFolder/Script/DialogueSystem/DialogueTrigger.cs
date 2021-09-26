@@ -5,6 +5,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public DialogueManager dm;
     private bool playerInRange;
+    private bool aux;
 
     /// <summary>
     /// Caso seja uma cutscene, começa o dialogo
@@ -40,12 +41,20 @@ public class DialogueTrigger : MonoBehaviour
                 dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
         }
         
-        if (playerInRange == true && dm.isCharacterDialogue == true) // se estiver dentro do playerInRange e for um characterdialogue
+        if (playerInRange == true && dm.isCharacterDialogue == true && aux == true) // se estiver dentro do playerInRange e for um characterdialogue
         {
-            if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
+            if (dm.isDialogue == false)
+            {
+                // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
-            
+                aux = false;
+            }
 
+        }
+
+        if (playerInRange == false)
+        {
+            aux = true;
         }
 
         if (Input.GetKeyDown(dm.key) && dm.isCutscene == true)

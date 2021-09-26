@@ -111,8 +111,12 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TimeToDisappearDialogue()
     {
         yield return new WaitForSeconds(2);
-        
-        GameObject.FindWithTag("DialogueBalloon").SetActive(false);
+
+        if (GameObject.FindWithTag("DialogueBalloon"))
+        {
+            EndDialogue();
+            Debug.Log("Desliguei");
+        }
     }
     
     /// <summary>
