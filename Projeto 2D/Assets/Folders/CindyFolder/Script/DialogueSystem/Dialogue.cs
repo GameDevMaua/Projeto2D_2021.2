@@ -9,7 +9,6 @@ public class Dialogue:ScriptableObject
     [System.Serializable]
     public class Info
     {
-        public GameObject indialoguecharacter;
         public CharacterProfile characterprofile; // O profile do personagem
         [TextArea(3,10)] // O tamanho do texto do diálogo
         public string sentences; // O texto do diálogo

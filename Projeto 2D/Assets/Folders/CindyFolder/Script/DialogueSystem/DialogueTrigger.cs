@@ -30,7 +30,7 @@ public class DialogueTrigger : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        if (Input.GetKeyDown(dm.key) && playerInRange == true && dm.isVNDialogue == true)
+        if (Input.GetKeyDown(dm.key) && playerInRange == true && dm.isVNDialogue == true) // se estiver dentro do playerInRange e for um dialogo normal
         {
             Time.timeScale = 0f;
             if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
@@ -39,9 +39,8 @@ public class DialogueTrigger : MonoBehaviour
                 dm.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
         }
         
-        if (playerInRange == true && dm.isCharacterDialogue == true)
+        if (playerInRange == true && dm.isCharacterDialogue == true) // se estiver dentro do playerInRange e for um characterdialogue
         {
-            Debug.Log("true");
             if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
 
@@ -77,6 +76,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             playerInRange = false;
             
+            // Casi for um characterdialogue, ao sair do range do player, não mostra as falas
             if(dm.isCharacterDialogue == true)
                 dm.EndDialogue();
         }

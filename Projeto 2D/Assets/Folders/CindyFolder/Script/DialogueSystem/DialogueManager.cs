@@ -5,26 +5,31 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Vector2 = System.Numerics.Vector2;
 
 public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Image characterSprite;
     public Text dialogueText;
-    public GameObject indialoguecharacter;
+    
+    public Text characterdialogueText;
+    
     public GameObject gameObjectVNDialogue;
     public GameObject gameObjectCharacterDialogue;
+    
     public bool isCutscene = false;
     public bool isVNDialogue = false;
     public bool isCharacterDialogue = false;
+    
     public SceneAsset newScene;
     public bool isDialogue = false;
     public KeyCode key = KeyCode.Z;
-    
+
     private Queue<Dialogue.Info> dInfos;
 
     /// <summary>
-    /// Cria a Queue sentences e sempre começa sem o canvas do diálogo (caso não seja uma cutscene)
+    /// Cria a Queue sentences e sempre começa sem o canvas do diálogo e do characterdialogue (caso não seja uma cutscene)
     /// </summary>
     private void Awake()
     {
@@ -41,11 +46,12 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogue = true; /// O Sistema saber que o diálogo foi inicializado
         
-        if(isVNDialogue == true)
+        if(isVNDialogue == true || isCutscene == true)
             gameObjectVNDialogue.SetActive(true); /// Ativa o canvas do diálogo
 
         if(isCharacterDialogue == true)
-            gameObjectCharacterDialogue.SetActive(true);
+            gameObjectCharacterDialogue.SetActive(true);/// Ativa o canvas do characterdialogue
+        
         dInfos.Clear(); /// Limpa a Queue caso tenha algo dentro
 
         /// Para cada Dialogue.Info (Array com characterprofile e sentenca), coloca essa dentro da Queue
@@ -72,6 +78,10 @@ public class DialogueManager : MonoBehaviour
         Dialogue.Info dInfo = dInfos.Dequeue(); // Tira o Dialogue.Info da Queue e coloca no nome, sprite e sentenca
         nameText.text = dInfo.characterprofile.Name; /// Referencia o nome do canvas ao nome do character profile
         characterSprite.sprite = dInfo.characterprofile.Image; /// Referencia o sprite do canvas ao sprite do character profile
+
+        if (isCharacterDialogue == true)
+            characterdialogueText.text = dInfo.sentences;
+        
         StopAllCoroutines(); // Para todas as corrotinas
         StartCoroutine(TypeSentence(dInfo.sentences)); // Começa a corrotina de TypeSentence
     }
@@ -102,8 +112,9 @@ public class DialogueManager : MonoBehaviour
             gameObjectVNDialogue.SetActive(false); // O canvas do Dialogo é desativado
         
         if(isCharacterDialogue == true)
-            gameObjectCharacterDialogue.SetActive(false); // O canvas do Dialogo é desativado
-            isDialogue = false;
+            gameObjectCharacterDialogue.SetActive(false); // O canvas do characterdialogue é desativado
+        
+        isDialogue = false;
         
         // Se for Cutscene, carrega uma nova cena após o termino do diálogo
         if (isCutscene == true)
@@ -117,12 +128,4 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void SetCharacterDialogue()
-    {
-        if (isCharacterDialogue == true)
-        {
-            //Navegar
-        }
-    }
-    
 }
