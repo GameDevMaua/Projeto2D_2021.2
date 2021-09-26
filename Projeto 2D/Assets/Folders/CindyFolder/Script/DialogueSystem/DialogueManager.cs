@@ -59,8 +59,13 @@ public class DialogueManager : MonoBehaviour
         {
             dInfos.Enqueue(info);
         }
-
+        
         DisplayNextSentence(); /// Vai para a próxima sentença
+    }
+
+    public void FunctionToDeactivateDialogue()
+    {
+        StartCoroutine(TimeToDisappearDialogue());
     }
 
     /// <summary>
@@ -103,6 +108,13 @@ public class DialogueManager : MonoBehaviour
         
     }
 
+    IEnumerator TimeToDisappearDialogue()
+    {
+        yield return new WaitForSeconds(2);
+        
+        GameObject.FindWithTag("DialogueBalloon").SetActive(false);
+    }
+    
     /// <summary>
     /// Fim do diálogo
     /// </summary>

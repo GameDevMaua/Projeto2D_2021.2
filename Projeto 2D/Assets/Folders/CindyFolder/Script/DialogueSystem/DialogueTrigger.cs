@@ -23,6 +23,7 @@ public class DialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dm.FunctionToDeactivateDialogue();
     }
 
     /// <summary>
@@ -43,6 +44,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             if(dm.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
+            
 
         }
 

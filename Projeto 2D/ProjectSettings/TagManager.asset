@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Element
   - Trap
+  - DialogueBalloon
   layers:
   - Default
   - TransparentFX
