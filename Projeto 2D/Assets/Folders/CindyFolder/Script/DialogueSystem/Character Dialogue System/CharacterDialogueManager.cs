@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,6 +66,22 @@ public class CharacterDialogueManager: AbstractDialogueManager
                             characterDialogueText[i].text = dInfo.sentences;
                             playerDialogueText.text = characterDialogueText[i].text; 
               }
+       }
+       
+       IEnumerator TimeToDisappearDialogue()
+       {
+              yield return new WaitForSeconds(2);
+
+              if (GameObject.FindWithTag("DialogueBalloon"))
+              {
+                     EndDialogue();
+                     Debug.Log("Desliguei");
+              }
+       }
+    
+       public void FunctionToDeactivateDialogue()
+       {
+              StartCoroutine(TimeToDisappearDialogue());
        }
        
        /// <summary>

@@ -82,6 +82,7 @@ public class InteractDialogueManager : AbstractDialogueManager
 
     }
 
+
     /// <summary>
     /// Fim do diálogo
     /// </summary>

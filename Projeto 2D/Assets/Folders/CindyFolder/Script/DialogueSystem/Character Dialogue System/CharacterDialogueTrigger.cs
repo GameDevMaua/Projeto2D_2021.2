@@ -9,6 +9,7 @@ public class CharacterDialogueTrigger : MonoBehaviour
     public CharacterDialogueManager characterDialogueManager;
     private bool playerInRange;
     public GameObject thisCharacterDialogue;
+    public bool aux;
 
     /// <summary>
     /// Funcao para comecar o diálogo
@@ -16,6 +17,7 @@ public class CharacterDialogueTrigger : MonoBehaviour
     public void TriggerDialogue()
     {
         FindObjectOfType<CharacterDialogueManager>().StartDialogue(dialogue);
+        characterDialogueManager.FunctionToDeactivateDialogue();
     }
 
     /// <summary>
@@ -26,11 +28,20 @@ public class CharacterDialogueTrigger : MonoBehaviour
 
         if (playerInRange == true) // se estiver dentro do playerInRange
         {
-            if(characterDialogueManager.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
+            if (characterDialogueManager.isDialogue == false)
+            {
+                // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
+                //aux = false;
+
+            }
 
         }
         
+        // if (playerInRange == false)
+        // {
+        //     aux = true;
+        // }
     }
         
     /// <summary>
