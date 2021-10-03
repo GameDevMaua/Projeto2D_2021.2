@@ -25,6 +25,10 @@ public class CharacterDialogueManager: AbstractDialogueManager
               dInfos = new Queue<Dialogue.Info>();
        }
        
+       /// <summary>
+       ///Inicio do dialogo
+       /// </summary>
+       /// <param name="dialogue"></param>
        public override void StartDialogue(Dialogue dialogue)
        {
               isDialogue = true;
@@ -41,6 +45,9 @@ public class CharacterDialogueManager: AbstractDialogueManager
               DisplayNextSentence(); /// Vai para a próxima sentença
        }
        
+       /// <summary>
+       /// próximo dialogo
+       /// </summary>
        public override void DisplayNextSentence()
        {
               // Caso não tenha mais sentenças dentro da Queue, acaba o diálogo
@@ -52,6 +59,7 @@ public class CharacterDialogueManager: AbstractDialogueManager
 
               Dialogue.Info dInfo = dInfos.Dequeue(); // Tira o Dialogue.Info da Queue e coloca no nome, sprite e sentenca
 
+              // Para todos os characterdialogue, atribuir o texto para as sentences presente na Queue e atribuir essas sentences no characterdialogue do player
               for (int i = 0; i < characterDialogueText.Length; i++) 
               {
                             characterDialogueText[i].text = dInfo.sentences;
@@ -59,17 +67,20 @@ public class CharacterDialogueManager: AbstractDialogueManager
               }
        }
        
+       /// <summary>
+       /// Fim do dialogo
+       /// </summary>
        public override void EndDialogue()
        {
-             
-                     for (int i = 0; i < gameObjectCharacterDialogue.Length; i++)
-                     {
-                            gameObjectCharacterDialogue[i].SetActive(false);
-                     }
-            
-                     gameObjectplayerDialogue.SetActive(false);
+             // Para cada characterdialogue atribuido para um personagem, desativá-lo
+              for (int i = 0; i < gameObjectCharacterDialogue.Length; i++) 
+              {
+                            gameObjectCharacterDialogue[i].SetActive(false); 
+              }
+              
+              gameObjectplayerDialogue.SetActive(false); //Desativar o characterdialogue do player
 
-                     isDialogue = false;
+              isDialogue = false; 
                      
        }
 }

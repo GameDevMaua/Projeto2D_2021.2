@@ -87,8 +87,7 @@ public class DialogueManager : MonoBehaviour
 
         Dialogue.Info dInfo = dInfos.Dequeue(); // Tira o Dialogue.Info da Queue e coloca no nome, sprite e sentenca
         nameText.text = dInfo.characterprofile.Name; /// Referencia o nome do canvas ao nome do character profile
-        characterSprite.sprite =
-            dInfo.characterprofile.Image; /// Referencia o sprite do canvas ao sprite do character profile
+        characterSprite.sprite = dInfo.characterprofile.Image; /// Referencia o sprite do canvas ao sprite do character profile
 
         if (isCharacterDialogue == true)
         {

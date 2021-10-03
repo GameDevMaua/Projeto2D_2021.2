@@ -7,7 +7,6 @@ public class InteractDialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public InteractDialogueManager interactDialogueManager;
     private bool playerInRange;
-    
 
     /// <summary>
     /// Funcao para comecar o diálogo
@@ -33,8 +32,7 @@ public class InteractDialogueTrigger : MonoBehaviour
     }
         
     /// <summary>
-    /// Quando o player estiver dentro da área, aumenta o Gameobject da cena para saber que o player pode apertar "Z"
-    /// </summary>
+    /// Quando o player estiver dentro da área, inicia o dialogo
     /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -46,7 +44,7 @@ public class InteractDialogueTrigger : MonoBehaviour
     }
     
     /// <summary>
-    /// Quando o player estiver fora da área, diminui o Gameobject da cena para saber que o player não consegue apertar "Z"
+    /// Quando o player estiver fora da área, nao consegue iniciar o dialogo
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit2D(Collider2D other)

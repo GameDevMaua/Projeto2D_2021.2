@@ -4,11 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Quando aperta um botao, o dialogo e inciado
+/// </summary>
 public class InteractDialogueManager : AbstractDialogueManager
 {
     public Text nameText;
     public Image characterSprite;
     public Text dialogueText;
+    public KeyCode keyinrange = KeyCode.Z;
 
     public GameObject gameObjectInteractDialogue;
 

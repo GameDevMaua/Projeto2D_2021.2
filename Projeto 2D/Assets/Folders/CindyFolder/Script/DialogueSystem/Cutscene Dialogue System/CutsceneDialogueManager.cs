@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Vector2 = System.Numerics.Vector2;
 
+/// <summary>
+/// Quando a cena só tem diálogo e sem jogatina
+/// </summary>
 public class CutsceneDialogueManager : AbstractDialogueManager
 {
     public Dialogue dialogue;
@@ -21,7 +22,7 @@ public class CutsceneDialogueManager : AbstractDialogueManager
     public SceneAsset newScene;
 
     /// <summary>
-    /// Cria a Queue sentences e sempre começa sem o canvas do diálogo e do characterdialogue (caso não seja uma cutscene)
+    /// Cria a Queue sentences, inicia o dialogo e ativa o gameobject do dialogo
     /// </summary>
     /// 
     private void Awake()
@@ -33,9 +34,9 @@ public class CutsceneDialogueManager : AbstractDialogueManager
 
     public void Update()
     {
-        if (Input.GetKeyDown(key))
+        if (Input.GetKeyDown(key)) // Caso aperte o botao, vai para a proxima sentenca
         {
-            DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
+            DisplayNextSentence(); 
                 
         }
     }
@@ -46,7 +47,7 @@ public class CutsceneDialogueManager : AbstractDialogueManager
     /// <param name="dialogue"></param>
     public override void StartDialogue(Dialogue dialogue)
     {
-        isDialogue = true; /// O Sistema saber que o diálogo foi inicializado
+        isDialogue = true; /// O Sistema sabe que o diálogo foi inicializado
         
         gameObjectCutsceneDialogue.SetActive(true); /// Ativa o canvas do diálogo
 
@@ -107,7 +108,7 @@ public class CutsceneDialogueManager : AbstractDialogueManager
         
 
         isDialogue = false;
-        SceneManager.LoadScene(newScene.name);
+        SceneManager.LoadScene(newScene.name); // Vai para a proxima cena
 
     }
 }

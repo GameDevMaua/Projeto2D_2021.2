@@ -286,6 +286,7 @@ MonoBehaviour:
   nameText: {fileID: 967077170}
   characterSprite: {fileID: 2059014360}
   dialogueText: {fileID: 655798014}
+  keyinrange: 32
   gameObjectInteractDialogue: {fileID: 415111202}
 --- !u!1 &270522954
 GameObject:
@@ -1036,7 +1037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDialogue: 0
-  key: 122
+  key: 32
   dialogue: {fileID: 11400000, guid: c44d689409a720f478a17a8a7796a33b, type: 2}
   cutsceneNameText: {fileID: 967077170}
   cutsceneCharacterSprite: {fileID: 2059014360}
@@ -2023,8 +2024,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1675081558}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+      - m_Target: {fileID: 256860932}
+        m_TargetAssemblyTypeName: InteractDialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
         m_Arguments:
