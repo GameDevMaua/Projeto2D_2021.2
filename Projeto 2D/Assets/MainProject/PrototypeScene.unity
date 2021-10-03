@@ -394,7 +394,16 @@ MonoBehaviour:
   electroAnimationPack: []
   geoAnimationPack: []
   hydroAnimationPack: []
-  noneAnimationPack: []
+  noneAnimationPack:
+  - DownPlayerAnimation
+  - Down_IdlePlayerAnimation
+  - LeftPlayerAnimation
+  - Left_IdlePlayerAnimation
+  - NonePlayerAnimation
+  - RightPlayerAnimation
+  - Right_IdlePlayerAnimation
+  - UpPlayerAnimation
+  - Up_IdlePlayerAnimation
   pyroAnimationPack: []
 --- !u!4 &662501783
 Transform:
@@ -472,15 +481,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 4592139337035662853, guid: 116daa482ddee03428c017c24778886c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4, y: 0.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &662501786
@@ -499,10 +508,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.4}
+    newSize: {x: 0.4, y: 0.4}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -519,7 +528,7 @@ Animator:
   m_GameObject: {fileID: 662501779}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd9900dc403451c4a86b066f92199e9e, type: 2}
+  m_Controller: {fileID: 9100000, guid: f5d4eb34a8cc85f4e88897f282a2b582, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
