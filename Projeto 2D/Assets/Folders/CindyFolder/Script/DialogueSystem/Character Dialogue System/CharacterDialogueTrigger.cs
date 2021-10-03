@@ -26,22 +26,22 @@ public class CharacterDialogueTrigger : MonoBehaviour
     public void Update()
     {
 
-        if (playerInRange == true) // se estiver dentro do playerInRange
+        if (playerInRange == true && aux == true) // se estiver dentro do playerInRange
         {
             if (characterDialogueManager.isDialogue == false)
             {
                 // Inicializa o diálogo, caso esse não esteja inicializado
                 TriggerDialogue();
-                //aux = false;
+                aux = false;
 
             }
 
         }
         
-        // if (playerInRange == false)
-        // {
-        //     aux = true;
-        // }
+        if (playerInRange == false)
+        {
+            aux = true;
+        }
     }
         
     /// <summary>
