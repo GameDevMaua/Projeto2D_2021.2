@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 231365990}
   m_Layer: 5
   m_Name: PlayerCharacterDialogue
-  m_TagString: Untagged
+  m_TagString: DialogueBalloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,6 +458,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: c44d689409a720f478a17a8a7796a33b, type: 2}
   characterDialogueManager: {fileID: 732258410}
   thisCharacterDialogue: {fileID: 1800964098}
+  aux: 0
 --- !u!114 &270522961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,6 +1215,7 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: cf3f31171a1823d40a9aeefb02bbae0f, type: 2}
   characterDialogueManager: {fileID: 732258410}
   thisCharacterDialogue: {fileID: 1531727628}
+  aux: 0
 --- !u!114 &901272116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +1821,7 @@ GameObject:
   - component: {fileID: 1531727629}
   m_Layer: 5
   m_Name: Friend2CharacterDialogue
-  m_TagString: Untagged
+  m_TagString: DialogueBalloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1916,7 +1918,7 @@ GameObject:
   - component: {fileID: 1800964099}
   m_Layer: 5
   m_Name: FriendCharacterDialogue
-  m_TagString: Untagged
+  m_TagString: DialogueBalloon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
