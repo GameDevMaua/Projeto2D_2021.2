@@ -12,7 +12,6 @@ public class InteractDialogueManager : AbstractDialogueManager
     public Text nameText;
     public Image characterSprite;
     public Text dialogueText;
-    public KeyCode keyinrange = KeyCode.Z;
 
     public GameObject gameObjectInteractDialogue;
 
