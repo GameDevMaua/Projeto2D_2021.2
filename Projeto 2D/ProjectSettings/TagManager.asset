@@ -7,11 +7,12 @@ TagManager:
   - Element
   - Trap
   - DialogueBalloon
+  - wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - 
