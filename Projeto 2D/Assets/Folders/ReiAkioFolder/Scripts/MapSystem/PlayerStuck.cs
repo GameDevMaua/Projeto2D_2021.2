@@ -23,7 +23,7 @@ public class PlayerStuck : MonoBehaviour
     {
         if (other.gameObject.tag == "wall")
         {
-            mapIcon.moveSpeed = 5;
+            mapIcon.moveSpeed = 15;
             collisionAux = false;
         }
     }
