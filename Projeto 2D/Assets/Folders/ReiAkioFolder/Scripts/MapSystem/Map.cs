@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Map : MonoBehaviour
 {
@@ -10,6 +12,14 @@ public class Map : MonoBehaviour
     public KeyCode mapKey = KeyCode.Tab;
     public float speed;
     private int countMapKey = 0;
+    public GameObject mp ;
+    public GameObject ms ;
+
+    public void Start()
+    {
+        mp.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        ms.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+    }
 
     private void mapKeyPressed()
     {
@@ -19,15 +29,18 @@ public class Map : MonoBehaviour
     {
         if (Input.GetKeyDown(mapKey) && countMapKey == 0)
         {
-            transform.position = playerPos.position;
+            mp.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            ms.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             mapKeyPressed();
             Debug.Log(countMapKey);
+            
         }
         else if (Input.GetKeyDown(mapKey) && countMapKey == 1)
         {
-            transform.position = Vector2.MoveTowards(transform.position, offScreenPos.position, speed * Time.deltaTime);
             countMapKey = 0;
             Debug.Log(countMapKey);
+            mp.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            ms.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }
