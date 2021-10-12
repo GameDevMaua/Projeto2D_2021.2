@@ -12,5 +12,10 @@ namespace MainProject.Scripts.Trap
         {
             AwakeObjectAnimation();
         }
+
+        private void OnEnable()
+        {
+            AwakeObjectAnimation();
+        }
     }
 }
