@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 76561f249339b9e49909c40622af098e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8198231985870328368
+    second: "sprite sheet_\xE1gua_0"
+  - first:
+      213: 1156629336543175599
+    second: "sprite sheet_\xE1gua_1"
+  - first:
+      213: -4240428134426905762
+    second: "sprite sheet_\xE1gua_2"
+  - first:
+      213: 372404499242393265
+    second: "sprite sheet_\xE1gua_3"
+  - first:
+      213: -5368387276509918377
+    second: "sprite sheet_\xE1gua_4"
+  - first:
+      213: 2514996949550938211
+    second: "sprite sheet_\xE1gua_5"
+  - first:
+      213: -6603707382538314551
+    second: "sprite sheet_\xE1gua_6"
+  - first:
+      213: 5738739555723763174
+    second: "sprite sheet_\xE1gua_7"
+  - first:
+      213: 8061222460698281511
+    second: "sprite sheet_\xE1gua_8"
+  - first:
+      213: -7716671134081649535
+    second: "sprite sheet_\xE1gua_9"
+  - first:
+      213: 1344381437933395298
+    second: "sprite sheet_\xE1gua_10"
+  - first:
+      213: 4773171858399360031
+    second: "sprite sheet_\xE1gua_11"
+  - first:
+      213: 2192046399037718642
+    second: "sprite sheet_\xE1gua_12"
+  - first:
+      213: 2485262134048829900
+    second: "sprite sheet_\xE1gua_13"
+  - first:
+      213: 5873124937324129126
+    second: "sprite sheet_\xE1gua_14"
+  - first:
+      213: 8912961772301922100
+    second: "sprite sheet_\xE1gua_15"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd24f7e1770a3e80800000000000000
+      internalID: -8198231985870328368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_1"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3a375e04c2d0010800000000000000
+      internalID: 1156629336543175599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_2"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5379e71419f625c0800000000000000
+      internalID: -4240428134426905762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_3"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be99124beb0b2500800000000000000
+      internalID: 372404499242393265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b46e60738af75b0800000000000000
+      internalID: -5368387276509918377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_5"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368bc2d866017e220800000000000000
+      internalID: 2514996949550938211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_6"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccdd2f9f1bea54a0800000000000000
+      internalID: -6603707382538314551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_7"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edd565883914af40800000000000000
+      internalID: 5738739555723763174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_8"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72642592e173fdf60800000000000000
+      internalID: 8061222460698281511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_9"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1847d8cfc70e8e490800000000000000
+      internalID: -7716671134081649535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_10"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d16a28bc338a210800000000000000
+      internalID: 1344381437933395298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_11"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14f8cf0486bd3240800000000000000
+      internalID: 4773171858399360031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_12"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27041d10696bb6e10800000000000000
+      internalID: 2192046399037718642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_13"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b5b15ebc6d7220800000000000000
+      internalID: 2485262134048829900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_14"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b61ba6308818150800000000000000
+      internalID: 5873124937324129126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sprite sheet_\xE1gua_15"
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f21be428331bb70800000000000000
+      internalID: 8912961772301922100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

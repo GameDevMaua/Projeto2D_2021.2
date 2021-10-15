@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: f62a0b1cc86ee684db84881d3156f1dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7869190388004095762
+    second: sprite sheet_Fogo_0
+  - first:
+      213: 3189932337254197048
+    second: sprite sheet_Fogo_1
+  - first:
+      213: -5851072335428555481
+    second: sprite sheet_Fogo_2
+  - first:
+      213: -5941048256563149485
+    second: sprite sheet_Fogo_3
+  - first:
+      213: -7832547172502150909
+    second: sprite sheet_Fogo_4
+  - first:
+      213: 2383710787680158366
+    second: sprite sheet_Fogo_5
+  - first:
+      213: 8372221874543235160
+    second: sprite sheet_Fogo_6
+  - first:
+      213: -3929725900126597407
+    second: sprite sheet_Fogo_7
+  - first:
+      213: 3333881774210636416
+    second: sprite sheet_Fogo_8
+  - first:
+      213: 4884800032613063781
+    second: sprite sheet_Fogo_9
+  - first:
+      213: 2889848783370134704
+    second: sprite sheet_Fogo_10
+  - first:
+      213: -6345297382848303572
+    second: sprite sheet_Fogo_11
+  - first:
+      213: 72490540538328346
+    second: sprite sheet_Fogo_12
+  - first:
+      213: 763316105713721858
+    second: sprite sheet_Fogo_13
+  - first:
+      213: -5622610798889808600
+    second: sprite sheet_Fogo_14
+  - first:
+      213: -3519939233064855449
+    second: sprite sheet_Fogo_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8f81de8050bc290800000000000000
+      internalID: -7869190388004095762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837619b4f8ae44c20800000000000000
+      internalID: 3189932337254197048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d6aa316b0dccea0800000000000000
+      internalID: -5851072335428555481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 93
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355891276182d8da0800000000000000
+      internalID: -5941048256563149485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301e48068d33d4390800000000000000
+      internalID: -7832547172502150909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9241faf454a41120800000000000000
+      internalID: 2383710787680158366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85097ecdf6b103470800000000000000
+      internalID: 8372221874543235160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_7
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 62
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee4d4a4d1fc679c0800000000000000
+      internalID: -3929725900126597407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a59fa5fc3544e20800000000000000
+      internalID: 3333881774210636416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cd7b6bfbb4ac340800000000000000
+      internalID: 4884800032613063781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b42f5b482eca1820800000000000000
+      internalID: 2889848783370134704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_11
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 31
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e6c1d26a9f0f7a0800000000000000
+      internalID: -6345297382848303572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15fc5633c9810100800000000000000
+      internalID: 72490540538328346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202a66434f7d79a00800000000000000
+      internalID: 763316105713721858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dc5eda44978f1b0800000000000000
+      internalID: -5622610798889808600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite sheet_Fogo_15
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 31.75
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768553ebae9a62fc0800000000000000
+      internalID: -3519939233064855449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
