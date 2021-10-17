@@ -34,26 +34,70 @@ namespace MainProject.Scripts.Player
 
             // Define animation packs padrões
             if (electroAnimationPack.Count == 0)
-                electroAnimationPack = new List<string> { };
+                electroAnimationPack = new List<string>
+                {
+                    "Down_Animation_ELECTRO_ELEMENT",
+                    "DownIdle_Animation_ELECTRO_ELEMENT",
+                    "Left_Animation_ELECTRO_ELEMENT",
+                    "LeftIdle_Animation_ELECTRO_ELEMENT",
+                    "NONE_Animation_ELECTRO_ELEMENT",
+                    "Right_Animation_ELECTRO_ELEMENT",
+                    "RightIdle_Animation_ELECTRO_ELEMENT",
+                    "Up_Animation_ELECTRO_ELEMENT",
+                    "UpIdle_Animation_ELECTRO_ELEMENT"
+                };
             if (geoAnimationPack.Count == 0)
-                geoAnimationPack = new List<string> { };
+                geoAnimationPack = new List<string>
+                {
+                    "Down_Animation_GEO_ELEMENT",
+                    "DownIdle_Animation_GEO_ELEMENT",
+                    "Left_Animation_GEO_ELEMENT",
+                    "LeftIdle_Animation_GEO_ELEMENT",
+                    "NONE_Animation_GEO_ELEMENT",
+                    "Right_Animation_GEO_ELEMENT",
+                    "RightIdle_Animation_GEO_ELEMENT",
+                    "Up_Animation_GEO_ELEMENT",
+                    "UpIdle_Animation_GEO_ELEMENT"
+                };
             if (hydroAnimationPack.Count == 0)
-                hydroAnimationPack = new List<string> { };
+                hydroAnimationPack = new List<string>
+                {
+                    "Down_Animation_HYDRO_ELEMENT",
+                    "DownIdle_Animation_HYDRO_ELEMENT",
+                    "Left_Animation_HYDRO_ELEMENT",
+                    "LeftIdle_Animation_HYDRO_ELEMENT",
+                    "NONE_Animation_HYDRO_ELEMENT",
+                    "Right_Animation_HYDRO_ELEMENT",
+                    "RightIdle_Animation_HYDRO_ELEMENT",
+                    "Up_Animation_HYDRO_ELEMENT",
+                    "UpIdle_Animation_HYDRO_ELEMENT"
+                };
             if (noneAnimationPack.Count == 0)
                 noneAnimationPack = new List<string>
                 {
-                    "Down_Animation",
-                    "DownIdle_Animation",
-                    "Left_Animation",
-                    "LeftIdle_Animation",
-                    "NONE_Animation",
-                    "Right_Animation",
-                    "RightIdle_Animation",
-                    "Up_Animation",
-                    "UpIdle_Animation"
+                    "Down_Animation_NONE_ELEMENT",
+                    "DownIdle_Animation_NONE_ELEMENT",
+                    "Left_Animation_NONE_ELEMENT",
+                    "LeftIdle_Animation_NONE_ELEMENT",
+                    "NONE_Animation_NONE_ELEMENT",
+                    "Right_Animation_NONE_ELEMENT",
+                    "RightIdle_Animation_NONE_ELEMENT",
+                    "Up_Animation_NONE_ELEMENT",
+                    "UpIdle_Animation_NONE_ELEMENT"
                 };
             if (pyroAnimationPack.Count == 0)
-                pyroAnimationPack = new List<string> { };
+                pyroAnimationPack = new List<string>
+                {
+                    "Down_Animation_PYRO_ELEMENT",
+                    "DownIdle_Animation_PYRO_ELEMENT",
+                    "Left_Animation_PYRO_ELEMENT",
+                    "LeftIdle_Animation_PYRO_ELEMENT",
+                    "NONE_Animation_PYRO_ELEMENT",
+                    "Right_Animation_PYRO_ELEMENT",
+                    "RightIdle_Animation_PYRO_ELEMENT",
+                    "Up_Animation_PYRO_ELEMENT",
+                    "UpIdle_Animation_PYRO_ELEMENT"
+                };
 
             // Inicializa o primeiro animation pack
             currentAnimationPack = noneAnimationPack;

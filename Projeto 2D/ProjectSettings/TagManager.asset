@@ -7,11 +7,12 @@ TagManager:
   - Element
   - Trap
   - DialogueBalloon
+  - wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - 
@@ -41,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Floor
+    uniqueID: 753495449
+    locked: 0
+  - name: Wall
+    uniqueID: 779419509
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

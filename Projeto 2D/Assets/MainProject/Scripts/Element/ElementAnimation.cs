@@ -12,5 +12,10 @@ namespace MainProject.Scripts.Element
         {
             AwakeObjectAnimation();
         }
+
+        private void OnEnable()
+        {
+            AwakeObjectAnimation();
+        }
     }
 }
