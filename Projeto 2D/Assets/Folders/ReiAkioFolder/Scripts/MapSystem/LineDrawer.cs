@@ -33,8 +33,8 @@ public class LineDrawer : MonoBehaviour
         {
 
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            lr.SetPosition(0, new Vector3(startMousePos.x, startMousePos.y, 0f));
-            lr.SetPosition(1, new Vector3(mousePos.x, mousePos.y, 0f));
+            lr.SetPosition(0, new Vector3(startMousePos.x, startMousePos.y, 3f));
+            lr.SetPosition(1, new Vector3(mousePos.x, mousePos.y, 3f));
             distance = (mousePos - startMousePos).magnitude;
             distanceText.text = distance.ToString("F2") + " meters";
         }
