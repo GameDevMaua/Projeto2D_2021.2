@@ -9,6 +9,7 @@ TagManager:
   - DialogueBalloon
   - wall
   - Canvas
+  - WallLiner
   layers:
   - Default
   - TransparentFX
