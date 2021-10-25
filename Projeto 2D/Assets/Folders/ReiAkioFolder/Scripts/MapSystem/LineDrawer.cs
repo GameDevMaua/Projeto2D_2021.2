@@ -11,8 +11,7 @@ public class LineDrawer : MonoBehaviour
     private Vector2 mousePos;
     private Vector2 startMousePos;
 
-    [SerializeField] 
-    private Text distanceText;
+    [SerializeField] private Text distanceText;
 
     private float distance;
 
@@ -22,7 +21,8 @@ public class LineDrawer : MonoBehaviour
         lr.positionCount = 2;
     }
 
-    private void Update()
+
+    private void wallDrawer()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -39,4 +39,10 @@ public class LineDrawer : MonoBehaviour
             distanceText.text = distance.ToString("F2") + " meters";
         }
     }
+
+    private void Update()
+    {
+        wallDrawer();
+    }
+
 }
