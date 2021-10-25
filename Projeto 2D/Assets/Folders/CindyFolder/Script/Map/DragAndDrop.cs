@@ -36,6 +36,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         Debug.Log("OnPointerDown");
         if(duplicateGameObject != null)
             duplicateGameObject.Duplicate();
+        
     }
 
     public void OnDrag(PointerEventData eventData)
