@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 911b35cc9eb91b54daed52e47d69dfd0, type: 3}
-  m_Name: SampleInteractDialogue
+  m_Name: SampleCutsceneDialogue
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: 3e0b6ed140f55ac4294db680ee0324ad, type: 2}
-    sentences: Sample Interact Dialogue - Scriptable Object
+    sentences: Sample Cutscene Dialogue - Scriptable Object

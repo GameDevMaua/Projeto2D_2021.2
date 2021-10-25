@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 4773564141382606966}
   - component: {fileID: 4773564141382606965}
   - component: {fileID: 4773564141382606964}
-  - component: {fileID: 4773564141382606963}
+  - component: {fileID: 6311617496556953375}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Untagged
@@ -189,7 +189,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &4773564141382606963
+--- !u!114 &6311617496556953375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,13 +198,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4773564141382606961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996fb93ea8fe51d4e804fba0d68ceb60, type: 3}
+  m_Script: {fileID: 11500000, guid: 62f3133de6244b5689eba451a5ad6152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 942d5129e2ea323429294d6d9d772c3a, type: 2}
-  characterDialogueManager: {fileID: 4773564141133767172}
-  thisCharacterDialogue: {fileID: 4773564141878438377}
+  entityCharacterDialogueGameObject: {fileID: 4773564141878438377}
+  entityCharacterDialogueManager: {fileID: 4773564141133767172}
   aux: 0
+  dialogue: {fileID: 11400000, guid: 942d5129e2ea323429294d6d9d772c3a, type: 2}
 --- !u!1 &4773564141560042633
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4773564141878438378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 15
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
     m_Alignment: 4

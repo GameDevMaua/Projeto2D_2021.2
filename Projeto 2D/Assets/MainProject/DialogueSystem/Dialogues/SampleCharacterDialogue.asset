@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SampleCharacterDialogue
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - characterprofile: {fileID: 0}
-    sentences: Sample Character Dialogue Text - Scriptable Object
+  - characterprofile: {fileID: 11400000, guid: 3e0b6ed140f55ac4294db680ee0324ad, type: 2}
+    sentences: Sample Character Dialogue - Scriptable Object
