@@ -14,11 +14,13 @@ public class Map : MonoBehaviour
     private int countMapKey = 0;
     public GameObject mp ;
     public GameObject ms ;
+    public Canvas canvas;
 
     public void Start()
     {
         mp.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         ms.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        canvas.enabled = false;
     }
 
     private void mapKeyPressed()
@@ -31,6 +33,7 @@ public class Map : MonoBehaviour
         {
             mp.gameObject.GetComponent<SpriteRenderer>().enabled = true;
             ms.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            canvas.enabled = true;
             mapKeyPressed();
             Debug.Log(countMapKey);
             
@@ -41,6 +44,7 @@ public class Map : MonoBehaviour
             Debug.Log(countMapKey);
             mp.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             ms.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            canvas.enabled = false;
         }
     }
 }

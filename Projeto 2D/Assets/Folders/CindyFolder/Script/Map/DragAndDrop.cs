@@ -1,15 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
     [SerializeField] private Canvas canvas;
- 
+
+    public DuplicateGameObject duplicateGameObject;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+ 
     
     private void Awake()
     {
@@ -34,6 +34,8 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDown");
+        if(duplicateGameObject != null)
+            duplicateGameObject.Duplicate();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -47,4 +49,3 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         throw new NotImplementedException();
     }
 }
-
