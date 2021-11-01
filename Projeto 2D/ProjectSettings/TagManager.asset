@@ -10,6 +10,7 @@ TagManager:
   - wall
   - Canvas
   - WallLiner
+  - Clone
   layers:
   - Default
   - TransparentFX
