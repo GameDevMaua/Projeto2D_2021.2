@@ -30,17 +30,16 @@ public class MultiWallDrawer : MonoBehaviour, IPointerClickHandler
             deletingLastChild();
         }
         
-        // Deletar gameObject clicado duas vezes
-        int i = eventData.clickCount;
-        if(i == 2 && ld.gameObject.CompareTag("Clone"))
-            Destroy(ld.gameObject);
     }
 
     public void deletingLastChild()
     {
-        int numChildren = wallLine.transform.childCount; 
-        Destroy(wallLine.transform.GetChild(numChildren-1).gameObject);
-        deleteCountAux = false;
+        int numChildren = wallLine.transform.childCount;
+        if (numChildren > 1)
+        {
+            Destroy(wallLine.transform.GetChild(numChildren - 1).gameObject);
+            deleteCountAux = false;
+        }
     }
     
     

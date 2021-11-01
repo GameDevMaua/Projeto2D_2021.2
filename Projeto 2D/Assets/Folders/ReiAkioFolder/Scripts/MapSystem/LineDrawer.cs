@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class LineDrawer : MonoBehaviour
+public class LineDrawer : MonoBehaviour, IPointerClickHandler
 {
 
     private LineRenderer lr;
@@ -62,6 +62,14 @@ public class LineDrawer : MonoBehaviour
     private void wallDrawerEnd()
     {
         this.GetComponent<LineDrawer>().enabled = false;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Deletar gameObject clicado duas vezes
+        int i = eventData.clickCount;
+        if(i == 2 && this.gameObject.CompareTag("Clsne"))
+            Destroy(this.gameObject);
     }
 
     private void Update()
