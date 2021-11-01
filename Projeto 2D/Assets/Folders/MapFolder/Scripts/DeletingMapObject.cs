@@ -7,18 +7,28 @@ public class DeletingMapObject : MonoBehaviour
 {
 
     public GameObject clickedMapGameObject;
+    public bool deleteCountAux = false;
 
     public void assignClickedObject()
     {
         
     }
-    
-    public void deletingGameObjectOnClick()
+
+    public void buttonToDeleteGameObject()
     {
-        if (Input.GetMouseButton(0))
+        if (deleteCountAux == false)
         {
-            Destroy(clickedMapGameObject);
-            Debug.Log("deletei o mapGameObject");
+            deleteCountAux = true;
+            Debug.Log("deleteCountAux ficou verdadeiro");
         }
     }
+    
+    // public void deletingGameObjectOnClick()
+    // {
+    //     if (Input.GetMouseButton(0))
+    //     {
+    //         Destroy(clickedMapGameObject);
+    //         Debug.Log("deletei o mapGameObject");
+    //     }
+    // }
 }
