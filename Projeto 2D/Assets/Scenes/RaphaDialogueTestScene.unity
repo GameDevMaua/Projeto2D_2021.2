@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &15142205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7713332411969199756, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
+  m_PrefabInstance: {fileID: 248450070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &45304891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5147,6 +5152,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &52245876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5942890198925353679, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+  m_PrefabInstance: {fileID: 1010979852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &73065965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1036854762318255229, guid: 09f0e8fb5fa589447af9a6517c18c6db, type: 3}
@@ -5685,11 +5695,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7713332411969199752, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9094794
+      value: 9.006
       objectReference: {fileID: 0}
     - target: {fileID: 7713332411969199752, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5462071
+      value: -4.626
       objectReference: {fileID: 0}
     - target: {fileID: 7713332411969199752, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5727,6 +5737,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GenericDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 7713332411969199757, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
+      propertyPath: keys.Array.data[0]
+      value: 
+      objectReference: {fileID: 52245876}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
 --- !u!1001 &251264862
@@ -6400,6 +6414,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5942890198925353676, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: locker
+      value: 
+      objectReference: {fileID: 15142205}
     - target: {fileID: 5942890198925353677, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_Size.x
       value: 0.32
@@ -6454,11 +6472,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5942890198925353715, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9323058
+      value: -9.47
       objectReference: {fileID: 0}
     - target: {fileID: 5942890198925353715, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7073895
+      value: -7.03
       objectReference: {fileID: 0}
     - target: {fileID: 5942890198925353715, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13461,11 +13479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041603, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.92
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041603, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.79
+      value: -4.86
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041603, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13498,6 +13516,10 @@ PrefabInstance:
     - target: {fileID: 4342101676766041603, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342101676766041613, guid: d936a63d380daa445afaae1281b042bd, type: 3}
+      propertyPath: interactionDistance
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041614, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_Name
