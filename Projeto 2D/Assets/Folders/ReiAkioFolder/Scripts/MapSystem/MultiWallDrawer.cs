@@ -12,6 +12,9 @@ public class MultiWallDrawer : MonoBehaviour, IPointerClickHandler
     public GameObject wallLineDrawer;
     public bool deleteCountAux = false;
 
+    /// <summary>
+    /// Ao se clicar com o botão esquerdo no iconde do wallDrawerCreator, irá ativar se criar um clone funcional de um lineDrawer
+    /// </summary>
     public void createWallLine()
     {
         GameObject duplicate = Instantiate(wallLineDrawer.gameObject);
@@ -20,6 +23,11 @@ public class MultiWallDrawer : MonoBehaviour, IPointerClickHandler
         duplicate.transform.tag = "Clone";
         
     }
+    
+    /// <summary>
+    /// Ao se clicar com o botão direito no icone do wallDrawerCreator irá ativar a função deletingLastChild
+    /// </summary>
+    /// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
         
@@ -31,7 +39,9 @@ public class MultiWallDrawer : MonoBehaviour, IPointerClickHandler
         }
         
     }
-
+/// <summary>
+/// identifica quantos filhos possuem o GameObject pai dos lineDrawers e deleta o ultimo criado caso haja pelo menos um
+/// </summary>
     public void deletingLastChild()
     {
         int numChildren = wallLine.transform.childCount;

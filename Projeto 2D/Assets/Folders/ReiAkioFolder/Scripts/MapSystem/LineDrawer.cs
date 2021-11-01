@@ -17,13 +17,19 @@ public class LineDrawer : MonoBehaviour, IPointerClickHandler
 
     private float distance;
 
+    
+    /// <summary>
+    /// Define-se os lineRenderer
+    /// </summary>
     private void Start()
     {
         lr = GetComponent<LineRenderer>();
         lr.positionCount = 2;
     }
 
-
+/// <summary>
+/// Responsável por criar os LineRenderers, utilizando-se da função wallDraweEnd após seu uso
+/// </summary>
     public void wallDrawer()
     {
         if (Input.GetMouseButtonDown(0))
@@ -59,19 +65,29 @@ public class LineDrawer : MonoBehaviour, IPointerClickHandler
        
     }
 
+/// <summary>
+/// desativa a funcionalidade do script
+/// </summary>
     private void wallDrawerEnd()
     {
         this.GetComponent<LineDrawer>().enabled = false;
     }
 
+/// <summary>
+/// Ao se clicar duas vezes em uma lineDrawer especifica, o mesmo será deletado ((Ainda em desenvolvimento))
+/// </summary>
+/// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
         // Deletar gameObject clicado duas vezes
         int i = eventData.clickCount;
-        if(i == 2 && this.gameObject.CompareTag("Clsne"))
+        if(i == 2 && this.gameObject.CompareTag("Clone"))
             Destroy(this.gameObject);
     }
 
+    /// <summary>
+    /// Update para o wallDrawer se atualizar a cada quadro
+    /// </summary>
     private void Update()
     {
         wallDrawer();

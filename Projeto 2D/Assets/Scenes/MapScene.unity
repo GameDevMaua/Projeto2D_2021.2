@@ -352,7 +352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ld: {fileID: 0}
-  wallLine: {fileID: 907863509}
+  wallLine: {fileID: 404324242}
+  wallLineDrawer: {fileID: 907863509}
   deleteCountAux: 0
 --- !u!1 &514322614
 GameObject:
@@ -2330,7 +2331,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907863509}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 903e0090b7057c2489eb29b593f583ae, type: 3}
   m_Name: 
