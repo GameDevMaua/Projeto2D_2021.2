@@ -11,11 +11,15 @@ namespace MainProject.Scripts
         public List<GameObject> objectsPrimarySelection;
         public List<GameObject> objectsSecondarySelection;
         public KeyCode interactionKey;
+        public KeyPosition keyPositionForSprite;
         [SerializeField]
         private double interactionDistance = 5f;
+        [SerializeField] private List<Sprite> switchSprites; // Utilizado como padrão pelo que foi colocado no inspector\
         
+        private bool switchSpriteState;
         private bool switchBool;
         private GameObject playerRef;
+        private SpriteRenderer spriteRendererRef;
 
         /// <summary>
         /// Chamada Awake da alavanca
@@ -23,6 +27,7 @@ namespace MainProject.Scripts
         private void Awake()
         {
             playerRef = GameObject.FindWithTag("Player");
+            spriteRendererRef = gameObject.GetComponent<SpriteRenderer>();
             switchBool = true;
 
             if (objectsPrimarySelection.Count != 0){ foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);}
@@ -33,14 +38,14 @@ namespace MainProject.Scripts
 
         private void Update()
         {
-            interactionVerify();
+            InteractionVerify();
         }
 
         /// <summary>
         /// Retorna se o player está na distância correta de interação com a alavanca
         /// </summary>
         /// <returns>true - caso seja possível interagir </returns>
-        private bool isThisObjectInInteractionRange()
+        private bool IsThisObjectInInteractionRange()
         {
             return !((playerRef.transform.position - gameObject.transform.position).magnitude > interactionDistance);
         }
@@ -48,9 +53,10 @@ namespace MainProject.Scripts
         /// <summary>
         /// Altera os objetos ativos na cena.
         /// </summary>
-        private void switchActiveObjects()
+        private void SwitchActiveObjects()
         {
             switchBool = !switchBool;
+            switchSpriteState = !switchSpriteState;
             foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
             foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
         }
@@ -58,9 +64,27 @@ namespace MainProject.Scripts
         /// <summary>
         /// Verifica se houve interação com a alavanca
         /// </summary>
-        private void interactionVerify()
+        private void InteractionVerify()
         {
-            if (Input.GetKeyUp(interactionKey) && isThisObjectInInteractionRange()) switchActiveObjects();
+            if (!Input.GetKeyUp(interactionKey) || !IsThisObjectInInteractionRange()) return;
+            SwitchActiveObjects();
+            CheckSwitchSprite();
+        }
+        
+        private void CheckSwitchSprite()
+        {
+            spriteRendererRef.sprite = keyPositionForSprite switch
+            {
+                KeyPosition.FRENTE => switchSpriteState ? switchSprites[0] : switchSprites[1],
+                KeyPosition.DIREITA => switchSpriteState ? switchSprites[2] : switchSprites[3],
+                KeyPosition.ESQUERDA => switchSpriteState ? switchSprites[4] : switchSprites[5],
+                _ => spriteRendererRef.sprite
+            };
+        }
+
+        public enum KeyPosition
+        {
+            FRENTE, DIREITA, ESQUERDA
         }
     }
 }

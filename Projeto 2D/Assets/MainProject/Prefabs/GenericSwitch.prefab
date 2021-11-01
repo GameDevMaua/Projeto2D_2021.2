@@ -72,15 +72,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1735771879735282622, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4342101676766041613
@@ -98,4 +98,13 @@ MonoBehaviour:
   objectsPrimarySelection: []
   objectsSecondarySelection: []
   interactionKey: 0
+  keyPositionForSprite: 0
   interactionDistance: 5
+  switchSprites:
+  - {fileID: 1735771879735282622, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -3805741728930504852, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -7829465498495451317, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -7351639223283963889, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: 2964847533325705676, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -624466149575493283, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  switchSpriteState: 0
