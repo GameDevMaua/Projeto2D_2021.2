@@ -6400,9 +6400,53 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5942890198925353677, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353677, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353677, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1095141833252711340, guid: 8ddc6f42aa5ccfe4da933a4466a37d0c, type: 3}
+    - target: {fileID: 5942890198925353677, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5942890198925353679, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_Name
       value: GenericKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942890198925353714, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5942890198925353715, guid: 7c1291c8b4725c245840a3c2ee35ef4d, type: 3}
       propertyPath: m_RootOrder
