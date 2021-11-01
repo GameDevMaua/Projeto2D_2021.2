@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4773564141133767171}
-  - component: {fileID: 4773564141133767172}
+  - component: {fileID: 4222283308354811764}
   m_Layer: 0
   m_Name: CharacterDialogueManager
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 4773564141560042634}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4773564141133767172
+--- !u!114 &4222283308354811764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4773564141133767170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70cbc95b5734681429f48966f90a7908, type: 3}
+  m_Script: {fileID: 11500000, guid: e494f64d3a614249ba039157ebea7534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDialogue: 0
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 4773564141382606966}
   - component: {fileID: 4773564141382606965}
   - component: {fileID: 4773564141382606964}
-  - component: {fileID: 6311617496556953375}
+  - component: {fileID: 4242234420056450312}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Untagged
@@ -189,7 +189,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &6311617496556953375
+--- !u!114 &4242234420056450312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,13 +198,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4773564141382606961}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f3133de6244b5689eba451a5ad6152, type: 3}
+  m_Script: {fileID: 11500000, guid: bcda85e36f9e4514b9e08b6f9e69a7fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityCharacterDialogueGameObject: {fileID: 4773564141878438377}
-  entityCharacterDialogueManager: {fileID: 4773564141133767172}
+  dialogue: {fileID: 0}
+  characterDialogueManager: {fileID: 4222283308354811764}
+  thisCharacterDialogue: {fileID: 4773564141878438377}
   aux: 0
-  dialogue: {fileID: 11400000, guid: 942d5129e2ea323429294d6d9d772c3a, type: 2}
 --- !u!1 &4773564141560042633
 GameObject:
   m_ObjectHideFlags: 0

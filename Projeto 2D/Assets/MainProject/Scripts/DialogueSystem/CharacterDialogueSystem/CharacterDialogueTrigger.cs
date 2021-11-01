@@ -1,32 +1,22 @@
-﻿
+﻿using UnityEngine;
 
-using System;
-using UnityEngine;
-
-namespace MainProject.Scripts.DialogueSystem
+namespace MainProject.Scripts.DialogueSystem.CharacterDialogueSystem
 {
-    /// <summary>
-    /// O trigger do characterdialogue, ou seja, o dialogo é ativado quando o player se aproxima do gameobject e aparece o dialogo
-    /// </summary>
     public class CharacterDialogueTrigger : MonoBehaviour
     {
-        public GameObject entityCharacterDialogueGameObject;            // Game Object do characterDialogue da entidade do diálogo
-        public CharacterDialogueManager entityCharacterDialogueManager; // Referência do Script do DialogueManager
-        public bool aux;
-        public Dialogue dialogue;
-        
+        public MainProject.Scripts.DialogueSystem.Dialogue dialogue;
+        public MainProject.Scripts.DialogueSystem.CharacterDialogueSystem.CharacterDialogueManager characterDialogueManager;
         private bool playerInRange;
-
-        
-
-
+        public GameObject thisCharacterDialogue;
+        public bool aux;
+    
         /// <summary>
         /// Funcao para comecar o diálogo
         /// </summary>
         public void TriggerDialogue()
         {
             FindObjectOfType<CharacterDialogueManager>().StartDialogue(dialogue);
-            entityCharacterDialogueManager.FunctionToDeactivateDialogue();
+            characterDialogueManager.FunctionToDeactivateDialogue();
         }
     
         /// <summary>
@@ -37,7 +27,7 @@ namespace MainProject.Scripts.DialogueSystem
     
             if (playerInRange == true && aux == true) // se estiver dentro do playerInRange
             {
-                if (entityCharacterDialogueManager.isDialogue == false)
+                if (characterDialogueManager.isDialogue == false)
                 {
                     // Inicializa o diálogo, caso esse não esteja inicializado
                     TriggerDialogue();
@@ -62,7 +52,7 @@ namespace MainProject.Scripts.DialogueSystem
             if (other.attachedRigidbody)
             {
                 playerInRange = true;
-                entityCharacterDialogueGameObject.SetActive(true);
+                thisCharacterDialogue.SetActive(true);
             }
     
         }
@@ -76,7 +66,7 @@ namespace MainProject.Scripts.DialogueSystem
             if (other.attachedRigidbody)
             {
                 playerInRange = false;
-                entityCharacterDialogueManager.EndDialogue();
+                characterDialogueManager.EndDialogue();
             }
         }
     }

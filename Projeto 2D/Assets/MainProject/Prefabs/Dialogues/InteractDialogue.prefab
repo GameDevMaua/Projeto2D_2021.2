@@ -239,7 +239,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8413404101920596268}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InteractDialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 8413404101658215072}
   - component: {fileID: 8413404101658215073}
   - component: {fileID: 8413404101658215078}
-  - component: {fileID: 8413404101658215077}
+  - component: {fileID: 6084916566633046921}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Untagged
@@ -755,7 +755,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &8413404101658215077
+--- !u!114 &6084916566633046921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -764,11 +764,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8413404101658215083}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a296ceb53c309f942a4edf7a8a04e9ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 56ae2bf269454843aa60ed00623c143b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 1ec63bc724d7d6f42ab99ab961e91edc, type: 2}
-  interactDialogueManager: {fileID: 8413404101920596268}
+  dialogue: {fileID: 0}
+  interactDialogueManager: {fileID: 3343665039951874171}
 --- !u!1 &8413404101703746265
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8413404101920596269}
-  - component: {fileID: 8413404101920596268}
+  - component: {fileID: 3343665039951874171}
   m_Layer: 0
   m_Name: InteractDialogueManager
   m_TagString: Untagged
@@ -875,7 +875,7 @@ Transform:
   m_Father: {fileID: 8413404101045485470}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8413404101920596268
+--- !u!114 &3343665039951874171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -884,7 +884,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8413404101920596306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae382807391925644ac960534de1d438, type: 3}
+  m_Script: {fileID: 11500000, guid: af59731a35074fc1879255d50976af46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDialogue: 0

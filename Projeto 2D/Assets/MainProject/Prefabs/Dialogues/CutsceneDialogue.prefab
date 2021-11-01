@@ -382,7 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3977416873843590814}
-  - component: {fileID: 3977416873843590815}
+  - component: {fileID: 7093138151151964313}
   m_Layer: 0
   m_Name: 'CutsceneDialogueManager '
   m_TagString: Untagged
@@ -404,7 +404,7 @@ Transform:
   m_Father: {fileID: 3977416873880469241}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3977416873843590815
+--- !u!114 &7093138151151964313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -413,12 +413,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3977416873843590813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc6785965804d374a87fe6145522f6a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b2f6b31de0243c5a3336526d0d8676b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDialogue: 0
   key: 32
-  dialogue: {fileID: 11400000, guid: 4f8c934603abf5b4c947d90605d5e3d0, type: 2}
+  dialogue: {fileID: 0}
   cutsceneNameText: {fileID: 3977416873368259818}
   cutsceneCharacterSprite: {fileID: 3977416874241989307}
   cutsceneDialogueText: {fileID: 3977416874164031168}
