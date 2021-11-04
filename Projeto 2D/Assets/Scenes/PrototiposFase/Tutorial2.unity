@@ -7560,6 +7560,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &896649782
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3977416873880469240, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_Name
+      value: CutsceneDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416873880469241, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093138151151964313, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b58c3e42e2394564b91a49063a88a702, type: 2}
+    - target: {fileID: 7093138151151964313, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: newScene
+      value: 
+      objectReference: {fileID: 102900000, guid: 1b1d8725d98a47843a1b9dea6f7a04da, type: 3}
+    - target: {fileID: 7093138151151964313, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: cutsceneNameText
+      value: 
+      objectReference: {fileID: 2108898047}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
 --- !u!1 &934293661
 GameObject:
   m_ObjectHideFlags: 0
@@ -13587,3 +13656,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2108898047 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3977416873368259818, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+  m_PrefabInstance: {fileID: 896649782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
