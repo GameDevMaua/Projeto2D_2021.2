@@ -33,7 +33,7 @@ public class MovementManager : MonoBehaviour
         foreach (var VARIABLE in movementQueue)
         {
             updatePosition(VARIABLE);
-        }       
+        }
     }
 
     /// <summary>

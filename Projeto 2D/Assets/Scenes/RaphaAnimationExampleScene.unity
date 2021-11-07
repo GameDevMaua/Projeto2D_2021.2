@@ -14267,19 +14267,13 @@ MonoBehaviour:
   movementQueue:
   - _object: {fileID: 774879359}
     destinyPosition:
-    - {x: -1, y: -7, z: 0}
-    - {x: -6, y: -6, z: 0}
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: -7, z: 0}
     timeBeforeReachDestiny:
-    - 50
-    - 10
-    - 25
-    hasTriggerToStart: 010000
+    - 100
+    hasTriggerToStart: 01
     waitTimeBeforeStarting:
     - 0
-    - 3
-    - 5
-    triggerToStart: 000000
+    triggerToStart: 00
     currentSpeed: {x: 0, y: 0, z: 0}
     speedStatus: 0
     hasReached: 0
