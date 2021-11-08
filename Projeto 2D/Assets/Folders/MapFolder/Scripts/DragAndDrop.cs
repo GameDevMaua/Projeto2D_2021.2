@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -11,6 +12,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public DuplicateGameObject duplicateGameObject;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    public static bool isAlreadyDuplicated = false;
  
     /// <summary>
     /// Toda vez que comeca a cena pega os componentes RectTransform e CanvasGroup
@@ -47,8 +49,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnPointerDown(PointerEventData eventData)
     {
-        if(duplicateGameObject != null)
+        if (duplicateGameObject != null && isAlreadyDuplicated == false)
+        {
             duplicateGameObject.Duplicate();
+            isAlreadyDuplicated = true;
+            Debug.Log("fiquei true");
+        }
     }
 
     /// <summary>
@@ -57,9 +63,16 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+        if (this.gameObject.CompareTag("Clone"))
+        {
+            rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+            isAlreadyDuplicated = false;
+
+
+        }
     }
     
+
     /// <summary>
     /// Toda vez que aperta com o mouse 2 vezes rapidamente em um clone, destroi esse
     /// </summary>

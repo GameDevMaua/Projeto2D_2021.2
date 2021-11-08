@@ -2899,8 +2899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608c0bec9ae7df54abd3f6fd22400081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedMapGameObject: {fileID: 0}
-  deleteCountAux: 0
 --- !u!114 &1507916308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3086,7 +3084,7 @@ GameObject:
   - component: {fileID: 1959841134}
   m_Layer: 0
   m_Name: Elemental
-  m_TagString: Untagged
+  m_TagString: MapElemental
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
