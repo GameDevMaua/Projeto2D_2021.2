@@ -15,6 +15,7 @@ public class Map : MonoBehaviour
     private Transform mapTransform;
     private Transform playerTransform;
     public Canvas canvas;
+    public float camerasize;
 
     /// <summary>
     /// Quando inicia o script:
@@ -27,6 +28,7 @@ public class Map : MonoBehaviour
         camera.transform.SetParent(playerTransform); // A camera vira filha do player
         map.transform.position = mapPlayerGameObject.transform.position; // O mapa vai para a posicao do playerMap
         canvas.enabled = false; // Canvas inicia desativado
+        camerasize = camera.orthographicSize;
     }
 
     /// <summary>
@@ -46,6 +48,7 @@ public class Map : MonoBehaviour
             camera.transform.position = new Vector3(map.transform.position.x,map.transform.position.y,-10); // Camera vai na posicao do map
             camera.transform.SetParent(mapTransform); // Camera vira filha do mapa
             canvas.enabled = true; // Canvas e ativado
+            camera.orthographicSize = 4+camerasize * Mathf.Max(mapPlayerGameObject.GetComponent<MapMovement>().scalex,mapPlayerGameObject.GetComponent<MapMovement>().scaley);
 
         }
         
@@ -53,6 +56,7 @@ public class Map : MonoBehaviour
         else if (Input.GetKeyDown(mapKey) && countMapKey == 1)
         {
             countMapKey = 0; // Contador zera
+            camera.orthographicSize = camerasize;
             camera.transform.position = new Vector3(player.transform.position.x,player.transform.position.y,-10); // Camera vai na posicao do player
             camera.transform.SetParent(playerTransform); // Camera vira filha do player
             canvas.enabled = false; // Canvas e desativado
