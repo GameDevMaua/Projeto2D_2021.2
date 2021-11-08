@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 1
+  m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -3113,7 +3113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -866.3001, y: -414}
+  m_AnchoredPosition: {x: -898, y: -422}
   m_SizeDelta: {x: 51.3987, y: 41.6782}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959841130
@@ -3194,6 +3194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Square: {fileID: 1287001652}
   RealObject: {fileID: 514322614}
+  elementalObject: {fileID: 1959841128}
   mapMovement: {fileID: 1247437642}
 --- !u!1 &2120282944
 GameObject:
