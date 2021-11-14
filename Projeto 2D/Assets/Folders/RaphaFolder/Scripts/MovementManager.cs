@@ -34,6 +34,7 @@ public class MovementManager : MonoBehaviour
         {
             updatePosition(VARIABLE);
         }
+        verifyListIntegrity(movementQueue);
     }
 
     /// <summary>
@@ -101,6 +102,42 @@ public class MovementManager : MonoBehaviour
                                 data.timeBeforeReachDestiny[data.counter];
             data.speedStatus = true;
         }
+    }
+
+    private void verifyListIntegrity(List<Movement> movements)
+    {
+        foreach (var move in movements)
+        {
+            var destinySize = move.destinyPosition.Count;
+            var timeBeforeDestinySize = move.timeBeforeReachDestiny.Count;
+            var hasTriggerSize = move.hasTriggerToStart.Count;
+            var waitTimeSize = move.waitTimeBeforeStarting.Count;
+            var triggerSizer = move.triggerToStart.Count;
+
+            if (!(destinySize == timeBeforeDestinySize &&
+                  timeBeforeDestinySize == hasTriggerSize &&
+                  hasTriggerSize == waitTimeSize &&
+                  waitTimeSize == triggerSizer))
+            {
+                var max = findMax(new List<int>{destinySize, timeBeforeDestinySize, hasTriggerSize,  waitTimeSize, triggerSizer});
+                if (destinySize != max) move.destinyPosition.Add(Vector3.zero);
+                if (timeBeforeDestinySize != max) move.timeBeforeReachDestiny.Add(0f);
+                if (hasTriggerSize != max) move.hasTriggerToStart.Add(true);
+                if (waitTimeSize != max) move.waitTimeBeforeStarting.Add(0f);
+                if (triggerSizer != max) move.triggerToStart.Add(false);
+            }
+        }
+    }
+
+    private int findMax(IReadOnlyList<int> values)
+    {
+        var max = values[0];
+        for (var i = 0; i < values.Count; i++)
+        {
+            if (values[i] > max) max = values[i];
+        }
+
+        return max;
     }
 
     /// <summary>
