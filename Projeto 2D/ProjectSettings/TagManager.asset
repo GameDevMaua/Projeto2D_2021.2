@@ -12,6 +12,7 @@ TagManager:
   - WallLiner
   - Clone
   - MapElemental
+  - Clones
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Wall
   - Water
   - UI
-  - 
+  - MapPlayer
   - 
   - 
   - 

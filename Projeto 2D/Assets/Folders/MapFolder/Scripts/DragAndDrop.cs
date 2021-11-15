@@ -29,8 +29,11 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = .6f;
-        canvasGroup.blocksRaycasts = false;
+        if (this.gameObject.CompareTag("Clone"))
+        {
+            canvasGroup.alpha = .6f;
+            canvasGroup.blocksRaycasts = false;
+        }
     }
 
     /// <summary>
@@ -39,8 +42,11 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.blocksRaycasts = true;
+        if (this.gameObject.CompareTag("Clone"))
+        {
+            canvasGroup.alpha = 1f;
+            canvasGroup.blocksRaycasts = true;
+        }
     }
     
     /// <summary>
@@ -49,7 +55,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (duplicateGameObject != null && isAlreadyDuplicated == false)
+        if (duplicateGameObject != null && isAlreadyDuplicated == false && eventData.button == PointerEventData.InputButton.Left)
         {
             duplicateGameObject.Duplicate();
             isAlreadyDuplicated = true;
@@ -67,8 +73,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         {
             rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
             isAlreadyDuplicated = false;
-
-
         }
     }
     
@@ -79,9 +83,13 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     /// <param name="eventData"></param>
     public void OnPointerClick(PointerEventData eventData)
     {
-        int i = eventData.clickCount;
-        if(i == 2 && this.gameObject.CompareTag("Clone"))
-            Destroy(this.gameObject);
+        
+        // Deletar ultimo filho criado
+        if (eventData.button == PointerEventData.InputButton.Right && CompareTag("MapElemental") )
+        {
+            duplicateGameObject.deleteCountAux = true;
+            duplicateGameObject.DeletingLastChild();
+        }
         
     }
 }

@@ -21,15 +21,14 @@ public class MapMovement : MonoBehaviour
     {
         scalex = map.GetComponent<SpriteRenderer>().size.x / bound.GetComponent<Tilemap>().size.x; // Faz a conta da escala x ( Tamanho do mapa/Tamanho do Grid)
         scaley =map.GetComponent<SpriteRenderer>().size.y / bound.GetComponent<Tilemap>().size.y; // Faz a conta da escala y ( Tamanho do mapa/Tamanho do Grid)
-        this.gameObject.transform.position = new Vector3((playerGameObject.transform.position.x) * scalex + positionx,
-            (playerGameObject.transform.position.y )* scaley+ positiony); // O player map comeca com a posicao do player * a escala + uma variavel
-
+        this.gameObject.transform.position = new Vector3((playerGameObject.transform.position.x) * scalex,
+            (playerGameObject.transform.position.y )* scaley); // O player map comeca com a posicao do player * a escala + uma variavel
     }
     
     void Update()
     {
-        this.gameObject.transform.position = new Vector3((playerGameObject.transform.position.x )* scalex + positionx,
-            (playerGameObject.transform.position.y) * scaley + positiony); // O player map altera a posicao de acordo com a posicao do player * a escala + uma variavel
+        this.gameObject.transform.position = new Vector3((playerGameObject.transform.position.x )* scalex,
+            (playerGameObject.transform.position.y) * scaley); // O player map altera a posicao de acordo com a posicao do player * a escala + uma variavel
 
     }
 
