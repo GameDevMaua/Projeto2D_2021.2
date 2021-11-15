@@ -8,12 +8,12 @@ using UnityEngine.UIElements;
 
 public class MovementManager : MonoBehaviour
 {
+    public float destinyPrecision = 0.2f; // Move o player para a posição designada +- destinyPrecision
     [SerializeField] private List<Movement> movementQueue;
     private float realTime;
 
     private float startTimeOfDelay;
     private bool hasStartedTimeOfDelay;
-    
     private void Awake()
     {
         foreach (var VARIABLE in movementQueue)
@@ -72,7 +72,7 @@ public class MovementManager : MonoBehaviour
         var currentPosition = data._object.transform.position;
         if (data.speedStatus)
         {
-            if (currentPosition == data.destinyPosition[data.counter])
+            if (currentPosition == data.destinyPosition[data.counter] || (data.destinyPosition[data.counter]-currentPosition).magnitude < destinyPrecision )
             {
                 data.hasReached = true;
             }
