@@ -22,6 +22,8 @@ public class MovementManager : MonoBehaviour
             VARIABLE.speedStatus = false;
             VARIABLE.hasReached = false;
         }
+        
+        verifyListIntegrity(movementQueue);
 
         startTimeOfDelay = 0f;
         hasStartedTimeOfDelay = false;

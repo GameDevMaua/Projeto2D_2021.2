@@ -230,7 +230,7 @@ PrefabInstance:
       objectReference: {fileID: 778937151}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].triggerToStart.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].destinyPosition.Array.size
@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[0].x
@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].waitTimeBeforeStarting.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[0]
