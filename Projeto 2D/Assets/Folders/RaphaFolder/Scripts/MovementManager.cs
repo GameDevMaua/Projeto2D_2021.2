@@ -86,12 +86,14 @@ public class MovementManager : MonoBehaviour
             else if (data.counter + 1 >= data.destinyPosition.Count)
             {
                 // Para a movimentação
+                oldDirectionInIdle(data);
                 data.counter++;
                 data.hasReached = true;
                 hasStartedTimeOfDelay = false;
             }
             else
             {
+                oldDirectionInIdle(data);
                 data.counter++;
                 data.speedStatus = false;
                 data.hasReached = false;
@@ -100,9 +102,44 @@ public class MovementManager : MonoBehaviour
         }
         else
         {
-            data.currentSpeed = (data.destinyPosition[data.counter] - currentPosition) /
-                                data.timeBeforeReachDestiny[data.counter];
+            data.currentSpeed = (data.destinyPosition[data.counter] - currentPosition); // Vetor completo da direção
+            calculateDirection(data);
+            data.currentSpeed /= data.timeBeforeReachDestiny[data.counter]; // Versor da direção
             data.speedStatus = true;
+        }
+    }
+
+    private void calculateDirection(Movement data)
+    {
+        var vectorX = data.currentSpeed.x;
+        var vectorY = data.currentSpeed.y;
+        var vectorZ = data.currentSpeed.z;
+
+        if (vectorY > 0) data._objectDirection = MainProject.Enums.Direction.UP;
+        else if (vectorY < 0) data._objectDirection = MainProject.Enums.Direction.DOWN;
+        else if (vectorX > 0) data._objectDirection = MainProject.Enums.Direction.RIGHT;
+        else if (vectorX < 0) data._objectDirection = MainProject.Enums.Direction.LEFT;
+        else oldDirectionInIdle(data);
+    }
+
+    private void oldDirectionInIdle(Movement data)
+    {
+        switch (data._objectDirection)
+        {
+            case MainProject.Enums.Direction.UP:
+                data._objectDirection = MainProject.Enums.Direction.UP_IDLE;
+                break;
+            case MainProject.Enums.Direction.DOWN:
+                data._objectDirection = MainProject.Enums.Direction.DOWN_IDLE;
+                break;
+            case MainProject.Enums.Direction.LEFT:
+                data._objectDirection = MainProject.Enums.Direction.LEFT_IDLE;
+                break;
+            case MainProject.Enums.Direction.RIGHT:
+                data._objectDirection = MainProject.Enums.Direction.RIGHT_IDLE;
+                break;
+            default:
+                break;
         }
     }
 
@@ -151,6 +188,7 @@ public class MovementManager : MonoBehaviour
     {
         [Header("GameObject que será movimentado.")]
         public GameObject _object;
+        public MainProject.Enums.Direction _objectDirection = MainProject.Enums.Direction.DOWN;
         
         [Header("Configurações principais (local e velocidade)")]
         public List<Vector3> destinyPosition;
