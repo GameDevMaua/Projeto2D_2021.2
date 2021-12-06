@@ -30,6 +30,17 @@ public class OptionMenu : MonoBehaviour
         mainMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(optionButton);
     }
+
+
+    public void setFullScreen(bool isFullScreen)
+    {
+        Screen.fullScreen = isFullScreen;
+    }
+
+    public void setQualityScreen(int qualityLevel)
+    {
+        QualitySettings.SetQualityLevel(qualityLevel);
+    }
      
     /// <summary>
     /// realiza a ação da função do SelectFirstButton, na classe FirstButton
