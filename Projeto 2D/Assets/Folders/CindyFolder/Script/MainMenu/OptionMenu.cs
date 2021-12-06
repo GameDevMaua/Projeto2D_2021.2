@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
- 
- 
+using UnityEngine.UIElements;
+
+
 public class OptionMenu : MonoBehaviour
 {
     public GameObject optionFirstButton;
@@ -32,14 +33,14 @@ public class OptionMenu : MonoBehaviour
     }
 
 
-    public void setFullScreen(bool isFullScreen)
+    public void setFullscreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
-    }
+    } 
 
-    public void setQualityScreen(int qualityLevel)
+    public void setQualityScreen(int qualityIndex)
     {
-        QualitySettings.SetQualityLevel(qualityLevel);
+        QualitySettings.SetQualityLevel(qualityIndex);
     }
      
     /// <summary>
