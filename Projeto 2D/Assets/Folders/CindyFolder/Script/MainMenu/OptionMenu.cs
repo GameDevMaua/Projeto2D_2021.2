@@ -9,6 +9,7 @@ public class OptionMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject optionMenu;
     public GameObject optionButton;
+    public GameObject ChangeKeyButton;
     private FirstButton fb;
      
     /// <summary>
@@ -43,6 +44,14 @@ public class OptionMenu : MonoBehaviour
     {
         QualitySettings.SetQualityLevel(qualityIndex);
     }
+
+    public void changeKeyButton(GameObject firstChangeKeyButton)
+    {
+        optionMenu.SetActive(false);
+        ChangeKeyButton.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(firstChangeKeyButton);
+    }
+    
      
     /// <summary>
     /// realiza a ação da função do SelectFirstButton, na classe FirstButton
