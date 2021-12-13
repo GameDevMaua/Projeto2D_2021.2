@@ -1,39 +1,103 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BindKey : MonoBehaviour
 {
     public ChangeKeyBind changeKeyBind;
-    public KeyCode [] key;
+    private KeyCode [] key;
     public MainProject.Scripts.Player.PlayerMovement prefabPlayerMovement;
     public GameObject prefab;
-    private int i = 0;
+    public int i = 0;
+    private Button button;
+    public Text LeftText;
+    public Text RightText;
+    public Text UpText;
+    public Text DownText;
 
+    public enum Button {LEFT, RIGHT, UP, DOWN};
+
+    /// <summary>
+    /// Quando chamado esse função, executa o update para o enum left
+    /// </summary>
     public void LeftButton()
     {
+        button = Button.LEFT;
         i = 0;
         key = new KeyCode[2];
     }
+    
+    /// <summary>
+    /// Quando chamado esse função, executa o update para o enum right
+    /// </summary>
+    public void RightButton()
+    {
+        button = Button.RIGHT;
+        i = 0;
+        key = new KeyCode[2];
+    }
+    
+    /// <summary>
+    /// Quando chamado esse função, executa o update para o enum up
+    /// </summary>
+    public void UpButton()
+    {
+        button = Button.UP;
+        i = 0;
+        key = new KeyCode[2];
+    }
+    
+    /// <summary>
+    /// Quando chamado esse função, executa o update para o enum down
+    /// </summary>
+    public void DownButton()
+    {
+        button = Button.DOWN;
+        i = 0;
+        key = new KeyCode[2];
+    }
+    
+
     // Update is called once per frame
     private void Update( )
     {
+        // Toda vez que aperta em uma tecla, ele atribui a key dentro de key[i]
         foreach(KeyCode vKey in System.Enum.GetValues(typeof(KeyCode))){
             if(Input.GetKeyDown(vKey))
             {
                 key[i] = vKey;
-                Debug.Log(key[i]);
-                Debug.Log(i);
-                prefabPlayerMovement.ChangeLeftKey(key[i]);
-                i++;
-                PrefabUtility.RecordPrefabInstancePropertyModifications(prefab);
-                if (i >= 1)
+
+                // Caso o enum seja left, muda o prefab para a tecla apertada e coloca no texto esse valor
+                if (button == Button.LEFT)
                 {
-                    changeKeyBind.changeButtonImage.SetActive(false);
+                    prefabPlayerMovement.ChangeLeftKey(key[i]);
+                    LeftText.text = prefabPlayerMovement.LeftKey.ToString();
                 }
+
+                // Caso o enum seja right, muda o prefab para a tecla apertada e coloca no texto esse valor
+                if (button == Button.RIGHT)
+                { 
+                    prefabPlayerMovement.ChangeRightKey(key[i]);
+                    RightText.text = prefabPlayerMovement.RightKey.ToString();
+                }
+
+                // Caso o enum seja up, muda o prefab para a tecla apertada e coloca no texto esse valor
+                if (button == Button.UP)
+                {
+                    prefabPlayerMovement.ChangeUpKey(key[i]);
+                    UpText.text = prefabPlayerMovement.UpKey.ToString();
+                }
+
+                // Caso o enum seja down, muda o prefab para a tecla apertada e coloca no texto esse valor
+                if (button == Button.DOWN)
+                {
+                    prefabPlayerMovement.ChangeDownKey(key[i]);
+                    DownText.text = prefabPlayerMovement.DownKey.ToString();
+                }
+                
+                // Muda o prefab inteiro e todas as instancias
+                PrefabUtility.RecordPrefabInstancePropertyModifications(prefab);
+                i++;
             }
             
         }

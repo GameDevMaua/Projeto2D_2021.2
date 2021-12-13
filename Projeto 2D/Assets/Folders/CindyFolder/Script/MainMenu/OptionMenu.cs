@@ -59,6 +59,6 @@ public class OptionMenu : MonoBehaviour
     public void Update()
     {
         fb.SelectFirstButton(optionFirstButton);
- 
+
     }
 }
