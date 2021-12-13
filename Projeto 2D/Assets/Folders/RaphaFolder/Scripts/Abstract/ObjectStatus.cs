@@ -6,7 +6,7 @@ using UnityEngine;
 public abstract class ObjectStatus : MonoBehaviour
 {
     [SerializeField]
-    private Element.ElementType objectElement; // Tipo elemental do objeto
+    public Element.ElementType objectElement; // Tipo elemental do objeto
     [SerializeField]
     private bool hasActivity; // Se o objeto está ativo ou não
 
