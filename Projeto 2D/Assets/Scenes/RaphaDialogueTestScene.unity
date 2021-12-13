@@ -6260,11 +6260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].destinyPosition.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[0].x
@@ -6283,8 +6283,52 @@ PrefabInstance:
       value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[2].y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[3].x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[3].y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[4].x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].destinyPosition.Array.data[4].y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].hasTriggerToStart.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].waitTimeBeforeStarting.Array.size
@@ -6292,11 +6336,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[0]
-      value: 1
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[1]
-      value: 1
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[3]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 481913859683601438, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
+      propertyPath: movementQueue.Array.data[0].timeBeforeReachDestiny.Array.data[4]
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 481913859683601439, guid: aa9deae03743d3449bbb0ce8aea578bc, type: 3}
       propertyPath: m_RootOrder
