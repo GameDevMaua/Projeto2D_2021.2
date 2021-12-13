@@ -11,6 +11,9 @@ namespace MainProject.Scripts
 {
     public class GameManager : MonoBehaviour
     {
+        private MainProject.Scripts.Player.PlayerStatus playerStatus;
+        private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
+        
         [Header("Configurações do nível:")]
         public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
 
@@ -22,6 +25,8 @@ namespace MainProject.Scripts
         {
             SaveGame();
             actualScene = SceneManager.GetActiveScene();
+            playerStatus = GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>();
+            playerSoundManager =  GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerSoundManager>();
         }
 
         /// <summary>
@@ -46,7 +51,11 @@ namespace MainProject.Scripts
         // Temporário para testes
         private void Update()
         {
-            if (GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>().isPlayerDead()) ReloadOnDeath();
+            if (playerStatus.isPlayerDead())
+            {
+                playerSoundManager.stopSounds();
+                ReloadOnDeath();
+            }
         }
     }
 }

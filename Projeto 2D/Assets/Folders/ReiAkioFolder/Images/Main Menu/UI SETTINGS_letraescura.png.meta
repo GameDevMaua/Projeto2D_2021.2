@@ -1,0 +1,510 @@
+fileFormatVersion: 2
+guid: 08457357d146b3541992f3cd77431611
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3109824243471382267
+    second: UI SETTINGS_letraescura_0
+  - first:
+      213: 4183008109134985630
+    second: UI SETTINGS_letraescura_1
+  - first:
+      213: 3662554209030968439
+    second: UI SETTINGS_letraescura_2
+  - first:
+      213: -7446149712697888783
+    second: UI SETTINGS_letraescura_3
+  - first:
+      213: -272562322081271454
+    second: UI SETTINGS_letraescura_4
+  - first:
+      213: 3421618593608363708
+    second: UI SETTINGS_letraescura_5
+  - first:
+      213: 2121449251183344644
+    second: UI SETTINGS_letraescura_6
+  - first:
+      213: 5413840360682775009
+    second: UI SETTINGS_letraescura_7
+  - first:
+      213: -1849926206124655435
+    second: UI SETTINGS_letraescura_8
+  - first:
+      213: 7617250014295989937
+    second: UI SETTINGS_letraescura_9
+  - first:
+      213: 2988725492132465513
+    second: UI SETTINGS_letraescura_10
+  - first:
+      213: 668394051958771764
+    second: UI SETTINGS_letraescura_11
+  - first:
+      213: 8229186844901714876
+    second: UI SETTINGS_letraescura_12
+  - first:
+      213: 1498914716833355531
+    second: UI SETTINGS_letraescura_13
+  - first:
+      213: 1274676325585829974
+    second: UI SETTINGS_letraescura_14
+  - first:
+      213: 8451294647483370289
+    second: UI SETTINGS_letraescura_15
+  - first:
+      213: -2361940910857511741
+    second: UI SETTINGS_letraescura_16
+  - first:
+      213: -5023833550096606274
+    second: UI SETTINGS_letraescura_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 177
+        width: 80
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf672024ca0582b20800000000000000
+      internalID: 3109824243471382267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 138
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99b19576b70d0a30800000000000000
+      internalID: 4183008109134985630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 138
+        width: 75
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77417e7e5a104d230800000000000000
+      internalID: 3662554209030968439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 115
+        width: 28
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffe346a946f9a890800000000000000
+      internalID: -7446149712697888783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_4
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 124
+        width: 49
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261b03d130aa73cf0800000000000000
+      internalID: -272562322081271454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 114
+        width: 109
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c3dc1aad6e07d10800000000000000
+      internalID: 2121449251183344644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 114
+        width: 67
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e16b21df13d12b40800000000000000
+      internalID: 5413840360682775009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 99
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcf047baedb356e0800000000000000
+      internalID: -1849926206124655435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 90
+        width: 63
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be9373b788e5b960800000000000000
+      internalID: 7617250014295989937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 90
+        width: 39
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4309cf459dc964900800000000000000
+      internalID: 668394051958771764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_12
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 98
+        width: 38
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb2fa8d5d1f33270800000000000000
+      internalID: 8229186844901714876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 83
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07157d4ef63dc410800000000000000
+      internalID: 1498914716833355531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 88
+        width: 67
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650c4265d5f80b110800000000000000
+      internalID: 1274676325585829974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_15
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 72
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b086b74b7094570800000000000000
+      internalID: 8451294647483370289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_16
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 62
+        width: 67
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc10e37143b83fd0800000000000000
+      internalID: -2361940910857511741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI SETTINGS_letraescura_17
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 22
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb5dcbe002c74ab0800000000000000
+      internalID: -5023833550096606274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
