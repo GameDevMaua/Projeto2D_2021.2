@@ -227,11 +227,11 @@ GameObject:
   - component: {fileID: 6386678159611983095}
   - component: {fileID: 6386678159611983092}
   - component: {fileID: 2431893801053345882}
+  - component: {fileID: 8772173431751474044}
   - component: {fileID: 6386678159611983098}
   - component: {fileID: 6386678159611983099}
   - component: {fileID: 6386678159611983096}
   - component: {fileID: 6386678159611983097}
-  - component: {fileID: 7781971263709351963}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -306,6 +306,20 @@ MonoBehaviour:
   hasActivity: 0
   playerDirection: 0
   isDead: 0
+  isWalking: 0
+--- !u!114 &8772173431751474044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386678159611983102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff4094592dc72d45a85af8b7d225b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6386678159611983102}
 --- !u!61 &6386678159611983098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -423,31 +437,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7781971263709351963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6386678159611983102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFX/Footsteps/sfx_footstep
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: Footstep
-    Value: 0
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &6386678159909853418
 GameObject:
   m_ObjectHideFlags: 0

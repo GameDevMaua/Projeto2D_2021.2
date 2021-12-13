@@ -7,7 +7,7 @@ namespace MainProject.Abstract
 {
     public abstract class ObjectStatus : MonoBehaviour
     {
-        [SerializeField] private MainProject.Enums.Element objectElement; // Tipo elemental do objeto
+        [SerializeField] public MainProject.Enums.Element objectElement; // Tipo elemental do objeto
         [SerializeField] private bool hasActivity; // Se o objeto está ativo ou não
 
         /// <summary>
