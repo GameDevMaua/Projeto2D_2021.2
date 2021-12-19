@@ -7,6 +7,7 @@ public class BindKey : MonoBehaviour
     public ChangeKeyBind changeKeyBind;
     private KeyCode [] key;
     public MainProject.Scripts.Player.PlayerMovement prefabPlayerMovement;
+    public MainProject.Scripts.Player.PlayerMovement playerMovement;
     public GameObject prefab;
     public int i = 0;
     private Button button;
@@ -72,6 +73,7 @@ public class BindKey : MonoBehaviour
                 {
                     prefabPlayerMovement.ChangeLeftKey(key[i]);
                     LeftText.text = prefabPlayerMovement.LeftKey.ToString();
+                    playerMovement.ChangeLeftKey(prefabPlayerMovement.LeftKey);
                 }
 
                 // Caso o enum seja right, muda o prefab para a tecla apertada e coloca no texto esse valor
@@ -79,6 +81,7 @@ public class BindKey : MonoBehaviour
                 { 
                     prefabPlayerMovement.ChangeRightKey(key[i]);
                     RightText.text = prefabPlayerMovement.RightKey.ToString();
+                    playerMovement.ChangeRightKey(prefabPlayerMovement.RightKey);
                 }
 
                 // Caso o enum seja up, muda o prefab para a tecla apertada e coloca no texto esse valor
@@ -86,6 +89,7 @@ public class BindKey : MonoBehaviour
                 {
                     prefabPlayerMovement.ChangeUpKey(key[i]);
                     UpText.text = prefabPlayerMovement.UpKey.ToString();
+                    playerMovement.ChangeUpKey(prefabPlayerMovement.UpKey);
                 }
 
                 // Caso o enum seja down, muda o prefab para a tecla apertada e coloca no texto esse valor
@@ -93,6 +97,7 @@ public class BindKey : MonoBehaviour
                 {
                     prefabPlayerMovement.ChangeDownKey(key[i]);
                     DownText.text = prefabPlayerMovement.DownKey.ToString();
+                    playerMovement.ChangeDownKey(prefabPlayerMovement.DownKey);
                 }
                 
                 // Muda o prefab inteiro e todas as instancias

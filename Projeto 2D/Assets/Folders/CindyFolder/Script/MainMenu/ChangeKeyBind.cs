@@ -48,7 +48,6 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void LeftButton()
     {
-        EventSystem.current.sendNavigationEvents = false;
         changeButtonImage.SetActive(true);
         bindKey.LeftButton();
     }
@@ -58,7 +57,6 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void RightButton()
     {
-        EventSystem.current.sendNavigationEvents = false;
         changeButtonImage.SetActive(true);
         bindKey.RightButton();
     }
@@ -68,7 +66,6 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void UpButton()
     {
-        EventSystem.current.sendNavigationEvents = false;
         changeButtonImage.SetActive(true);
         bindKey.UpButton();
     }
@@ -78,7 +75,6 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void DownButton()
     {
-        EventSystem.current.sendNavigationEvents = false;
         changeButtonImage.SetActive(true);
         bindKey.DownButton();
     }
@@ -92,6 +88,11 @@ public class ChangeKeyBind : MonoBehaviour
         bindKey.prefabPlayerMovement.ChangeRightKey(KeyCode.D);
         bindKey.prefabPlayerMovement.ChangeDownKey(KeyCode.S);
         bindKey.prefabPlayerMovement.ChangeUpKey(KeyCode.W);
+        
+        bindKey.playerMovement.ChangeLeftKey(bindKey.prefabPlayerMovement.LeftKey);
+        bindKey.playerMovement.ChangeRightKey(bindKey.prefabPlayerMovement.RightKey);
+        bindKey.playerMovement.ChangeUpKey(bindKey.prefabPlayerMovement.UpKey);
+        bindKey.playerMovement.ChangeDownKey(bindKey.prefabPlayerMovement.DownKey);
                     
         bindKey.LeftText.text = bindKey.prefabPlayerMovement.LeftKey.ToString();
         bindKey.RightText.text = bindKey.prefabPlayerMovement.RightKey.ToString();
@@ -115,5 +116,6 @@ public class ChangeKeyBind : MonoBehaviour
     public void Update()
     {
         fb.SelectFirstButton(changeKeyFirstButton);
+        Debug.Log(EventSystem.current.sendNavigationEvents);
     }
 }
