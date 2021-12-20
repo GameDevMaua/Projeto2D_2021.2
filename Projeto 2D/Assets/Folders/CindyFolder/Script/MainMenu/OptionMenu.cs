@@ -7,7 +7,6 @@ public class OptionMenu : MonoBehaviour
 {
     public GameObject optionFirstButton;
     public GameObject mainMenu;
-    public GameObject optionMenu;
     public GameObject optionButton;
     public GameObject ChangeKeyButton;
     private FirstButton fb;
@@ -17,9 +16,9 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void Start()
     {
-        fb = optionMenu.AddComponent<FirstButton>();
+        fb = this.gameObject.AddComponent<FirstButton>();
         EventSystem.current.SetSelectedGameObject(optionFirstButton);
-        optionMenu.SetActive(true);
+        this.gameObject.SetActive(true);
         mainMenu.SetActive(false);
     }
  
@@ -28,7 +27,7 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void backButton ()
     {
-        optionMenu.SetActive(false);
+        this.gameObject.SetActive(false);
         mainMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(optionButton);
     }
@@ -47,7 +46,7 @@ public class OptionMenu : MonoBehaviour
 
     public void changeKeyButton(GameObject firstChangeKeyButton)
     {
-        optionMenu.SetActive(false);
+        this.gameObject.SetActive(false);
         ChangeKeyButton.SetActive(true);
         EventSystem.current.SetSelectedGameObject(firstChangeKeyButton);
     }

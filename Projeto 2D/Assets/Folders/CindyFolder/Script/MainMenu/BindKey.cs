@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ public class BindKey : MonoBehaviour
     public Text RightText;
     public Text UpText;
     public Text DownText;
-
+    
     public enum Button {LEFT, RIGHT, UP, DOWN};
 
     /// <summary>

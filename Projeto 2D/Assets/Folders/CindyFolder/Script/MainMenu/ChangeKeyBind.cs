@@ -6,10 +6,9 @@ public class ChangeKeyBind : MonoBehaviour
 {
     public GameObject changeKeyFirstButton;
     public GameObject optionMenu;
-    public GameObject changeKeyMenu;
     public GameObject optionChangeKeyBindButton;
-    public GameObject changeButtonImage;
-    public BindKey bindKey;
+    public GameObject changeKeyImage;
+    private BindKey bindKey;
     private FirstButton fb;
 
     /// <summary>
@@ -17,9 +16,10 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void Start()
     {
-        fb = changeKeyMenu.AddComponent<FirstButton>();
+        bindKey = changeKeyImage.GetComponent<BindKey>();
+        fb = this.gameObject.AddComponent<FirstButton>();
         EventSystem.current.SetSelectedGameObject(changeKeyFirstButton);
-        changeKeyMenu.SetActive(true);
+        this.gameObject.SetActive(true);
         optionMenu.SetActive(false);
         
         // Pre-definir o texto do lado do botao para o left
@@ -48,7 +48,7 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void LeftButton()
     {
-        changeButtonImage.SetActive(true);
+        changeKeyImage.SetActive(true);
         bindKey.LeftButton();
     }
     
@@ -57,7 +57,7 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void RightButton()
     {
-        changeButtonImage.SetActive(true);
+        changeKeyImage.SetActive(true);
         bindKey.RightButton();
     }
     
@@ -66,7 +66,7 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void UpButton()
     {
-        changeButtonImage.SetActive(true);
+        changeKeyImage.SetActive(true);
         bindKey.UpButton();
     }
     
@@ -75,7 +75,7 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void DownButton()
     {
-        changeButtonImage.SetActive(true);
+        changeKeyImage.SetActive(true);
         bindKey.DownButton();
     }
 
@@ -105,7 +105,7 @@ public class ChangeKeyBind : MonoBehaviour
     /// </summary>
     public void backButton()
     {
-        changeKeyMenu.SetActive(false);
+        this.gameObject.SetActive(false);
         optionMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(optionChangeKeyBindButton);
     }
@@ -116,6 +116,5 @@ public class ChangeKeyBind : MonoBehaviour
     public void Update()
     {
         fb.SelectFirstButton(changeKeyFirstButton);
-        Debug.Log(EventSystem.current.sendNavigationEvents);
     }
 }

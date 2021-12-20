@@ -13,7 +13,7 @@ public class ChangeKey : MonoBehaviour
     {
         if (bindKey.i >= 1)
         {
-            bindKey.changeKeyBind.changeButtonImage.SetActive(false);
+            bindKey.changeKeyBind.changeKeyImage.SetActive(false);
 
         }
     }

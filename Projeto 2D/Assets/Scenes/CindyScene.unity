@@ -2955,7 +2955,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   optionFirstButton: {fileID: 1447667469}
   mainMenu: {fileID: 1650971814}
-  optionMenu: {fileID: 1339493287}
   optionButton: {fileID: 2031306272}
   ChangeKeyButton: {fileID: 664515173}
 --- !u!1 &1417315790
@@ -4852,6 +4851,10 @@ PrefabInstance:
       propertyPath: optionMenu
       value: 
       objectReference: {fileID: 1339493287}
+    - target: {fileID: 9162227944199591228, guid: 9a2924b2c442f244aa8fb41ecf8a3da0, type: 3}
+      propertyPath: changeKeyImage
+      value: 
+      objectReference: {fileID: 467338920}
     - target: {fileID: 9162227944199591228, guid: 9a2924b2c442f244aa8fb41ecf8a3da0, type: 3}
       propertyPath: changeButtonImage
       value: 
