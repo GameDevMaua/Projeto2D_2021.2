@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 using TMPro;
+using Toggle = UnityEngine.UI.Toggle;
 
 
 public class OptionMenu : MonoBehaviour
@@ -13,6 +15,8 @@ public class OptionMenu : MonoBehaviour
     public GameObject ChangeKeyButton;
     private FirstButton fb;
 
+
+    public Toggle fullScreenTog;
     public List<ResItem> resolutions = new List<ResItem>();
     private int selectedResolution;
 
@@ -27,6 +31,8 @@ public class OptionMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(optionFirstButton);
         this.gameObject.SetActive(true);
         mainMenu.SetActive(false);
+
+        fullScreenTog.isOn = Screen.fullScreen;
     }
  
     /// <summary>
@@ -83,6 +89,11 @@ public class OptionMenu : MonoBehaviour
     public void UpdateResLabel()
     {
         resolutionLabel.text = resolutions[selectedResolution].horizontal.ToString() + " x " + resolutions[selectedResolution].vertical.ToString();
+    }
+
+    public void Apply()
+    {
+        Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullScreenTog.isOn);
     }
      
     /// <summary>

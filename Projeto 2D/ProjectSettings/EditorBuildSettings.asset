@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/CindyScene.unity
+    guid: 71f9edeb9b6c5ed458beeebeb7aa2d41
+  - enabled: 1
     path: Assets/MainProject/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/HaScene.unity
     guid: 236df1b629e05594eaf0525e70114fc1
-  - enabled: 1
-    path: Assets/Scenes/CindyScene.unity
-    guid: 71f9edeb9b6c5ed458beeebeb7aa2d41
   - enabled: 1
     path: Assets/Scenes/CindyLevelMenu.unity
     guid: c7df2f4dfa76857469760f75649fd6af
