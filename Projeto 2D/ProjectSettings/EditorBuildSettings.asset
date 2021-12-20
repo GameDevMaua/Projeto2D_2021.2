@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AkioScene.unity
     guid: 1ebb4f846c21e6144a6ccad0d4ceeae1
+  - enabled: 1
+    path: Assets/Scenes/PrototiposFase/Tutorial1.unity
+    guid: c59e30ff13567ca40963ece2aca607e9
+  - enabled: 1
+    path: Assets/Scenes/PrototiposFase/Tutorial2.unity
+    guid: 880d5a5a3ebb13a4cbcb9d22cfff8e99
+  - enabled: 1
+    path: Assets/Scenes/PrototiposFase/Tutorial3.unity
+    guid: 2014fa10644af7c468eb52b89a51a9e7
+  - enabled: 1
+    path: Assets/Scenes/PrototiposFase/Tutorial4.unity
+    guid: 1a1f770f4ff657f4eb2b36dff24174b1
   m_configObjects: {}
