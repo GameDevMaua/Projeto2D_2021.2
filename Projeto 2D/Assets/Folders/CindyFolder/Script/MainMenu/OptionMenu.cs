@@ -1,6 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
+using TMPro;
 
 
 public class OptionMenu : MonoBehaviour
@@ -10,6 +12,11 @@ public class OptionMenu : MonoBehaviour
     public GameObject optionButton;
     public GameObject ChangeKeyButton;
     private FirstButton fb;
+
+    public List<ResItem> resolutions = new List<ResItem>();
+    private int selectedResolution;
+
+    public TMP_Text resolutionLabel;
      
     /// <summary>
     /// Quando começar essa classe, chamar o optionFirstButton
@@ -50,7 +57,33 @@ public class OptionMenu : MonoBehaviour
         ChangeKeyButton.SetActive(true);
         EventSystem.current.SetSelectedGameObject(firstChangeKeyButton);
     }
-    
+
+    public void ResLeft()
+    {
+        selectedResolution--;
+        if (selectedResolution < 0)
+        {
+            selectedResolution = 0;
+        }
+        
+        UpdateResLabel();
+    }
+
+    public void ResRight()
+    {
+        selectedResolution++;
+        if (selectedResolution > resolutions.Count - 1)
+        {
+            selectedResolution = resolutions.Count - 1;
+        }
+        
+        UpdateResLabel();
+    }
+
+    public void UpdateResLabel()
+    {
+        resolutionLabel.text = resolutions[selectedResolution].horizontal.ToString() + " x " + resolutions[selectedResolution].vertical.ToString();
+    }
      
     /// <summary>
     /// realiza a ação da função do SelectFirstButton, na classe FirstButton
@@ -60,4 +93,10 @@ public class OptionMenu : MonoBehaviour
         fb.SelectFirstButton(optionFirstButton);
 
     }
+}
+
+[System.Serializable]
+public class ResItem
+{
+    public int horizontal, vertical;
 }
