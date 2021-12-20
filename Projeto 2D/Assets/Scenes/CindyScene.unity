@@ -1567,8 +1567,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -12}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -18, y: 2.1841}
+  m_SizeDelta: {x: 160, y: 131.6319}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &624908456
 MonoBehaviour:
@@ -2682,7 +2682,8 @@ MonoBehaviour:
   mainMenu: {fileID: 1650971814}
   optionButton: {fileID: 2031306272}
   ChangeKeyButton: {fileID: 664515173}
-  fullScreenTog: {fileID: 0}
+  res: 0
+  fullScreenTog: {fileID: 2126298739}
   resolutions:
   - horizontal: 1920
     vertical: 1080

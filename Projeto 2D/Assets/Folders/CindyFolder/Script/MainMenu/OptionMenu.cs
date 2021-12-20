@@ -16,6 +16,7 @@ public class OptionMenu : MonoBehaviour
     private FirstButton fb;
 
 
+    public bool res = false;
     public Toggle fullScreenTog;
     public List<ResItem> resolutions = new List<ResItem>();
     private int selectedResolution;
@@ -33,6 +34,30 @@ public class OptionMenu : MonoBehaviour
         mainMenu.SetActive(false);
 
         fullScreenTog.isOn = Screen.fullScreen;
+
+        for (int i = 0; i < resolutions.Count; i++)
+        {
+            if (Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            {
+                res = true;
+                selectedResolution = i;
+                UpdateResLabel();
+            }
+        }
+
+        if (!res)
+        {
+            ResItem newResItem = new ResItem();
+            newResItem.horizontal = Screen.width;
+            newResItem.vertical = Screen.height;
+            
+            resolutions.Add(newResItem);
+
+            selectedResolution = resolutions.Count - 1;
+            
+            UpdateResLabel();
+        }
+        
     }
  
     /// <summary>
