@@ -934,11 +934,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 1
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 1065948661}
+    m_SelectOnUp: {fileID: 1766438418}
+    m_SelectOnDown: {fileID: 1766438418}
+    m_SelectOnLeft: {fileID: 842073053}
     m_SelectOnRight: {fileID: 842073053}
   m_Transition: 1
   m_Colors:
@@ -964,7 +964,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294586791}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1104005334}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 102900000, guid: 2014fa10644af7c468eb52b89a51a9e7, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294586791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,7 +1606,7 @@ GameObject:
   - component: {fileID: 842073054}
   - component: {fileID: 842073053}
   m_Layer: 5
-  m_Name: Level4
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1615,10 +1627,10 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 1
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1065948661}
+    m_SelectOnDown: {fileID: 1065948661}
     m_SelectOnLeft: {fileID: 294586790}
-    m_SelectOnRight: {fileID: 1177017324}
+    m_SelectOnRight: {fileID: 294586790}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1643,7 +1655,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 842073054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1104005334}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 102900000, guid: 71f9edeb9b6c5ed458beeebeb7aa2d41, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &842073054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2075,12 +2099,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 5
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 842073053}
+    m_SelectOnDown: {fileID: 842073053}
     m_SelectOnLeft: {fileID: 1766438418}
-    m_SelectOnRight: {fileID: 294586790}
+    m_SelectOnRight: {fileID: 1766438418}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2111,7 +2135,7 @@ MonoBehaviour:
         m_MethodName: PlayGame
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+          m_ObjectArgument: {fileID: 102900000, guid: 880d5a5a3ebb13a4cbcb9d22cfff8e99, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3205,7 +3229,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 4
+  m_Text: Back
 --- !u!222 &1500431723
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3668,12 +3692,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 1
+    m_Mode: 4
     m_WrapAround: 1
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 294586790}
+    m_SelectOnDown: {fileID: 294586790}
+    m_SelectOnLeft: {fileID: 1065948661}
+    m_SelectOnRight: {fileID: 1065948661}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3704,7 +3728,7 @@ MonoBehaviour:
         m_MethodName: PlayGame
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 71f9edeb9b6c5ed458beeebeb7aa2d41, type: 3}
+          m_ObjectArgument: {fileID: 102900000, guid: c59e30ff13567ca40963ece2aca607e9, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
           m_IntArgument: 0
           m_FloatArgument: 0
