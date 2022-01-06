@@ -2,12 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20111 (118066), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=96000, nAvgBytesPerSec=768000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 8192 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000027660A439E8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D7AAE34818 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,54 +19,158 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          :  (00000276618225B8)
-[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(2) (00000275D6FB1098)
-[LOG] SoundI::release                          :  (00000276618249A8)
-[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(3) (00000275D6A51B68)
-[LOG] SoundI::release                          :  (0000027661821BA8)
-[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(4) (00000275ADB56928)
-[LOG] SoundI::release                          :  (0000027661822898)
-[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(5) (00000275D6FB1238)
-[LOG] SoundI::release                          :  (0000027661821FF8)
-[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304 (00000275ADB56C68)
-[LOG] SoundI::release                          :  (0000027661821E88)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1(2) (00000275ADB55748)
-[LOG] SoundI::release                          :  (0000027661825248)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1 (00000275D6A4FC88)
-[LOG] SoundI::release                          :  (0000027661822728)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(2) (00000275D6FB0878)
-[LOG] SoundI::release                          :  (0000027661822A08)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(3) (00000275D6FABA78)
-[LOG] SoundI::release                          :  (0000027661825C58)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(4) (00000275D6FAD7B8)
-[LOG] SoundI::release                          :  (000002766181F088)
-[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687 (00000275ADB55A88)
-[LOG] SoundI::release                          :  (000002766181E678)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(10) (00000275ADB562A8)
-[LOG] SoundI::release                          :  (000002766181F7B8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(11) (00000275ADB56E08)
-[LOG] SoundI::release                          :  (0000027661821D18)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(12) (00000275ADB56AC8)
-[LOG] SoundI::release                          :  (00000276618215E8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(13) (00000275ADB56108)
-[LOG] SoundI::release                          :  (00000276618218C8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(14) (00000275ADB565E8)
-[LOG] SoundI::release                          :  (00000276618222D8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(2) (00000275D6FB1D98)
-[LOG] SoundI::release                          :  (000002766181EF18)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(3) (00000275ADB555A8)
-[LOG] SoundI::release                          :  (0000027661822B78)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(4) (00000275D6FAC778)
-[LOG] SoundI::release                          :  (0000027661824C88)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(5) (00000275D6A52528)
-[LOG] SoundI::release                          :  (0000027661822168)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(6) (00000275D6FB0A18)
-[LOG] SoundI::release                          :  (0000027661825DC8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(7) (00000275D6A51EA8)
-[LOG] SoundI::release                          :  (000002766181F648)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(8) (00000275ADB55408)
-[LOG] SoundI::release                          :  (00000276618253B8)
-[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(9) (00000275D6A507E8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 822880
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34080
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C11E90F118
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDC4A760E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDC4A760B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDC4A761B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDC4A76270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D7CC792CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Rocks, Crash & Debris, Falling, Heavy, Dusty SND42667(2)', format=5, channels=2, frequency=48000, lengthbytes=52032, lengthpcm=220799, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.188429.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 822880
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34080
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C11E90F118
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDC4A760E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDC4A760B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDC4A761B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDC4A76270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D7CC792CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Rocks, Crash & Debris, Multiple Rocks Tumbling, Dusty SND42664 2', format=5, channels=1, frequency=48000, lengthbytes=48992, lengthpcm=220536, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.358644.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 822880
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34080
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C11E90F118
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDC4A760E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDC4A760B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDC4A761B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDC4A76270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D7CC792CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_orb_earth', format=5, channels=2, frequency=48000, lengthbytes=67872, lengthpcm=284640, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.206795.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 822880
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34080
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C11E90F118
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDC4A760E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDC4A760B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDC4A761B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDC4A76270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D7CC792CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Rocks, Crash & Debris, Falling, Heavy, Dusty SND42667(5)', format=5, channels=2, frequency=48000, lengthbytes=45440, lengthpcm=200960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.167694.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 822880
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 34080
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C11E90F118
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDC4A760E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDC4A760B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDC4A761B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDC4A76270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D7CC792CF8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SFX_Rocks, Crash & Debris, Multiple Rocks Tumbling, Dusty SND42664 2(2)', format=5, channels=1, frequency=48000, lengthbytes=40672, lengthpcm=185938, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.259114.
+[LOG] SoundI::release                          :  (000001D7212DBDF8)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(2) (000001D7262C5768)
+[LOG] SoundI::release                          :  (000001D7212DBC88)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(3) (000001D71C385878)
+[LOG] SoundI::release                          :  (000001D7212D9FC8)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(4) (000001D71C0C9048)
+[LOG] SoundI::release                          :  (000001D7212DA138)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4 (000001D71C0CA708)
+[LOG] SoundI::release                          :  (000001D7212DBF68)
+[LOG] SoundI::release                          :     sfx_orb_water (000001D7262C8348)
+[LOG] SoundI::release                          :  (000001D7212DC978)
+[LOG] SoundI::release                          :     sfx_orb_electric (000001D7262C8B68)
+[LOG] SoundI::release                          :  (000001D7212D9898)
+[LOG] SoundI::release                          :     sfx_orb_fire(2) (000001D71C0CA568)
+[LOG] SoundI::release                          :  (000001D56E22D408)
+[LOG] SoundI::release                          :     SFX_Rocks, Crash & Debris, Falling, Heavy, Dusty SND42667(2) (000001D720D25688)
+[LOG] SoundI::release                          :  (000001D56E22D858)
+[LOG] SoundI::release                          :     SFX_Rocks, Crash & Debris, Falling, Heavy, Dusty SND42667(5) (000001D71FF3E248)
+[LOG] SoundI::release                          :  (000001D56E22BD08)
+[LOG] SoundI::release                          :     SFX_Rocks, Crash & Debris, Multiple Rocks Tumbling, Dusty SND42664 2(2) (000001D71FF3E3E8)
+[LOG] SoundI::release                          :  (000001D56E22C158)
+[LOG] SoundI::release                          :     SFX_Rocks, Crash & Debris, Multiple Rocks Tumbling, Dusty SND42664 2 (000001D720D25828)
+[LOG] SoundI::release                          :  (000001D56E22C718)
+[LOG] SoundI::release                          :     sfx_orb_earth (000001D720D25B68)
+[LOG] SoundI::release                          :  (000001D7212DA588)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(2) (000001D71C386A58)
+[LOG] SoundI::release                          :  (000001D7212D8198)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(3) (000001D7262C7CC8)
+[LOG] SoundI::release                          :  (000001D7212DB558)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(4) (000001D71C385BB8)
+[LOG] SoundI::release                          :  (000001D7212DAE28)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(5) (000001D71C386578)
+[LOG] SoundI::release                          :  (000001D7212DCDC8)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304 (000001D71C385EF8)
+[LOG] SoundI::release                          :  (000001D7212DBB18)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1(2) (000001D71C3851F8)
+[LOG] SoundI::release                          :  (000001D7212DCC58)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1 (000001D7262C8D08)
+[LOG] SoundI::release                          :  (000001D7212DAB48)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(2) (000001D71C3863D8)
+[LOG] SoundI::release                          :  (000001D7212DC808)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(3) (000001D71C386718)
+[LOG] SoundI::release                          :  (000001D7212DC0D8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(4) (000001D7262C7B28)
+[LOG] SoundI::release                          :  (000001D7212D7EB8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687 (000001D71C0C9388)
+[LOG] SoundI::release                          :  (000001D7212D95B8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(10) (000001D71C0C8D08)
+[LOG] SoundI::release                          :  (000001D7212DB6C8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(11) (000001D71C385538)
+[LOG] SoundI::release                          :  (000001D7212DA2A8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(12) (000001D71C386098)
+[LOG] SoundI::release                          :  (000001D7212DC3B8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(13) (000001D71C0C8B68)
+[LOG] SoundI::release                          :  (000001D7212D9A08)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(14) (000001D71C0C8EA8)
+[LOG] SoundI::release                          :  (000001D7212DD0A8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(2) (000001D71C385D58)
+[LOG] SoundI::release                          :  (000001D7212DC698)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(3) (000001D71C0C9BA8)
+[LOG] SoundI::release                          :  (000001D7212DACB8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(4) (000001D71C3868B8)
+[LOG] SoundI::release                          :  (000001D7212D7A68)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(5) (000001D725F79D88)
+[LOG] SoundI::release                          :  (000001D7212DA418)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(6) (000001D71C385A18)
+[LOG] SoundI::release                          :  (000001D7212DCAE8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(7) (000001D7262C84E8)
+[LOG] SoundI::release                          :  (000001D7212DB838)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(8) (000001D71C0CA8A8)
+[LOG] SoundI::release                          :  (000001D7212DD218)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(9) (000001D725F7CE48)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

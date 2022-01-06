@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01a285a5b7254365addc9c0aa857d054, type: 3}
-  m_Name: Player
+  m_Script: {fileID: 11500000, guid: 02b29bf1594449b4ad098b1d2c6ad9a2, type: 3}
+  m_Name: Tutorial03_01
   m_EditorClassIdentifier: 
-  Name: Player
-  Image: {fileID: 21300000, guid: 1b193c430cb9e9448a2e0af7604b14de, type: 3}
+  dialogueInfo:
+  - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
+    sentences: So this is how it works.
