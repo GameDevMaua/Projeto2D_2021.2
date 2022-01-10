@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PrototiposFase/Tutorial1.unity
     guid: c59e30ff13567ca40963ece2aca607e9
   - enabled: 1
+    path: Assets/Scenes/PrototiposFase/Tutorial1Dialogue.unity
+    guid: 1282ae0184f1acb4ebb6f2da96f0c28c
+  - enabled: 1
     path: Assets/Scenes/PrototiposFase/Tutorial2.unity
     guid: 880d5a5a3ebb13a4cbcb9d22cfff8e99
   - enabled: 1
