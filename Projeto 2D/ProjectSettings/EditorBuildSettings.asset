@@ -41,4 +41,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrototiposFase/Tutorial4.unity
     guid: 1a1f770f4ff657f4eb2b36dff24174b1
+  - enabled: 1
+    path: Assets/MainProject/Scenes/0_Tutorial_0_Dialogue.unity
+    guid: 8d01373fceaa9e44babe86733069c8be
+  - enabled: 1
+    path: Assets/MainProject/Scenes/1_Tutorial_0_Fase.unity
+    guid: c49c4d9d0ef737a47807a4e29398eefb
+  - enabled: 1
+    path: Assets/MainProject/Scenes/2_Tutorial_1_Dialogue.unity
+    guid: 314c05fce0e622f42b82e1209f5dfa9f
+  - enabled: 1
+    path: Assets/MainProject/Scenes/3_Tutorial_1_Fase.unity
+    guid: d5a961804dfb76d409e3aa32bb5ff102
+  - enabled: 1
+    path: Assets/MainProject/Scenes/4_Tutorial_2_Dialogue.unity
+    guid: 4877e34021acf9041b82fa2f7d6e7a40
+  - enabled: 1
+    path: Assets/MainProject/Scenes/5_Tutorial_2_Fase.unity
+    guid: 0865082135367334ba7d61263da7dbd7
+  - enabled: 1
+    path: Assets/MainProject/Scenes/6_Tutorial_3_Dialogue.unity
+    guid: b52f2bda6aa1d634d921bf73cbc94085
+  - enabled: 1
+    path: Assets/MainProject/Scenes/7_Tutorial_3_Fase.unity
+    guid: 1e525189c22ad0845bfb529e9e71ea48
+  - enabled: 1
+    path: Assets/MainProject/Scenes/8_Fase_1.unity
+    guid: 9ab04cf6c98fd90438dd5893f1d1adde
+  - enabled: 1
+    path: Assets/MainProject/Scenes/9_Fase_2.unity
+    guid: 85bf746a18a9eb9478f5eee0f261680b
   m_configObjects: {}
