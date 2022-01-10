@@ -34,7 +34,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DownIdle_Animation_NONE_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -112,7 +112,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LeftIdle_Animation_HYDRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -164,7 +164,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UpIdle_Animation_GEO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -190,7 +190,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NONE_Animation_HYDRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -216,7 +216,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RightIdle_Animation_GEO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -268,7 +268,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LeftIdle_Animation_PYRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -300,139 +300,139 @@ AnimatorStateMachine:
     m_Position: {x: -190, y: -470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7635654021268552705}
-    m_Position: {x: 100, y: -510, z: 0}
+    m_Position: {x: 100, y: -500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1935526866850007152}
-    m_Position: {x: 110, y: -500, z: 0}
+    m_Position: {x: 100, y: -420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2474108827454894044}
-    m_Position: {x: 120, y: -490, z: 0}
+    m_Position: {x: 100, y: -490, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2223853866858521450}
-    m_Position: {x: 130, y: -480, z: 0}
+    m_Position: {x: 100, y: -410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2888673361701050394}
-    m_Position: {x: 140, y: -470, z: 0}
+    m_Position: {x: 100, y: -400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8814515008700272922}
-    m_Position: {x: 150, y: -460, z: 0}
+    m_Position: {x: 100, y: -480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2803258626093325319}
-    m_Position: {x: 160, y: -450, z: 0}
+    m_Position: {x: 100, y: -390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8561478565378286355}
-    m_Position: {x: 170, y: -440, z: 0}
+    m_Position: {x: 100, y: -470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8265719745173447098}
-    m_Position: {x: 180, y: -430, z: 0}
+    m_Position: {x: 100, y: -380, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2164281977579809025}
-    m_Position: {x: 400, y: -510, z: 0}
+    m_Position: {x: 400, y: -500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 114857128397707046}
-    m_Position: {x: 410, y: -500, z: 0}
+    m_Position: {x: 400, y: -420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4962462054981944224}
-    m_Position: {x: 420, y: -490, z: 0}
+    m_Position: {x: 400, y: -490, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4483429860943609490}
-    m_Position: {x: 430, y: -480, z: 0}
+    m_Position: {x: 400, y: -410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -507839366131671252}
-    m_Position: {x: 440, y: -470, z: 0}
+    m_Position: {x: 400, y: -400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8822483729510344206}
-    m_Position: {x: 450, y: -460, z: 0}
+    m_Position: {x: 400, y: -480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4661823009170888506}
-    m_Position: {x: 460, y: -450, z: 0}
+    m_Position: {x: 400, y: -390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7365111576473984156}
-    m_Position: {x: 470, y: -440, z: 0}
+    m_Position: {x: 400, y: -470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4881153181230143701}
-    m_Position: {x: 480, y: -430, z: 0}
+    m_Position: {x: 400, y: -380, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1251789896396173950}
-    m_Position: {x: 700, y: -510, z: 0}
+    m_Position: {x: 700, y: -500, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8660045553768104302}
-    m_Position: {x: 710, y: -500, z: 0}
+    m_Position: {x: 700, y: -420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2494570969129629349}
-    m_Position: {x: 720, y: -490, z: 0}
+    m_Position: {x: 700, y: -490, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7126263547054800474}
-    m_Position: {x: 730, y: -480, z: 0}
+    m_Position: {x: 700, y: -410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4762305680613016836}
-    m_Position: {x: 740, y: -470, z: 0}
+    m_Position: {x: 700, y: -400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2989141364966445554}
-    m_Position: {x: 750, y: -460, z: 0}
+    m_Position: {x: 700, y: -480, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6802578513022880105}
-    m_Position: {x: 760, y: -450, z: 0}
+    m_Position: {x: 700, y: -390, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5756725828752764535}
-    m_Position: {x: 770, y: -440, z: 0}
+    m_Position: {x: 700, y: -470, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8763684981024634159}
-    m_Position: {x: 780, y: -430, z: 0}
+    m_Position: {x: 700, y: -380, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6964696924592384688}
     m_Position: {x: 100, y: -300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8677207104155800115}
-    m_Position: {x: 110, y: -290, z: 0}
+    m_Position: {x: 100, y: -220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2081789974162875056}
-    m_Position: {x: 120, y: -280, z: 0}
+    m_Position: {x: 100, y: -290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 434061051979937001}
-    m_Position: {x: 130, y: -270, z: 0}
+    m_Position: {x: 100, y: -210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2805580516484065682}
-    m_Position: {x: 140, y: -260, z: 0}
+    m_Position: {x: 100, y: -200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5337231540697285652}
-    m_Position: {x: 150, y: -250, z: 0}
+    m_Position: {x: 100, y: -280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -224382854768465313}
-    m_Position: {x: 160, y: -240, z: 0}
+    m_Position: {x: 100, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4434984612044800507}
-    m_Position: {x: 170, y: -230, z: 0}
+    m_Position: {x: 100, y: -270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1823257766410406820}
-    m_Position: {x: 180, y: -220, z: 0}
+    m_Position: {x: 100, y: -180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1015605077397124043}
     m_Position: {x: 400, y: -300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7102767687610010378}
-    m_Position: {x: 410, y: -290, z: 0}
+    m_Position: {x: 400, y: -220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5986286896552372104}
-    m_Position: {x: 420, y: -280, z: 0}
+    m_Position: {x: 400, y: -290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3096346176105501449}
-    m_Position: {x: 430, y: -270, z: 0}
+    m_Position: {x: 400, y: -210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7449036788999922798}
-    m_Position: {x: 440, y: -260, z: 0}
+    m_Position: {x: 400, y: -200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4179495581192977715}
-    m_Position: {x: 450, y: -250, z: 0}
+    m_Position: {x: 400, y: -280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -32040480477516546}
-    m_Position: {x: 460, y: -240, z: 0}
+    m_Position: {x: 400, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7503608371376245687}
-    m_Position: {x: 470, y: -230, z: 0}
+    m_Position: {x: 400, y: -270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 151474580723749980}
-    m_Position: {x: 480, y: -220, z: 0}
+    m_Position: {x: 400, y: -180, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -529,7 +529,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NONE_Animation_GEO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -555,7 +555,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RightIdle_Animation_NONE_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -581,7 +581,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RightIdle_Animation_PYRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -629,7 +629,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DownIdle_Animation_GEO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -655,7 +655,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UpIdle_Animation_PYRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -681,7 +681,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LeftIdle_Animation_NONE_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -707,7 +707,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UpIdle_Animation_NONE_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -733,7 +733,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DownIdle_Animation_ELECTRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -811,7 +811,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LeftIdle_Animation_ELECTRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -863,7 +863,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RightIdle_Animation_ELECTRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -889,7 +889,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NONE_Animation_NONE_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -915,7 +915,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NONE_Animation_ELECTRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1019,7 +1019,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LeftIdle_Animation_GEO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1149,7 +1149,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: RightIdle_Animation_HYDRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1175,7 +1175,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DownIdle_Animation_PYRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1201,7 +1201,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: NONE_Animation_PYRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1253,7 +1253,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UpIdle_Animation_ELECTRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1305,7 +1305,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: DownIdle_Animation_HYDRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -1331,7 +1331,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UpIdle_Animation_HYDRO_ELEMENT
-  m_Speed: 0.25
+  m_Speed: 0.06
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
