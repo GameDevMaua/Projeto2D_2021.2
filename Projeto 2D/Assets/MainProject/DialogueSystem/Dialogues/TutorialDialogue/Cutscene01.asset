@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: 'Nossa, que queda... '
+    sentences: Ouch, what a fall...
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: Como que eu subo de volta mesmo?
+    sentences: How can i go up again?

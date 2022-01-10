@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: "Ent\xE3o \xE9 s\xF3 usar a alavanca para chegar la?"
+    sentences: So I just need to activate this lever to get to the door?

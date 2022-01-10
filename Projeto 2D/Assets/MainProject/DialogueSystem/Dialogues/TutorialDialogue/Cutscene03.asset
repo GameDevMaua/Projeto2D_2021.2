@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: Agora tem alavanca...? O mago usava ela como?
+    sentences: 'There is a lever now... How did the wizard even used it?
+
+'

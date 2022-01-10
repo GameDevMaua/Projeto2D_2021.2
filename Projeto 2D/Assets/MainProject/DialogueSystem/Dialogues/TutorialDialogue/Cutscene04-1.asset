@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: "Eita, isso n\xE3o acontecia quando eu e o mago pass\xE1vamos por
-      aqui..."
+    sentences: Wow, this didn't happen when the wizard and I passed through here...
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: "Ficar parado vai resolver nada. Tenho que achar um caminho por conta
-      pr\xF3pria"
+    sentences: Staying here won't solve anything, I should find a passage back.
