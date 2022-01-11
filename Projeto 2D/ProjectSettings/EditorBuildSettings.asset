@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainProject/Scenes/9_Fase_2.unity
     guid: 85bf746a18a9eb9478f5eee0f261680b
+  - enabled: 1
+    path: Assets/MainProject/Scenes/10_StartMenu.unity
+    guid: 799ee837d03f7d544bb164ad0599717d
   m_configObjects: {}
