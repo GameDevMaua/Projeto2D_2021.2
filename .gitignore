@@ -58,9 +58,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Arquivos únicos
+
 Projeto 2D/ProjectSettings/EditorBuildSettings.asset
 Projeto 2D/UserSettings/EditorUserSettings.asset
-Projeto 2D/UserSettings/EditorUserSettings.asset
-Projeto 2D/UserSettings/EditorUserSettings.asset
+Projeto 2D/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+Projeto 2D/fmod_editor.log
+
 
 !FMOD/**
+Projeto 2D/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+Projeto 2D/UserSettings/EditorUserSettings.asset
