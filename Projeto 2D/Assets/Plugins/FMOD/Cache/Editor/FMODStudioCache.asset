@@ -154,6 +154,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-9048199264334866245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8983755260980771277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,6 +3544,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4359486366203987259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-4355212403941193298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3956,7 +4000,7 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637750266744742645
+  lastModified: 637774429667137617
   FileSizes:
   - Name: 
     Value: 1530
@@ -5524,7 +5568,7 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1219504279707396308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6134,7 +6178,7 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637750266744653792
+  lastModified: 637774429666981406
   FileSizes: []
   Exists: 1
 --- !u!114 &-317183838346231317
@@ -6365,7 +6409,7 @@ MonoBehaviour:
   - {fileID: -395358134165622407}
   StringsBanks:
   - {fileID: -3660665219023098795}
-  stringsBankWriteTime: 637750266744742645
+  stringsBankWriteTime: 637774429667137617
   cacheVersion: 8
 --- !u!114 &7445551782689109
 MonoBehaviour:
@@ -7644,6 +7688,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &2505559435524774755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &2514959285081424608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7996,6 +8062,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &3132640741694343184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3141621588046021760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8545,7 +8633,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1236676285293627466}
+  - {fileID: -4359486366203987259}
   MinDistance: 0
   MaxDistance: 0
   Length: 1911
@@ -10707,6 +10795,28 @@ MonoBehaviour:
   IsGlobal: 0
   Exists: 0
 --- !u!114 &7877605759480946149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &7881058504180170404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
