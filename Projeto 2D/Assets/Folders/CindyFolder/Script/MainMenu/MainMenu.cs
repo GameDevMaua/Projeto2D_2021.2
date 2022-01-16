@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject optionMenu;
     public GameObject firstOptionButton;
     private FirstButton fb;
+    public SceneAsset scene;
 
     public Animator animator;
 
@@ -21,19 +22,12 @@ public class MainMenu : MonoBehaviour
 /// <summary>
 /// Ativa o trigger para que a tela fique preta em animação
 /// </summary>
-    public void fadeOutTrigger()
+    public void fadeOutTrigger(SceneAsset newScene)
     {
+        scene = newScene;
         animator.SetTrigger("FadeOut");
     }
 
-    /// <summary>
-    /// Criação da ação do botão PLAY
-    /// </summary>
-    public void PlayGame(SceneAsset newScene)
-    {
-        fadeOutTrigger();
-        SceneManager.LoadScene(newScene.name);
-    }
 
     /// <summary>
     /// Criação da ação do botão OPTION
