@@ -8,7 +8,11 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
+<<<<<<< Updated upstream
 [LOG] AsyncManager::init                       : manager 00000216DD5F3E28 isAsync 0 updatePeriod 0.02
+=======
+[LOG] AsyncManager::init                       : manager 0000016DB75F1CF8 isAsync 0 updatePeriod 0.02
+>>>>>>> Stashed changes
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,3 +23,78 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+<<<<<<< Updated upstream
+=======
+[LOG] SoundI::release                          :  (0000016DB6E18428)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(2) (0000016D53819E98)
+[LOG] SoundI::release                          :  (0000016D314D5A08)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(3) (0000016D5381D918)
+[LOG] SoundI::release                          :  (0000016D314D3618)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(4) (0000016D2EA5B488)
+[LOG] SoundI::release                          :  (0000016D314D4028)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4 (0000016D2EA58F28)
+[LOG] SoundI::release                          :  (0000016DB6E1A538)
+[LOG] SoundI::release                          :     sfx_orb_water (0000016D53817458)
+[LOG] SoundI::release                          :  (0000016DB6E172E8)
+[LOG] SoundI::release                          :     sfx_orb_electric (0000016D5381A1D8)
+[LOG] SoundI::release                          :  (0000016D314D5728)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(2) (0000016D5381D778)
+[LOG] SoundI::release                          :  (0000016DB6E16D28)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(3) (0000016D538182F8)
+[LOG] SoundI::release                          :  (0000016D314D55B8)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(4) (0000016D2EA595A8)
+[LOG] SoundI::release                          :  (0000016DB6E1A3C8)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(5) (0000016D53816278)
+[LOG] SoundI::release                          :  (0000016D314D3A68)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304 (0000016D5381D298)
+[LOG] SoundI::release                          :  (0000016D314D38F8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1(2) (0000016D5381D0F8)
+[LOG] SoundI::release                          :  (0000016DB6E182B8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1 (0000016D5381B558)
+[LOG] SoundI::release                          :  (0000016DB6E17FD8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(2) (0000016D53819818)
+[LOG] SoundI::release                          :  (0000016DB6E16768)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(3) (0000016D538199B8)
+[LOG] SoundI::release                          :  (0000016DB6E16BB8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(4) (0000016D5381A038)
+[LOG] SoundI::release                          :  (0000016D314D5B78)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687 (0000016D2EA5B7C8)
+[LOG] SoundI::release                          :  (0000016D314D31C8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(10) (0000016D2EA5B148)
+[LOG] SoundI::release                          :  (0000016D314D52D8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(11) (0000016D5381CDB8)
+[LOG] SoundI::release                          :  (0000016D314D48C8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(12) (0000016D5381CA78)
+[LOG] SoundI::release                          :  (0000016D314D4198)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(13) (0000016D2EA588A8)
+[LOG] SoundI::release                          :  (0000016D314D4308)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(14) (0000016D2EA58BE8)
+[LOG] SoundI::release                          :  (0000016D314D21F8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(2) (0000016D5381D5D8)
+[LOG] SoundI::release                          :  (0000016D314D3338)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(3) (0000016D2EA58A48)
+[LOG] SoundI::release                          :  (0000016DB6E18E38)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(4) (0000016D53816F78)
+[LOG] SoundI::release                          :  (0000016DB6E19568)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(5) (0000016D5381BD78)
+[LOG] SoundI::release                          :  (0000016D314D2368)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(6) (0000016D5381D438)
+[LOG] SoundI::release                          :  (0000016DB6E17A18)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(7) (0000016D5381B3B8)
+[LOG] SoundI::release                          :  (0000016D314D4478)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(8) (0000016D2EA59268)
+[LOG] SoundI::release                          :  (0000016DB6E18878)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(9) (0000016D53818638)
+[LOG] SoundI::release                          :  (0000016D314D34A8)
+[LOG] SoundI::release                          :     sfx_orb_fire(2) (0000016D2EA5B2E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+>>>>>>> Stashed changes

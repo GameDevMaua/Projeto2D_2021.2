@@ -3764,7 +3764,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &-4932777514799235159
+=======
+--- !u!114 &-4483098261824556444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-4400285476997565795
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8831,8 +8857,53 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 0
 --- !u!114 &1657969069048222239
+=======
+  Exists: 1
+--- !u!114 &-431819660286063387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &-395358134165622407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Builds/Build/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637750266744653792
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-317183838346231317
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9052,7 +9123,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+<<<<<<< Updated upstream
 --- !u!114 &1932632146814000930
+=======
+--- !u!114 &-120912628092002789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-102065876947891895
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9184,7 +9281,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &2100593466714511011
+=======
+--- !u!114 &179530231648917311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &191920818366952179
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9822,7 +9945,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &2965770459291897711
+=======
+--- !u!114 &1420948645731037928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &1447646327224501854
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11013,7 +11162,11 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &4684393747804701647
+=======
+--- !u!114 &3324305033434004466
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11078,8 +11231,58 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 1
 --- !u!114 &4724231174162544361
+=======
+  Exists: 0
+--- !u!114 &3439731540503262178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &3444088600444748788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Traps/Positive/sfx_trap_positive_earth
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Traps/Positive/sfx_trap_positive_earth
+  guid: a36c018bda4302498d5d9a47f7a56656
+  Banks:
+  - {fileID: -395358134165622407}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3522532476385999529
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11431,7 +11634,35 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &5084224139384878945
+=======
+--- !u!114 &4011582550818994548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps/sfx_footstep
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps/sfx_footstep
+  guid: f9ebe89f3108f440a5f087bfb3172340
+  Banks:
+  - {fileID: -395358134165622407}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6057711011319151570}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1911
+--- !u!114 &4026460019565122962
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11562,8 +11793,35 @@ MonoBehaviour:
     data2: 0
   Type: 1
   IsGlobal: 0
+<<<<<<< Updated upstream
   Exists: 0
 --- !u!114 &5334294463026064042
+=======
+  Exists: 1
+--- !u!114 &4294980791202804618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &4298981637896044709
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12509,7 +12767,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &6702714113199793946
+=======
+--- !u!114 &6057711011319151570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &6074991481550113819
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13786,7 +14070,33 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+<<<<<<< Updated upstream
 --- !u!114 &8346161791950341492
+=======
+--- !u!114 &7777360098004314922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_footstep/Footstep
+  m_EditorClassIdentifier: 
+  Name: Footstep
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
+--- !u!114 &7854985079207706082
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
