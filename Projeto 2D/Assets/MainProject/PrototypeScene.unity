@@ -7338,6 +7338,10 @@ PrefabInstance:
       value: GenericDoor
       objectReference: {fileID: 0}
     - target: {fileID: 7713332411969199757, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
+      propertyPath: nextLevelOnOpen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7713332411969199757, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
       propertyPath: keys.Array.data[0]
       value: 
       objectReference: {fileID: 1430508441}

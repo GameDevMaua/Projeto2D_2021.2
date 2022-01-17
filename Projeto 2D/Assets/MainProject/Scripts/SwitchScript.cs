@@ -1,20 +1,24 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
+
 
 namespace MainProject.Scripts
 {
     public class SwitchScript : MonoBehaviour
     {
+        public enum KeyPosition
+        {
+            FRENTE, DIREITA, ESQUERDA
+        }
+        
         public List<GameObject> objectsPrimarySelection;
         public List<GameObject> objectsSecondarySelection;
         public KeyCode interactionKey;
         public KeyPosition keyPositionForSprite;
         [SerializeField]
         private double interactionDistance = 5f;
-        [SerializeField] private List<Sprite> switchSprites; // Utilizado como padrão pelo que foi colocado no inspector\
+        [Header("Padrão dos sprites abaixo: Frente, Esquerda, Direita")]
+        [SerializeField] private List<Sprite> switchSprites; // Frente (1/0), Esquerda (1/0), Direita (1/0)
         
         private bool switchSpriteState;
         private bool switchBool;
@@ -29,11 +33,21 @@ namespace MainProject.Scripts
             playerRef = GameObject.FindWithTag("Player");
             spriteRendererRef = gameObject.GetComponent<SpriteRenderer>();
             switchBool = true;
+            switchSpriteState = true;
 
-            if (objectsPrimarySelection.Count != 0){ foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);}
-            if (objectsSecondarySelection.Count != 0) foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
-            if (interactionKey.Equals(KeyCode.None)) interactionKey = KeyCode.E;
             if (objectsPrimarySelection.Count == 0 && objectsSecondarySelection.Count == 0) Debug.Log("Nenhum objeto atribuído à switch: " + gameObject);
+            else
+            {
+                if (objectsPrimarySelection.Count != 0)
+                {
+                    foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool); // Ativa todos os objetos
+                }
+
+                if (objectsSecondarySelection.Count != 0)
+                    foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool); // Desativa todos os objetos
+            }
+            if (interactionKey.Equals(KeyCode.None)) interactionKey = KeyCode.E;
+            CheckSwitchSprite();
         }
 
         private void Update()
@@ -55,10 +69,10 @@ namespace MainProject.Scripts
         /// </summary>
         private void SwitchActiveObjects()
         {
-            switchBool = !switchBool;
-            switchSpriteState = !switchSpriteState;
-            foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
-            foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
+                switchBool = !switchBool;
+                switchSpriteState = !switchSpriteState;
+                foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
+                foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
         }
 
         /// <summary>
@@ -70,21 +84,16 @@ namespace MainProject.Scripts
             SwitchActiveObjects();
             CheckSwitchSprite();
         }
-        
+
         private void CheckSwitchSprite()
         {
             spriteRendererRef.sprite = keyPositionForSprite switch
             {
                 KeyPosition.FRENTE => switchSpriteState ? switchSprites[0] : switchSprites[1],
-                KeyPosition.DIREITA => switchSpriteState ? switchSprites[2] : switchSprites[3],
-                KeyPosition.ESQUERDA => switchSpriteState ? switchSprites[4] : switchSprites[5],
+                KeyPosition.ESQUERDA => switchSpriteState ? switchSprites[2] : switchSprites[3],
+                KeyPosition.DIREITA => switchSpriteState ? switchSprites[4] : switchSprites[5],
                 _ => spriteRendererRef.sprite
             };
-        }
-
-        public enum KeyPosition
-        {
-            FRENTE, DIREITA, ESQUERDA
         }
     }
 }

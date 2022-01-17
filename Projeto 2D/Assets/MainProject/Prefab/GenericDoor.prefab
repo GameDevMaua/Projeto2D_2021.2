@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keys:
   - {fileID: 0}
+  nextLevelOnOpen: 1

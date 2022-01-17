@@ -5,42 +5,45 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CindyScene.unity
     guid: 71f9edeb9b6c5ed458beeebeb7aa2d41
-  - enabled: 1
+  - enabled: 0
     path: Assets/MainProject/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HaScene.unity
     guid: 236df1b629e05594eaf0525e70114fc1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CindyLevelMenu.unity
     guid: c7df2f4dfa76857469760f75649fd6af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AkioLevelMenuScene.unity
     guid: b1055ab1aef763746a99d10c49595714
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RaphaScene.unity
     guid: 205984e003d337544828b83db3b42064
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AkioScene.unity
     guid: 1ebb4f846c21e6144a6ccad0d4ceeae1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototiposFase/Tutorial1.unity
     guid: c59e30ff13567ca40963ece2aca607e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototiposFase/Tutorial1Dialogue.unity
     guid: 1282ae0184f1acb4ebb6f2da96f0c28c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototiposFase/Tutorial2.unity
     guid: 880d5a5a3ebb13a4cbcb9d22cfff8e99
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototiposFase/Tutorial3.unity
     guid: 2014fa10644af7c468eb52b89a51a9e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototiposFase/Tutorial4.unity
     guid: 1a1f770f4ff657f4eb2b36dff24174b1
+  - enabled: 1
+    path: Assets/MainProject/Scenes/11_StartMenu.unity
+    guid: 799ee837d03f7d544bb164ad0599717d
   - enabled: 1
     path: Assets/MainProject/Scenes/0_Tutorial_0_Dialogue.unity
     guid: 8d01373fceaa9e44babe86733069c8be
@@ -66,12 +69,15 @@ EditorBuildSettings:
     path: Assets/MainProject/Scenes/7_Tutorial_3_Fase.unity
     guid: 1e525189c22ad0845bfb529e9e71ea48
   - enabled: 1
-    path: Assets/MainProject/Scenes/8_Fase_1.unity
+    path: Assets/MainProject/Scenes/9_Fase_1.unity
     guid: 9ab04cf6c98fd90438dd5893f1d1adde
   - enabled: 1
-    path: Assets/MainProject/Scenes/9_Fase_2.unity
+    path: Assets/MainProject/Scenes/8_Fase_2.unity
     guid: 85bf746a18a9eb9478f5eee0f261680b
   - enabled: 1
-    path: Assets/MainProject/Scenes/10_StartMenu.unity
-    guid: 799ee837d03f7d544bb164ad0599717d
+    path: Assets/MainProject/Scenes/10_Fim_De_Jogo.unity
+    guid: f1536f5ac1303d34085f3a3d7501e44c
+  - enabled: 1
+    path: Assets/MainProject/Scenes/12_LevelMenu.unity
+    guid: 73086d8ff0cb2f843a143348d44e47b5
   m_configObjects: {}

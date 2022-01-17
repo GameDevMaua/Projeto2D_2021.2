@@ -27,7 +27,12 @@ namespace MainProject.Scripts
         /// <summary>
         /// Carrega a próxima fase
         /// </summary>
-        public void LoadNextLevel() => SceneManager.LoadScene(nextLevel.name);
+        public void LoadNextLevel()
+        {
+            playerSoundManager.nextLevelSound();
+            // inicia o fade out
+            SceneManager.LoadScene(nextLevel.name);
+        }
 
         /// <summary>
         /// Recarrega a fase atual
@@ -48,7 +53,7 @@ namespace MainProject.Scripts
         {
             if (playerStatus.isPlayerDead())
             {
-                playerSoundManager.stopSounds();
+                playerSoundManager.deathSoundReload();
                 ReloadOnDeath();
             }
         }

@@ -76,8 +76,15 @@ namespace MainProject.Scripts.Player
             }
         }
 
-        public void stopSounds()
+        public void deathSoundReload()
         {
+            // Tocar o som de morte e esperar ele terminar
+            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+        }
+
+        public void nextLevelSound()
+        {
+            // Tocar o som da próxima fase depois de um delay e esperar ele terminar
             sfxEvent.stop(STOP_MODE.IMMEDIATE);
         }
     }
