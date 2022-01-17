@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000045776367, y: 0}
+  m_AnchoredPosition: {x: 1043, y: 557.33}
   m_SizeDelta: {x: 2331.0066, y: 1114.6696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &607861784511008077
@@ -90,8 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeKeyBind: {fileID: 0}
-  prefabPlayerMovement: {fileID: 6386678159611983095, guid: 26f1770b6de10164b86b65a76e3d8aa6, type: 3}
-  prefab: {fileID: 6386678159611983102, guid: 26f1770b6de10164b86b65a76e3d8aa6, type: 3}
+  prefabPlayerMovement: {fileID: 6386678159611983095, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
+  playerMovement: {fileID: 6386678159611983095, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
+  prefab: {fileID: 6386678159611983102, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
   i: 0
   LeftText: {fileID: 0}
   RightText: {fileID: 0}
@@ -202,7 +203,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607861786127518360}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -228,4 +229,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bindKey: {fileID: 607861784511008078}
-  time: 1.25
