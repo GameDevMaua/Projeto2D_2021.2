@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
-    sentences: I should have the same element if I want to pass through that trap.
+    sentences: There's a note here...
+  - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
+    sentences: '"Fire pass through fire, water pass through water. One shall have
+      the same element of the trap"'
+  - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
+    sentences: Perhaps I need fire to pass through this fire trap then...
