@@ -15,6 +15,8 @@ namespace MainProject.Scripts
         // Atributos privados
         private UnityEngine.SceneManagement.Scene actualScene;
 
+        public Animator animator;
+
         // Inicializa valores padrões e executa métodos básicos
         private void Awake()
         {
@@ -30,8 +32,8 @@ namespace MainProject.Scripts
         public void LoadNextLevel()
         {
             playerSoundManager.nextLevelSound();
-            // inicia o fade out
-            SceneManager.LoadScene(nextLevel.name);
+            animator.SetTrigger("FadeOut");// inicia o fade out
+            //SceneManager.LoadScene(nextLevel.name);
         }
 
         /// <summary>

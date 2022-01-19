@@ -7,10 +7,13 @@ using UnityEngine.SceneManagement;
 public class NewScene : MonoBehaviour
 {
     public MainMenu mainMenu;
-    public Animator animator;
+    public MainProject.Scripts.GameManager gameManager;
     public void PlayGame(SceneAsset newScene)
     {
-        SceneManager.LoadScene(mainMenu.scene.name);
+        if(mainMenu != null)
+            SceneManager.LoadScene(mainMenu.scene.name);
+        if(gameManager != null)
+            SceneManager.LoadScene(gameManager.nextLevel.name);
     }
 
 }
