@@ -159,8 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTime: 3
-  collectedStatus: 0
-  disableAndNotChangeStatus: 1
+  higherLayer: 20
+  lowerLayer: 0
 --- !u!114 &7597491906632369963
 MonoBehaviour:
   m_ObjectHideFlags: 0

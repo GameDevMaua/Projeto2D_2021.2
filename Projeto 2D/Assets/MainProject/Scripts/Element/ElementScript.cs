@@ -10,9 +10,31 @@ namespace MainProject.Scripts.Element
     public class ElementScript : MonoBehaviour
     {
         public float delayTime = 3f;
-        public bool collectedStatus = false;
-        public bool disableAndNotChangeStatus = true;
+        public int higherLayer = 5;
+        public int lowerLayer;
+
+        private GameObject playerRef;
+        private Animator animatorRef;
+        private ElementAnimation elementAnimationRef;
+        private SpriteRenderer spriteRendererRef;
+        private BoxCollider2D boxCollider2DRef;
+        private bool alternator;
         
+        private void Awake()
+        {
+            playerRef = GameObject.FindWithTag("Player");
+            animatorRef = gameObject.GetComponent<Animator>();
+            elementAnimationRef = gameObject.GetComponent<ElementAnimation>();
+            spriteRendererRef = gameObject.GetComponent<SpriteRenderer>();
+            boxCollider2DRef = gameObject.GetComponent<BoxCollider2D>();
+            alternator = false;
+        }
+
+        private void Update()
+        {
+            verificaPosicaoAtualizaSpriteOrder();
+        }
+
         /// <summary>
         /// Caso um GameObject que tenha o PlayerStatus passar pelo elemento, o elemento do PlayerStatus será
         /// atualizado para o elemento atual desse objecto.
@@ -25,30 +47,48 @@ namespace MainProject.Scripts.Element
             {
                 var objectElement = gameObject.GetComponent<MainProject.Scripts.Element.ElementStatus>().getObjectElement();
                 playerStatus.setObjectElement(objectElement);
-                StartCoroutine(DisableWithDelay(delayTime));
+                setObjectStatus(false);
             }
         }
-        
-        private IEnumerator DisableWithDelay(float delay)
+
+        private void OnTriggerExit2D(Collider2D other)
         {
-            // Desativa ou altera o status para coletado
-            if (disableAndNotChangeStatus) setObjectStatus(false);
-            else collectedStatus = true;
-            
+            var playerStatus = other.gameObject.GetComponent<MainProject.Scripts.Player.PlayerStatus>();
+            if (playerStatus)
+            {
+                StartCoroutine(enableWithDelay(delayTime));
+            }
+        }
+
+        private IEnumerator enableWithDelay(float delay)
+        {
             // Delay
             yield return new WaitForSeconds(delayTime);
             
-            // Ativa ou altera o status para não coletado
-            if (disableAndNotChangeStatus) setObjectStatus(true);
-            else collectedStatus = false;
+            // Reativa o objeto
+            setObjectStatus(true);
         }
 
         private void setObjectStatus(bool activeStatus)
         {
-            gameObject.GetComponent<Animator>().enabled = activeStatus;
-            gameObject.GetComponent<ElementAnimation>().enabled = activeStatus;
-            gameObject.GetComponent<SpriteRenderer>().enabled = activeStatus;
-            gameObject.GetComponent<BoxCollider2D>().enabled = activeStatus;
+            animatorRef.enabled = activeStatus;
+            elementAnimationRef.enabled = activeStatus;
+            spriteRendererRef.enabled = activeStatus;
+            boxCollider2DRef.isTrigger = !activeStatus;
+        }
+
+        private void verificaPosicaoAtualizaSpriteOrder()
+        {
+            if ((playerRef.transform.position.y > gameObject.transform.position.y) && !alternator)
+            {
+                spriteRendererRef.sortingOrder = higherLayer;
+                alternator = true;
+            }
+            else if ((playerRef.transform.position.y <= gameObject.transform.position.y) && alternator)
+            {
+                spriteRendererRef.sortingOrder = lowerLayer;
+                alternator = false;
+            }
         }
     }
 }
