@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 using TMPro;
 using Toggle = UnityEngine.UI.Toggle;
 
-
 public class OptionMenu : MonoBehaviour
 {
     public GameObject optionFirstButton;
