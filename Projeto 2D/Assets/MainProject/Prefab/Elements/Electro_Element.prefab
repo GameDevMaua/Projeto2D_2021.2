@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayTime: 3
   higherLayer: 20
-  lowerLayer: 0
+  lowerLayer: 1
 --- !u!114 &4215849561433316580
 MonoBehaviour:
   m_ObjectHideFlags: 0

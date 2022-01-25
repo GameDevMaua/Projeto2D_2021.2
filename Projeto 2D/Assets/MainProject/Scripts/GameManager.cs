@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,15 +32,13 @@ namespace MainProject.Scripts
         /// </summary>
         public void LoadNextLevel()
         {
-            playerSoundManager.nextLevelSound();
-            animator.SetTrigger("FadeOut");// inicia o fade out
-            //SceneManager.LoadScene(nextLevel.name);
+            StartCoroutine(transition(3));
         }
 
         /// <summary>
         /// Recarrega a fase atual
         /// </summary>
-        public void ReloadOnDeath() => SceneManager.LoadScene(actualScene.name);
+        public void ReloadOnDeath() => StartCoroutine(transition2(2));
 
         /// <summary>
         /// Salva o jogo
@@ -58,6 +57,21 @@ namespace MainProject.Scripts
                 playerSoundManager.deathSoundReload();
                 ReloadOnDeath();
             }
+        }
+
+        private IEnumerator transition(float delayTime)
+        {
+            playerSoundManager.nextLevelSound();
+            animator.SetTrigger("FadeOut");// inicia o fade out
+            yield return new WaitForSeconds(delayTime);
+            SceneManager.LoadScene(nextLevel.name);
+        }
+        
+        private IEnumerator transition2(float delayTime)
+        {
+            animator.SetTrigger("FadeOut");// inicia o fade out
+            yield return new WaitForSeconds(delayTime);
+            SceneManager.LoadScene(actualScene.name);
         }
     }
 }

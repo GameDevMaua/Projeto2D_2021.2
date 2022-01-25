@@ -6930,6 +6930,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hydro_Element
       objectReference: {fileID: 0}
+    - target: {fileID: 373408311093802653, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 373408311093802653, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
+      propertyPath: higherLayer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 373408311093802655, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7234,6 +7242,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5174560677080119223, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174560677080119223, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
+      propertyPath: higherLayer
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
 --- !u!1 &588176235
@@ -7344,6 +7360,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5174560677080119223, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5174560677080119223, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
+      propertyPath: higherLayer
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94fafcdcf42d4c5478bb34c6fddae12b, type: 3}
 --- !u!4 &647845944 stripped
@@ -7424,6 +7448,10 @@ PrefabInstance:
       propertyPath: keys.Array.data[0]
       value: 
       objectReference: {fileID: 1430508441}
+    - target: {fileID: 7713332411969199758, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0455b462f3b22164aae80c1b006a5229, type: 3}
 --- !u!1 &754641837 stripped
@@ -7629,6 +7657,14 @@ PrefabInstance:
     - target: {fileID: 4215849561433316578, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
       propertyPath: m_Name
       value: Electro_Element (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215849561433316583, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215849561433316583, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
+      propertyPath: higherLayer
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4215849561433316584, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
       propertyPath: m_RootOrder
@@ -9002,6 +9038,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7597491906632369962, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597491906632369962, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
+      propertyPath: higherLayer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7597491906632369965, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
       propertyPath: m_Name
       value: Geo_Element
@@ -9023,6 +9067,14 @@ PrefabInstance:
     - target: {fileID: 4215849561433316578, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
       propertyPath: m_Name
       value: Electro_Element
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215849561433316583, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4215849561433316583, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
+      propertyPath: higherLayer
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4215849561433316584, guid: 622b4b10173862f4abbe67d1d3cdca55, type: 3}
       propertyPath: m_RootOrder
@@ -9275,6 +9327,14 @@ PrefabInstance:
     - target: {fileID: 373408311093802648, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
       propertyPath: m_Name
       value: Hydro_Element (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 373408311093802653, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 373408311093802653, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
+      propertyPath: higherLayer
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 373408311093802655, guid: 4f937ac3e010eb245a0d24f3244bd5a4, type: 3}
       propertyPath: m_RootOrder
@@ -14487,8 +14547,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7597491906632369962, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
+      propertyPath: lowerLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597491906632369962, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
       propertyPath: higherLayer
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7597491906632369965, guid: 7245cd7e98dea384db847d6e0ce49e85, type: 3}
       propertyPath: m_Name
