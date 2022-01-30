@@ -14,6 +14,7 @@ namespace MainProject.Scripts.Exclusivos
         private bool playerInRange;
         public bool triggerDialogue = false;
         public bool hasInteracted = false;
+        public bool endedDialogue = false;
         
         /// <summary>
         /// Funcao para comecar o diálogo
@@ -30,25 +31,19 @@ namespace MainProject.Scripts.Exclusivos
         {
             if (triggerDialogue) // se estiver dentro do playerInRange e for um dialogo normal
             {
-                Debug.Log("Entrou no if");
                 Time.timeScale = 0f;
-                if (interactDialogueManager.isDialogue == false)
+                if (interactDialogueManager.isDialogue == false && !endedDialogue)
                 {
                     // Inicializa o diálogo, caso esse não esteja inicializado
-                    
-                    Debug.Log("Entrou no segundo if");
                     TriggerDialogue();
-                    Debug.Log("Executou o trigger dialogue");
+                    endedDialogue = true;
 
                 }
                 else
                 {
-                    Debug.Log("Não entrou no seguno if");
                     interactDialogueManager
                         .DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
-                    Debug.Log("Mostrou a próxima cena");
                 }
-                Debug.Log("Resetou Trigger Dialogue");
                 triggerDialogue = false;
                 hasInteracted = true;
             }
@@ -58,8 +53,12 @@ namespace MainProject.Scripts.Exclusivos
                 if (Input.GetKeyDown(interactDialogueManager.key) && playerInRange && hasInteracted) // se estiver dentro do playerInRange e for um dialogo normal
                 {
                     Time.timeScale = 0f;
-                    if(interactDialogueManager.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado
+                    if (interactDialogueManager.isDialogue == false && !endedDialogue)
+                    {
+                        // Inicializa o diálogo, caso esse não esteja inicializado
                         TriggerDialogue();
+                        endedDialogue = true;
+                    }
                     else
                         interactDialogueManager.DisplayNextSentence(); // Caso o diálogo esteja inicializado, vai para a próxima fala
                 }
@@ -90,10 +89,15 @@ namespace MainProject.Scripts.Exclusivos
             }
         }
 
-        public IEnumerator startDialogue(float delayTime)
+        private IEnumerator startDialogueWithDelay(float delayTime)
         {
             yield return new WaitForSeconds(delayTime);
             triggerDialogue = true;
+        }
+
+        public void StartDialogue(float delay)
+        {
+            StartCoroutine(startDialogueWithDelay(delay));
         }
         
 
