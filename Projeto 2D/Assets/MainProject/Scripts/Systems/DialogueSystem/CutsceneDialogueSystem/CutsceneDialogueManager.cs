@@ -16,6 +16,7 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
     public Text cutsceneDialogueText;
     public GameObject gameObjectCutsceneDialogue;
     public SceneAsset newScene;
+    public Animator animator;
 
     /// <summary>
     /// Cria a Queue sentences, inicia o dialogo e ativa o gameobject do dialogo
@@ -104,8 +105,16 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
         
 
         isDialogue = false;
-        SceneManager.LoadScene(newScene.name); // Vai para a proxima cena
 
+        StartCoroutine(transition(2));
+
+    }
+    
+    private IEnumerator transition(float delayTime)
+    {
+        animator.SetTrigger("FadeOut");// inicia o fade out
+        yield return new WaitForSeconds(delayTime);
+        SceneManager.LoadScene(newScene.name); // Vai para a proxima cena
     }
     }
 }
