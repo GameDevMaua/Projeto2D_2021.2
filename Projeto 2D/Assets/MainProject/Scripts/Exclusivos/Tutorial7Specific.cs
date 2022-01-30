@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using MainProject.Scripts.Exclusivos;
 using UnityEditor.Build;
 using UnityEngine;
 
@@ -24,6 +26,8 @@ public class Tutorial7Specific : MonoBehaviour
            private GameObject playerRef;
            private SpriteRenderer spriteRendererRef;
            public Animator animator;
+           [SerializeField]
+           private InteractDialogueTrigger_Tutorial_7 interactDialogueTriggerTutorial7;
    
            /// <summary>
            /// Chamada Awake da alavanca
@@ -100,10 +104,13 @@ public class Tutorial7Specific : MonoBehaviour
            {
                animator.SetTrigger("FadeOut");// inicia o fade out
                yield return new WaitForSeconds(delayTime);
+               StartCoroutine(interactDialogueTriggerTutorial7.startDialogue(5));
                foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
                foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
                animator.SetTrigger(("FadeIn"));
-               
+
            }
+           
+           
            
        }
