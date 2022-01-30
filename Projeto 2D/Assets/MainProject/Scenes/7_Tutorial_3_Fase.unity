@@ -583,6 +583,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &118601350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4342101676766041614, guid: d936a63d380daa445afaae1281b042bd, type: 3}
+  m_PrefabInstance: {fileID: 264729745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &118601353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118601350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3394a0bf9fb1d3c459799cdf868bffef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsPrimarySelection:
+  - {fileID: 35842288}
+  objectsSecondarySelection:
+  - {fileID: 666300236}
+  interactionKey: 0
+  keyPositionForSprite: 0
+  interactionDistance: 5
+  switchSprites:
+  - {fileID: 1735771879735282622, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -3805741728930504852, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -7829465498495451317, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -7351639223283963889, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: 2964847533325705676, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  - {fileID: -624466149575493283, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}
+  animator: {fileID: 58013549}
 --- !u!1001 &125158291
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11582,6 +11614,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041603, guid: d936a63d380daa445afaae1281b042bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342101676766041613, guid: d936a63d380daa445afaae1281b042bd, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4342101676766041613, guid: d936a63d380daa445afaae1281b042bd, type: 3}

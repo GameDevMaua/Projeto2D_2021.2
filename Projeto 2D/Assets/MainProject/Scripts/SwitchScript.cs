@@ -71,6 +71,7 @@ namespace MainProject.Scripts
         {
                 switchBool = !switchBool;
                 switchSpriteState = !switchSpriteState;
+            
                 foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
                 foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);
         }
