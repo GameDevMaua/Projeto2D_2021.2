@@ -9,7 +9,7 @@ namespace MainProject.Scripts
     {
         private MainProject.Scripts.Player.PlayerStatus playerStatus;
         private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
-        
+
         [Header("Configurações do nível:")]
         public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
 

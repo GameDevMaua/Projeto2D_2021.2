@@ -41,8 +41,8 @@ namespace MainProject.Scripts.Player
         private void Update()
         {
             movementVector = MovementInputVector();
-            MoveCharacter();
-            playerStatusReference.setPlayerDirection(UpdateCurrentDirection());
+                MoveCharacter();
+                playerStatusReference.setPlayerDirection(UpdateCurrentDirection());
         }
 
         /// <summary>
