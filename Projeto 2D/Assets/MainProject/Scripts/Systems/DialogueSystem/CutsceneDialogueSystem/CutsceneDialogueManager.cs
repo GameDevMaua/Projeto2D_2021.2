@@ -1,8 +1,7 @@
-﻿#if UNITY_EDITOR
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -17,7 +16,7 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
     public Image cutsceneCharacterSprite;
     public Text cutsceneDialogueText;
     public GameObject gameObjectCutsceneDialogue;
-    public SceneAsset newScene;
+    public string newScene;
     public Animator animator;
 
     /// <summary>
@@ -116,8 +115,7 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
     {
         animator.SetTrigger("FadeOut");// inicia o fade out
         yield return new WaitForSeconds(delayTime);
-        SceneManager.LoadScene(newScene.name); // Vai para a proxima cena
+        SceneManager.LoadScene(newScene); // Vai para a proxima cena
     }
     }
 }
-#endif

@@ -443,8 +443,8 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 995a2cca9971e1e4086b1956fe7c1d32, type: 2}
     - target: {fileID: 7093138151151964313, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
       propertyPath: newScene
-      value: 
-      objectReference: {fileID: 102900000, guid: 1e525189c22ad0845bfb529e9e71ea48, type: 3}
+      value: 7_Tutorial_3_Fase
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
 --- !u!4 &718538143 stripped

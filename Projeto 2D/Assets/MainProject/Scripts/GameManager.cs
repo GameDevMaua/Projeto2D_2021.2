@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+// #if UNITY_EDITOR
+// using UnityEditor;
+// #endif
 
 namespace MainProject.Scripts
 {
@@ -11,11 +11,13 @@ namespace MainProject.Scripts
     {
         private MainProject.Scripts.Player.PlayerStatus playerStatus;
         private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
+        private MainProject.Scripts.Player.PlayerMovement playerMovement;
 
-        #if UNITY_EDITOR
-        [Header("Configurações do nível:")]
-        public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
-        #endif
+        // #if UNITY_EDITOR
+        // [Header("Configurações do nível:")]
+        // public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
+        // #endif
+        [Header("Configurações do nível:")] public string nextLevel;
 
         // Atributos privados
         private UnityEngine.SceneManagement.Scene actualScene;
@@ -29,6 +31,7 @@ namespace MainProject.Scripts
             actualScene = SceneManager.GetActiveScene();
             playerStatus = GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             playerSoundManager =  GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerSoundManager>();
+            playerMovement =  GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerMovement>();
         }
 
         /// <summary>
@@ -42,7 +45,10 @@ namespace MainProject.Scripts
         /// <summary>
         /// Recarrega a fase atual
         /// </summary>
-        public void ReloadOnDeath() => StartCoroutine(transition2(2));
+        public void ReloadOnDeath()
+        {
+            StartCoroutine(transition2(2));
+        }
 
         /// <summary>
         /// Salva o jogo
@@ -65,17 +71,17 @@ namespace MainProject.Scripts
 
         private IEnumerator transition(float delayTime)
         {
+            playerMovement.canMovePlayer = false;
             playerSoundManager.nextLevelSound();
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
-            #if UNITY_EDITOR
-            SceneManager.LoadScene(nextLevel.name);
-            #endif
+            SceneManager.LoadScene(nextLevel);
         }
         
         
         private IEnumerator transition2(float delayTime)
         {
+            playerMovement.canMovePlayer = false;
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
             SceneManager.LoadScene(actualScene.name);

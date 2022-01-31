@@ -1,8 +1,7 @@
-﻿#if UNITY_EDITOR
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-using UnityEditor;
+//using UnityEditor;
 
 namespace MainProject.Scripts
 {
@@ -14,7 +13,7 @@ namespace MainProject.Scripts
     public GameObject optionMenu;
     public GameObject firstOptionButton;
     private MainProject.Scripts.FirstButton fb;
-    public SceneAsset scene;
+    public string scene;
 
     public Animator animator;
 
@@ -25,7 +24,7 @@ namespace MainProject.Scripts
 /// <summary>
 /// Ativa o trigger para que a tela fique preta em animação
 /// </summary>
-    public void fadeOutTrigger(SceneAsset newScene)
+    public void fadeOutTrigger(string newScene)
     {
         scene = newScene;
         animator.SetTrigger("FadeOut");
@@ -62,4 +61,3 @@ namespace MainProject.Scripts
     }
 }
 }
-#endif

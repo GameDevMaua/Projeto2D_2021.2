@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+// #if UNITY_EDITOR
+// using UnityEditor;
+// #endif
 
 public class DialogueManager : MonoBehaviour
 {
@@ -26,9 +26,10 @@ public class DialogueManager : MonoBehaviour
     public bool isVNDialogue = false;
     public bool isCharacterDialogue = false;
     
-    #if UNITY_EDITOR
-    public SceneAsset newScene;
-    #endif
+    // #if UNITY_EDITOR
+    // public SceneAsset newScene;
+    // #endif
+    public string newScene;
     
     public bool isDialogue = false;
     public KeyCode key = KeyCode.Z;
@@ -158,7 +159,7 @@ public class DialogueManager : MonoBehaviour
         if (isCutscene == true)
         {
             #if UNITY_EDITOR
-            SceneManager.LoadScene(newScene.name);
+            SceneManager.LoadScene(newScene);
             #endif
         }
         else // Se não, volta para o jogo

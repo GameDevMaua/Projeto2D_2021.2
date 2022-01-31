@@ -424,13 +424,13 @@ MonoBehaviour:
       - m_Target: {fileID: 830211961}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: fadeOutTrigger
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 8d01373fceaa9e44babe86733069c8be, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CindyScene
+          m_StringArgument: 0_Tutorial_0_Dialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &124366758
@@ -827,7 +827,7 @@ MonoBehaviour:
   mainMenu: {fileID: 505347576}
   optionMenu: {fileID: 830211960}
   firstOptionButton: {fileID: 1971601559}
-  scene: {fileID: 0}
+  scene: 
   animator: {fileID: 0}
 --- !u!224 &505347578
 RectTransform:
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   mainMenu: {fileID: 830211960}
   optionMenu: {fileID: 505347576}
   firstOptionButton: {fileID: 873766695}
-  scene: {fileID: 0}
+  scene: 
   animator: {fileID: 1029276882}
 --- !u!224 &830211962
 RectTransform:
@@ -1664,7 +1664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 830211961}
-  animator: {fileID: 1029276882}
+  gameManager: {fileID: 0}
 --- !u!95 &1029276882
 Animator:
   serializedVersion: 3
@@ -2286,13 +2286,13 @@ MonoBehaviour:
       - m_Target: {fileID: 830211961}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: fadeOutTrigger
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 799ee837d03f7d544bb164ad0599717d, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 11_StartMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1370470051
@@ -2879,13 +2879,13 @@ MonoBehaviour:
       - m_Target: {fileID: 830211961}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: fadeOutTrigger
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 4877e34021acf9041b82fa2f7d6e7a40, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 4_Tutorial_2_Dialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1690126453
@@ -3685,7 +3685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
-  animator: {fileID: 2020647541}
+  gameManager: {fileID: 0}
 --- !u!95 &2020647541
 Animator:
   serializedVersion: 3
@@ -3892,13 +3892,13 @@ MonoBehaviour:
       - m_Target: {fileID: 830211961}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: fadeOutTrigger
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 314c05fce0e622f42b82e1209f5dfa9f, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEditor.SceneAsset, UnityEditor.CoreModule
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainScene
+          m_StringArgument: 2_Tutorial_1_Dialogue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2052476629

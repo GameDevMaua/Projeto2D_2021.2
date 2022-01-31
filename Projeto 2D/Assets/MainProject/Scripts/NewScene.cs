@@ -15,9 +15,9 @@ namespace MainProject.Scripts
         public void PlayGame(SceneAsset newScene)
         {
             if(mainMenu != null)
-                SceneManager.LoadScene(mainMenu.scene.name);
+                SceneManager.LoadScene(mainMenu.scene);
             if(gameManager != null)
-                SceneManager.LoadScene(gameManager.nextLevel.name);
+                SceneManager.LoadScene(gameManager.nextLevel);
         }
 
     }

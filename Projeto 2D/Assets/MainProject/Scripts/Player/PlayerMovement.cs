@@ -13,6 +13,7 @@ namespace MainProject.Scripts.Player
         public KeyCode LeftKey;
         public KeyCode RightKey;
         public float Speed;
+        public bool canMovePlayer = true;
 
         // Variáveis privadas
         private MainProject.Enums.Direction lastDirection;
@@ -40,9 +41,17 @@ namespace MainProject.Scripts.Player
 
         private void Update()
         {
-            movementVector = MovementInputVector();
+            if (canMovePlayer)
+            {
+                movementVector = MovementInputVector();
                 MoveCharacter();
                 playerStatusReference.setPlayerDirection(UpdateCurrentDirection());
+            }
+            else
+            {
+                movementVector = Vector2.zero;
+                MoveCharacter();
+            }
         }
 
         /// <summary>
