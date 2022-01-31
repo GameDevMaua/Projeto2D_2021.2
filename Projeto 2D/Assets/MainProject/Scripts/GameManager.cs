@@ -1,7 +1,9 @@
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace MainProject.Scripts
 {
@@ -10,8 +12,10 @@ namespace MainProject.Scripts
         private MainProject.Scripts.Player.PlayerStatus playerStatus;
         private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
 
+        #if UNITY_EDITOR
         [Header("Configurações do nível:")]
         public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
+        #endif
 
         // Atributos privados
         private UnityEngine.SceneManagement.Scene actualScene;
@@ -64,8 +68,11 @@ namespace MainProject.Scripts
             playerSoundManager.nextLevelSound();
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
+            #if UNITY_EDITOR
             SceneManager.LoadScene(nextLevel.name);
+            #endif
         }
+        
         
         private IEnumerator transition2(float delayTime)
         {

@@ -1,4 +1,3 @@
-using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -61,6 +60,7 @@ public class BindKey : MonoBehaviour
     
 
     // Update is called once per frame
+    
     private void Update( )
     {
         // Toda vez que aperta em uma tecla, ele atribui a key dentro de key[i]
@@ -100,14 +100,13 @@ public class BindKey : MonoBehaviour
                     DownText.text = prefabPlayerMovement.DownKey.ToString();
                     playerMovement.ChangeDownKey(prefabPlayerMovement.DownKey);
                 }
-                
+                #if UNITY_EDITOR
                 // Muda o prefab inteiro e todas as instancias
                 PrefabUtility.RecordPrefabInstancePropertyModifications(prefab);
                 i++;
+                #endif
             }
             
         }
     }
 }
-
-

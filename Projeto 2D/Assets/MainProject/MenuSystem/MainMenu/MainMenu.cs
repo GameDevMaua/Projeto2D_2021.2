@@ -1,7 +1,9 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+
+using UnityEditor;
 
 namespace MainProject.MenuSystem.MainMenu
 {
@@ -56,3 +58,4 @@ namespace MainProject.MenuSystem.MainMenu
         }
     }
 }
+#endif

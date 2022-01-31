@@ -1,10 +1,12 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+using UnityEditor;
 
 /// <summary>
 /// Quando a cena só tem diálogo e sem jogatina
@@ -112,3 +114,4 @@ public class CutsceneDialogueManager : AbstractDialogueManager
 
     }
 }
+#endif

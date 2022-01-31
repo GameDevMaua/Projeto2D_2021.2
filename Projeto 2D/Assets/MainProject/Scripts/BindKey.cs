@@ -1,5 +1,6 @@
-﻿using System;
+﻿#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -102,10 +103,11 @@ namespace MainProject.Scripts
                     DownText.text = prefabPlayerMovement.DownKey.ToString();
                     playerMovement.ChangeDownKey(prefabPlayerMovement.DownKey);
                 }
-                
+                #if UNITY_EDITOR
                 // Muda o prefab inteiro e todas as instancias
                 PrefabUtility.RecordPrefabInstancePropertyModifications(prefab);
                 i++;
+                #endif
             }
             
         }

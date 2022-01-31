@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,8 +25,11 @@ public class DialogueManager : MonoBehaviour
     public bool isCutscene = false;
     public bool isVNDialogue = false;
     public bool isCharacterDialogue = false;
-
+    
+    #if UNITY_EDITOR
     public SceneAsset newScene;
+    #endif
+    
     public bool isDialogue = false;
     public KeyCode key = KeyCode.Z;
 
@@ -151,7 +157,9 @@ public class DialogueManager : MonoBehaviour
         // Se for Cutscene, carrega uma nova cena após o termino do diálogo
         if (isCutscene == true)
         {
+            #if UNITY_EDITOR
             SceneManager.LoadScene(newScene.name);
+            #endif
         }
         else // Se não, volta para o jogo
         {

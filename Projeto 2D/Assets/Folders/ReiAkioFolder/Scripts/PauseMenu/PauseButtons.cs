@@ -1,7 +1,9 @@
-using UnityEditor;
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+
+using UnityEditor;
 
 public class PauseButtons : MonoBehaviour
 {
@@ -33,4 +35,4 @@ public class PauseButtons : MonoBehaviour
     }
     
 }
-
+#endif

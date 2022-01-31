@@ -1,6 +1,8 @@
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,7 +11,9 @@ public class MainMenu : MonoBehaviour
     public GameObject optionMenu;
     public GameObject firstOptionButton;
     private FirstButton fb;
+    #if UNITY_EDITOR
     public SceneAsset scene;
+    #endif
 
     public Animator animator;
 
@@ -20,11 +24,13 @@ public class MainMenu : MonoBehaviour
 /// <summary>
 /// Ativa o trigger para que a tela fique preta em animação
 /// </summary>
+    #if UNITY_EDITOR
     public void fadeOutTrigger(SceneAsset newScene)
     {
         scene = newScene;
         animator.SetTrigger("FadeOut");
     }
+    #endif
 
 
     /// <summary>

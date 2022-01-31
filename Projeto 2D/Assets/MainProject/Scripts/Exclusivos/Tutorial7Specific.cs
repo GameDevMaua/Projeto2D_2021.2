@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using MainProject.Scripts.Exclusivos;
-using UnityEditor.Build;
 using UnityEngine;
 
 public class Tutorial7Specific : MonoBehaviour

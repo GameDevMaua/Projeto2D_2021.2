@@ -1,6 +1,8 @@
-using UnityEditor;
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -41,3 +43,4 @@ public class GameManager : MonoBehaviour
         if ( GameObject.FindWithTag("Player").GetComponent<PlayerStatus>().isPlayerDead() ) ReloadOnDeath();
     }
 }
+#endif

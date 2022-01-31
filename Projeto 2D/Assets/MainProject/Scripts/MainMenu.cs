@@ -1,6 +1,8 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
 using UnityEngine;
 using UnityEngine.EventSystems;
+
+using UnityEditor;
 
 namespace MainProject.Scripts
 {
@@ -60,3 +62,4 @@ namespace MainProject.Scripts
     }
 }
 }
+#endif
