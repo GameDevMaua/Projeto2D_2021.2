@@ -273,6 +273,7 @@ MonoBehaviour:
   LeftKey: 0
   RightKey: 0
   Speed: 0
+  canMovePlayer: 1
 --- !u!114 &6386678159611983092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +544,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6386678159611983094}
     m_Modifications:
+    - target: {fileID: 6171819553354381516, guid: 2bc9344681f2b43498161ad979f1c6ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171819553354381516, guid: 2bc9344681f2b43498161ad979f1c6ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171819553354381516, guid: 2bc9344681f2b43498161ad979f1c6ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 11_StartMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171819553354381516, guid: 2bc9344681f2b43498161ad979f1c6ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6171819553502523658, guid: 2bc9344681f2b43498161ad979f1c6ec, type: 3}
       propertyPath: m_Name
       value: PauseMenu

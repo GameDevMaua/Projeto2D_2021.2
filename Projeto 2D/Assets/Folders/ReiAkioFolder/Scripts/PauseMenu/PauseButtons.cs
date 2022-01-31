@@ -1,9 +1,8 @@
-#if UNITY_EDITOR
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-using UnityEditor;
+//using UnityEditor;
 
 public class PauseButtons : MonoBehaviour
 {
@@ -28,11 +27,10 @@ public class PauseButtons : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(firstChangeKeyButton);
     }
  
-    public void ReturnToMainMenu(SceneAsset newScene)
+    public void ReturnToMainMenu(string newScene)
     {
-        SceneManager.LoadScene(newScene.name);
+        SceneManager.LoadScene(newScene);
         Time.timeScale = 1;
     }
     
 }
-#endif
