@@ -67,13 +67,13 @@ EditorBuildSettings:
     guid: b52f2bda6aa1d634d921bf73cbc94085
   - enabled: 1
     path: Assets/MainProject/Scenes/7_Tutorial_3_Fase.unity
-    guid: 1e525189c22ad0845bfb529e9e71ea48
-  - enabled: 1
-    path: Assets/MainProject/Scenes/9_Fase_1.unity
-    guid: 9ab04cf6c98fd90438dd5893f1d1adde
+    guid: 2f250a55f5d68c940bb9772cbc9b8214
   - enabled: 1
     path: Assets/MainProject/Scenes/8_Fase_2.unity
     guid: 85bf746a18a9eb9478f5eee0f261680b
+  - enabled: 1
+    path: Assets/MainProject/Scenes/9_Fase_1.unity
+    guid: 9ab04cf6c98fd90438dd5893f1d1adde
   - enabled: 1
     path: Assets/MainProject/Scenes/10_Fim_De_Jogo.unity
     guid: f1536f5ac1303d34085f3a3d7501e44c
