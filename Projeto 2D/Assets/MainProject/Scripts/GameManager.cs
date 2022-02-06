@@ -27,8 +27,9 @@ namespace MainProject.Scripts
         // Inicializa valores padrões e executa métodos básicos
         private void Awake()
         {
-            SaveGame();
             actualScene = SceneManager.GetActiveScene();
+            SaveGame();
+            
             playerStatus = GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             playerSoundManager =  GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerSoundManager>();
             playerMovement =  GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerMovement>();
