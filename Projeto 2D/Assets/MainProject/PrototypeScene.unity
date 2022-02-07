@@ -8427,6 +8427,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5732181412792354764, guid: e2ca4d1ef2e49d84986852865a67ccde, type: 3}
+      propertyPath: animation
+      value: HydroTrapAnimation
+      objectReference: {fileID: 0}
     - target: {fileID: 5732181412792354767, guid: e2ca4d1ef2e49d84986852865a67ccde, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8441,11 +8445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5732181412792354767, guid: e2ca4d1ef2e49d84986852865a67ccde, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.4
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 5732181412792354767, guid: e2ca4d1ef2e49d84986852865a67ccde, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.11
+      value: -2.063
       objectReference: {fileID: 0}
     - target: {fileID: 5732181412792354767, guid: e2ca4d1ef2e49d84986852865a67ccde, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8531,11 +8535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1036854762318255227, guid: 09f0e8fb5fa589447af9a6517c18c6db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.64
+      value: 6.84
       objectReference: {fileID: 0}
     - target: {fileID: 1036854762318255227, guid: 09f0e8fb5fa589447af9a6517c18c6db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.11
+      value: -1.47
       objectReference: {fileID: 0}
     - target: {fileID: 1036854762318255227, guid: 09f0e8fb5fa589447af9a6517c18c6db, type: 3}
       propertyPath: m_LocalPosition.z

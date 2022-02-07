@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: df0b384f27d700a4bb1b043ac191f67c
+guid: f5388596a5f016145b381ddab6e9b868
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5405666286504860945
-    second: Eletric-trap-sheet_0
+      213: -5562096331901565360
+    second: TrapDeAgua-sheet_0
   - first:
-      213: -831832084291449156
-    second: Eletric-trap-sheet_1
+      213: 7748251911352492350
+    second: TrapDeAgua-sheet_1
   - first:
-      213: 5771400078293080799
-    second: Eletric-trap-sheet_2
+      213: -4493171004865248719
+    second: TrapDeAgua-sheet_2
   - first:
-      213: 1467371777175818444
-    second: Eletric-trap-sheet_3
+      213: -6717587668465068498
+    second: TrapDeAgua-sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 310
+  spritePixelsToUnits: 425
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Eletric-trap-sheet_0
+      name: TrapDeAgua-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,20 +111,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11d5d6dd8d8c40b40800000000000000
-      internalID: 5405666286504860945
+      spriteID: 056018afad67fc2b0800000000000000
+      internalID: -5562096331901565360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eletric-trap-sheet_1
+      name: TrapDeAgua-sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -132,20 +132,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe0907602db474f0800000000000000
-      internalID: -831832084291449156
+      spriteID: e312866bf02578b60800000000000000
+      internalID: 7748251911352492350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eletric-trap-sheet_2
+      name: TrapDeAgua-sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -153,20 +153,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda12530bc1281050800000000000000
-      internalID: 5771400078293080799
+      spriteID: 1320ce3e6cc05a1c0800000000000000
+      internalID: -4493171004865248719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Eletric-trap-sheet_3
+      name: TrapDeAgua-sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -174,14 +174,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc09ffb5bd62d5410800000000000000
-      internalID: 1467371777175818444
+      spriteID: e2658995b9556c2a0800000000000000
+      internalID: -6717587668465068498
       vertices: []
       indices: 
       edges: []
