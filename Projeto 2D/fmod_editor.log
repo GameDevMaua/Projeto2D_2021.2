@@ -2,13 +2,13 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20111 (118066), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=96000, nAvgBytesPerSec=768000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 8192 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
+[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.16ms, DSP buffer: 1024 * 4
+[LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000277AE9FF838 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001959C915758 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,3 +19,73 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          :  (00000195D1995BE8)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(2) (000001959C8D2BB8)
+[LOG] SoundI::release                          :  (00000195D1994098)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(3) (000001959C8D4418)
+[LOG] SoundI::release                          :  (00000195D1990FB8)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4(4) (000001959C8D4C38)
+[LOG] SoundI::release                          :  (00000195D198ED38)
+[LOG] SoundI::release                          :     SFX_Water_LakeLap4 (000001959C8D4278)
+[LOG] SoundI::release                          :  (00000195D1994C18)
+[LOG] SoundI::release                          :     sfx_orb_water (000001959C8D4A98)
+[LOG] SoundI::release                          :  (00000195D1994EF8)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(2) (000001959C8D2058)
+[LOG] SoundI::release                          :  (00000195D1995068)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(3) (000001959C8D45B8)
+[LOG] SoundI::release                          :  (00000195D1991128)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(4) (000001959C8D79B8)
+[LOG] SoundI::release                          :  (00000195D1994378)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304(5) (000001959C8D1D18)
+[LOG] SoundI::release                          :  (00000195D19926B8)
+[LOG] SoundI::release                          :     SFX_Objects, Household, Cleaning, Cloth, Wet, Wring, Squeeze, Squelch, Rinse 01 SND21304 (000001959C8D5FB8)
+[LOG] SoundI::release                          :  (00000195D1991CA8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1(2) (000001959C8D3F38)
+[LOG] SoundI::release                          :  (00000195D1995908)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Sliding, Heavy SND42688 1 (000001959C8D48F8)
+[LOG] SoundI::release                          :  (00000195D1994658)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(2) (000001959C8D7338)
+[LOG] SoundI::release                          :  (00000195D1993DB8)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(3) (000001959C8D3BF8)
+[LOG] SoundI::release                          :  (00000195D1994938)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687(4) (000001959C8D52B8)
+[LOG] SoundI::release                          :  (00000195D198EA58)
+[LOG] SoundI::release                          :     SFX_Rocks, Movement, Slow, Crunchy SND42687 (000001959C8D3718)
+[LOG] SoundI::release                          :  (00000195D198E778)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(10) (000001959C8D4F78)
+[LOG] SoundI::release                          :  (00000195D1991578)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(11) (000001959C8D67D8)
+[LOG] SoundI::release                          :  (00000195D1991298)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(12) (000001959C8D3A58)
+[LOG] SoundI::release                          :  (00000195D198E608)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(13) (000001959C8D7B58)
+[LOG] SoundI::release                          :  (00000195D198E8E8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(14) (000001959C8D5118)
+[LOG] SoundI::release                          :  (00000195D1993F28)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(2) (000001959C8D6FF8)
+[LOG] SoundI::release                          :  (00000195D198EBC8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(3) (000001959C8D6638)
+[LOG] SoundI::release                          :  (00000195D19947C8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(4) (000001959C8D21F8)
+[LOG] SoundI::release                          :  (00000195D1993C48)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(5) (000001959C8D2538)
+[LOG] SoundI::release                          :  (00000195D1994D88)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(6) (000001959C8D6158)
+[LOG] SoundI::release                          :  (00000195D19944E8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(7) (000001959C8D4758)
+[LOG] SoundI::release                          :  (00000195D198F018)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(8) (000001959C8D1EB8)
+[LOG] SoundI::release                          :  (00000195D1994AA8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(9) (000001959C8D4DD8)
+[LOG] SoundI::release                          :  (00000195D1990438)
+[LOG] SoundI::release                          :     sfx_orb_fire(2) (000001959C8D7198)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 // #if UNITY_EDITOR
 // using UnityEditor;
 // #endif
@@ -12,9 +13,8 @@ namespace MainProject.Scripts
         private MainProject.Scripts.Player.PlayerStatus playerStatus;
         private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
         private MainProject.Scripts.Player.PlayerMovement playerMovement;
-
-        [SerializeField] private bool hasPlayer;
-
+        private bool hasPlayer;
+        
         // #if UNITY_EDITOR
         // [Header("Configurações do nível:")]
         // public SceneAsset nextLevel; // O próximo nível pode ser definido pelo Inspector, mas deverá estar presente no build settings > Scenes in build
@@ -31,8 +31,13 @@ namespace MainProject.Scripts
         {
             actualScene = SceneManager.GetActiveScene();
             SaveGame();
+            if (GameObject.FindWithTag("Player") == null)
+            {
+                hasPlayer = false;
+                return;
+            }
 
-            if (!hasPlayer) return;
+            hasPlayer = true;
             playerStatus = GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             playerSoundManager = GameObject.FindWithTag("Player")
                 .GetComponent<MainProject.Scripts.Player.PlayerSoundManager>();
@@ -68,10 +73,12 @@ namespace MainProject.Scripts
         // Temporário para testes
         private void Update()
         {
-            if (!hasPlayer) return;
-            if (playerStatus.isPlayerDead())
-                playerSoundManager.deathSoundReload();
-            ReloadOnDeath();
+            if (hasPlayer)
+                if (playerStatus.isPlayerDead())
+                {
+                    playerSoundManager.deathSoundReload();
+                    ReloadOnDeath();
+                }
         }
 
         private IEnumerator transition(float delayTime)
