@@ -678,6 +678,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 242649326}
     - target: {fileID: 6967876848961955893, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
+      propertyPath: hasPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967876848961955893, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
       propertyPath: nextLevel
       value: 6_Tutorial_3_Dialogue
       objectReference: {fileID: 0}

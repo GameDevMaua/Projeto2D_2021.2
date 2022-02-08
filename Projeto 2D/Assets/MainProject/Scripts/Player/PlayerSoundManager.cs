@@ -87,6 +87,11 @@ namespace MainProject.Scripts.Player
             // Tocar o som da próxima fase depois de um delay e esperar ele terminar
             sfxEvent.stop(STOP_MODE.IMMEDIATE);
         }
+
+        public void stopSounds()
+        {
+            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+        }
     }
 }
 

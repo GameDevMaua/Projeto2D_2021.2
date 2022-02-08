@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using MainProject.Scripts.Player;
 //using UnityEditor;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
