@@ -33,7 +33,7 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
 
     public void Update()
     {
-        if (Input.GetKeyDown(key)) // Caso aperte o botao, vai para a proxima sentenca
+        if (Input.GetKeyDown(key) || Input.GetKeyDown(KeyCode.Return)) // Caso aperte o botao, vai para a proxima sentenca
         {
             DisplayNextSentence(); 
                 

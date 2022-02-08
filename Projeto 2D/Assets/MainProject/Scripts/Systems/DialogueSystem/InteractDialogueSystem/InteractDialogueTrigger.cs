@@ -21,7 +21,7 @@ namespace MainProject.Scripts.DialogueSystem.InteractDialogueSystem
         /// </summary>
         public void Update()
         {
-            if (Input.GetKeyDown(interactDialogueManager.key) && playerInRange) // se estiver dentro do playerInRange e for um dialogo normal
+            if (Input.GetKeyDown(interactDialogueManager.key) && playerInRange || Input.GetKeyDown(KeyCode.Return) && playerInRange) // se estiver dentro do playerInRange e for um dialogo normal
             {
                 Time.timeScale = 0f;
                 if(interactDialogueManager.isDialogue == false) // Inicializa o diálogo, caso esse não esteja inicializado

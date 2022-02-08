@@ -50,7 +50,7 @@ namespace MainProject.Scripts.Exclusivos
 
             else
             {
-                if (Input.GetKeyDown(interactDialogueManager.key) && playerInRange && hasInteracted) // se estiver dentro do playerInRange e for um dialogo normal
+                if (Input.GetKeyDown(interactDialogueManager.key) && playerInRange && hasInteracted || Input.GetKeyDown(KeyCode.Return) && playerInRange && hasInteracted) // se estiver dentro do playerInRange e for um dialogo normal
                 {
                     Time.timeScale = 0f;
                     if (interactDialogueManager.isDialogue == false && !endedDialogue)
