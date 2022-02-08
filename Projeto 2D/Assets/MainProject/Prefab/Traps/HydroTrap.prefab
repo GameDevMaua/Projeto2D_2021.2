@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c951b294d14288a6a8e226405eaa02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: HydroTrapAnimation
+  animation: HydroTrapAnimationMain
 --- !u!61 &5732181412792354763
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3702511951108366512, guid: ffacf5930b971024aa1aa6e82095ef8a, type: 3}
+  m_Sprite: {fileID: -5562096331901565360, guid: f5388596a5f016145b381ddab6e9b868, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
