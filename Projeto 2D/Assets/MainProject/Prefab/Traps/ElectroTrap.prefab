@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c951b294d14288a6a8e226405eaa02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: ElectroTrapAnimation
+  animation: ElectroTrapAnimationMain
 --- !u!61 &1036854762318255231
 BoxCollider2D:
   m_ObjectHideFlags: 0
