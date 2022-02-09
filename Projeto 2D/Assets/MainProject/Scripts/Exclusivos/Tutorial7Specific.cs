@@ -103,6 +103,7 @@ public class Tutorial7Specific : MonoBehaviour
            private IEnumerator FadeOutLevel7(float delayTime)
            {
                animator.SetTrigger("FadeOut");// inicia o fade out
+               playerRef.GetComponent<MainProject.Scripts.Player.PlayerMovement>().canMovePlayer = false;
                yield return new WaitForSeconds(delayTime);
                interactDialogueTriggerTutorial7.StartDialogue(delayTimeToDialogue);
                foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);

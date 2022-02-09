@@ -13,6 +13,7 @@ namespace MainProject.Scripts.DialogueSystem.InteractDialogueSystem
         public Text dialogueText;
 
         public GameObject gameObjectInteractDialogue;
+        private Player.PlayerMovement playerMovement;
 
         /// <summary>
         /// Cria a Queue sentences e sempre começa sem o canvas do diálogo e do characterdialogue (caso não seja uma cutscene)
@@ -21,6 +22,7 @@ namespace MainProject.Scripts.DialogueSystem.InteractDialogueSystem
         {
             gameObjectInteractDialogue.SetActive(false);
             dInfos = new Queue<MainProject.Scripts.DialogueSystem.Dialogue.Info>();
+            playerMovement = GameObject.FindWithTag("Player").GetComponent<Player.PlayerMovement>();
         }
 
         /// <summary>
@@ -30,6 +32,8 @@ namespace MainProject.Scripts.DialogueSystem.InteractDialogueSystem
         public override void StartDialogue(MainProject.Scripts.DialogueSystem.Dialogue dialogue)
         {
             isDialogue = true; /// O Sistema saber que o diálogo foi inicializado
+
+            playerMovement.canMovePlayer = false;
             
             gameObjectInteractDialogue.SetActive(true); /// Ativa o canvas do diálogo
 
@@ -89,7 +93,7 @@ namespace MainProject.Scripts.DialogueSystem.InteractDialogueSystem
             gameObjectInteractDialogue.SetActive(false); // O canvas do Dialogo é desativado
             isDialogue = false;
             Time.timeScale = 1f;
-
+            playerMovement.canMovePlayer = true;
         }
     }
 }
