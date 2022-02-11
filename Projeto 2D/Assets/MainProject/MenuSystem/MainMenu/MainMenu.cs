@@ -14,9 +14,12 @@ namespace MainProject.MenuSystem.MainMenu
         public GameObject optionMenu;
         public GameObject firstOptionButton;
         private MainProject.MenuSystem.MainMenu.FirstButton fb;
+        private Scripts.GameManager gameManager;
+        
 
         public void Start()
         {
+            gameManager = GameObject.FindWithTag("GameManager").GetComponent<Scripts.GameManager>();
             fb = mainMenu.AddComponent<MainProject.MenuSystem.MainMenu.FirstButton>();
         }
 
@@ -25,7 +28,7 @@ namespace MainProject.MenuSystem.MainMenu
         /// </summary>
         public void PlayGame(SceneAsset newScene)
         {
-            SceneManager.LoadScene(newScene.name);
+            gameManager.LoadLevel(newScene.name);
         }
 
         /// <summary>

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.EventSystems;
 public class PauseButton : MonoBehaviour
 {
     [SerializeField] private GameObject setSelectedButton;
+
     private void selectedButton()
     {
         if (GameObject.ReferenceEquals(EventSystem.current.currentSelectedGameObject, null))

@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public GameObject optionMenu;
     public GameObject firstOptionButton;
     private FirstButton fb;
+    public MainProject.Scripts.GameManager gameManager;
+    
     //#if UNITY_EDITOR
     //public SceneAsset scene;
     //#endif
@@ -21,6 +23,9 @@ public class MainMenu : MonoBehaviour
     public void Start()
     {
         fb = mainMenu.AddComponent<FirstButton>();
+        var gameManagerObject = GameObject.FindWithTag("GameManager");
+        if (gameManagerObject != null)
+            gameManager = gameManagerObject.GetComponent<MainProject.Scripts.GameManager>();
     }
     /// <summary>
     /// Ativa o trigger para que a tela fique preta em animação

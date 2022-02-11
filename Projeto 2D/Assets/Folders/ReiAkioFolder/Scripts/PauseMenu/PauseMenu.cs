@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] public GameObject pauseMenu;
     public bool isPaused;
     [SerializeField] public KeyCode openPMButton;
+    public MainProject.Scripts.GameManager gameManager;
     
     /// <summary>
     /// Quando chamado, ira ativar o painel do menuPause, e pausar o estado do jogo
@@ -33,6 +34,7 @@ public class PauseMenu : MonoBehaviour
     public void Start()
     {
         isPaused = false;
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<MainProject.Scripts.GameManager>();
     }
     
     /// <summary>

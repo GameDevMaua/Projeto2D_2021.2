@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class NewScene : MonoBehaviour
 {
     public MainMenu mainMenu;
-    public MainProject.Scripts.GameManager gameManager;
+    
     // #if UNITY_EDITOR
     // public void PlayGame(SceneAsset newScene)
     // {
@@ -20,10 +20,15 @@ public class NewScene : MonoBehaviour
     // #endif
     public void PlayGame(string newScene)
     {
-        if(mainMenu != null)
-            SceneManager.LoadScene(mainMenu.scene);
-        if(gameManager != null)
-            SceneManager.LoadScene(gameManager.nextLevel);
+        var called = false;
+        if (mainMenu != null && called == false)
+        {
+            mainMenu.gameManager.LoadLevel(mainMenu.scene);
+            called = true;
+        }
+
+        if (mainMenu.gameManager != null && called == false)
+            mainMenu.gameManager.LoadLevel(mainMenu.gameManager.nextLevel);
     }
 
 }

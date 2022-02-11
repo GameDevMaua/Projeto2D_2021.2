@@ -174,6 +174,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6967876848961955893, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1560552149}
+    - target: {fileID: 6967876848961955893, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
+      propertyPath: nextLevel
+      value: 5_Tutorial_2_Fase
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967876848961955893, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
+      propertyPath: playerSoundManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6967876848961955898, guid: 1d7b4461e3f7dc143958e193d524f40a, type: 3}
       propertyPath: m_Name
       value: GameManager

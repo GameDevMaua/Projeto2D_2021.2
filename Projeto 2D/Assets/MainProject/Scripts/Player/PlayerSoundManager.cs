@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using FMOD;
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
@@ -14,6 +15,7 @@ namespace MainProject.Scripts.Player
         public GameObject player;
         private MainProject.Scripts.Player.PlayerStatus playerStatusRef;
         private FMOD.Studio.EventInstance sfxEvent;
+        private FMOD.Studio.Bus masterBus;
 
         private bool isPlaying;
         private MainProject.Enums.Element currentElement;
@@ -22,7 +24,7 @@ namespace MainProject.Scripts.Player
         {
             playerStatusRef = player.GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             sfxEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Footsteps/sfx_footstep");
-            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+            masterBus = FMODUnity.RuntimeManager.GetBus("Bus:/");
             isPlaying = false;
 
         }
@@ -79,18 +81,18 @@ namespace MainProject.Scripts.Player
         public void deathSoundReload()
         {
             // Tocar o som de morte e esperar ele terminar
-            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+            masterBus.stopAllEvents(STOP_MODE.IMMEDIATE);
         }
 
         public void nextLevelSound()
         {
             // Tocar o som da próxima fase depois de um delay e esperar ele terminar
-            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+            masterBus.stopAllEvents(STOP_MODE.IMMEDIATE);
         }
 
         public void stopSounds()
         {
-            sfxEvent.stop(STOP_MODE.IMMEDIATE);
+            masterBus.stopAllEvents(STOP_MODE.IMMEDIATE);
         }
     }
 }

@@ -11,7 +11,7 @@ namespace MainProject.Scripts
     public class GameManager : MonoBehaviour
     {
         private MainProject.Scripts.Player.PlayerStatus playerStatus;
-        private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
+        [SerializeField] private MainProject.Scripts.Player.PlayerSoundManager playerSoundManager;
         private MainProject.Scripts.Player.PlayerMovement playerMovement;
         private bool hasPlayer;
         
@@ -50,7 +50,7 @@ namespace MainProject.Scripts
         /// </summary>
         public void LoadNextLevel()
         {
-            StartCoroutine(transition(3));
+            StartCoroutine(nextLevelTransition(3));
         }
 
         /// <summary>
@@ -58,7 +58,12 @@ namespace MainProject.Scripts
         /// </summary>
         public void ReloadOnDeath()
         {
-            StartCoroutine(transition2(2));
+            StartCoroutine(deathTransition(2));
+        }
+
+        public void LoadLevel(string levelName)
+        {
+            loadLevelTransition(levelName);
         }
 
         /// <summary>
@@ -76,12 +81,11 @@ namespace MainProject.Scripts
             if (hasPlayer)
                 if (playerStatus.isPlayerDead())
                 {
-                    playerSoundManager.deathSoundReload();
                     ReloadOnDeath();
                 }
         }
 
-        private IEnumerator transition(float delayTime)
+        private IEnumerator nextLevelTransition(float delayTime)
         {
             playerMovement.canMovePlayer = false;
             playerSoundManager.nextLevelSound();
@@ -91,12 +95,22 @@ namespace MainProject.Scripts
         }
         
         
-        private IEnumerator transition2(float delayTime)
+        private IEnumerator deathTransition(float delayTime)
         {
             playerMovement.canMovePlayer = false;
+            playerSoundManager.deathSoundReload();
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
             SceneManager.LoadScene(actualScene.name);
+        }
+
+        private void loadLevelTransition(string levelName)
+        {
+            if (playerSoundManager != null)
+                playerSoundManager.stopSounds();
+            if (animator != null)
+                animator.SetTrigger("FadeOut");// inicia o fade out
+            SceneManager.LoadScene(levelName);
         }
     }
 }

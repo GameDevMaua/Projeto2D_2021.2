@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseButtons : MonoBehaviour
 {
-    public PauseMenu pM = new PauseMenu();
+    public PauseMenu pM;
     public GameObject pausemenu;
     public GameObject optionButton;
     
@@ -29,7 +29,8 @@ public class PauseButtons : MonoBehaviour
  
     public void ReturnToMainMenu(string newScene)
     {
-        SceneManager.LoadScene(newScene);
+        pM.gameManager.LoadLevel(newScene);
+        //SceneManager.LoadScene(newScene);
         Time.timeScale = 1;
     }
     

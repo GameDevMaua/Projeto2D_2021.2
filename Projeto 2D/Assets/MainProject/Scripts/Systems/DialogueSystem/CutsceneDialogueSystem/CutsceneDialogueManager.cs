@@ -20,12 +20,15 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
     public string newScene;
     public Animator animator;
 
+    private GameManager gameManager;
+
     /// <summary>
     /// Cria a Queue sentences, inicia o dialogo e ativa o gameobject do dialogo
     /// </summary>
     /// 
     private void Awake()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         gameObjectCutsceneDialogue.SetActive(true);
         dInfos = new Queue<MainProject.Scripts.DialogueSystem.Dialogue.Info>();
         StartDialogue(dialogue);
@@ -116,7 +119,7 @@ namespace MainProject.Scripts.DialogueSystem.CutsceneDialogueSystem
     {
         animator.SetTrigger("FadeOut");// inicia o fade out
         yield return new WaitForSeconds(delayTime);
-        SceneManager.LoadScene(newScene); // Vai para a proxima cena
+        gameManager.LoadLevel(newScene); // Vai para a proxima cena
     }
     }
 }
