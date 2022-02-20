@@ -419,6 +419,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8390948929338041555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8381078583477957019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +463,30 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-8349459023666516832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_behavior
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_behavior
+  guid: 4cccd356b9c7924086fe3b2f484f7338
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2785282458420281231}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16495
 --- !u!114 &-8317246588914433145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +685,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7960282455079317596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/sfx_ui_menu_button_confirm
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/sfx_ui_menu_button_confirm
+  guid: ee5c94735990a7448b6e6b7cf6c7313e
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 68
 --- !u!114 &-7920548519453041564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +818,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7883243636190298255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orbcatch_basiclayer
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orbcatch_basiclayer
+  guid: f6ab65f0c3024b468cd76b5bfc4e9781
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1349
 --- !u!114 &-7882540373096720671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,6 +1105,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7513671041973953132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7498789636163331625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,6 +1303,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7301752498663061609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7287466093036004771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,6 +1479,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-7089528856414414775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Doors/sfx_gp_lever
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Doors/sfx_gp_lever
+  guid: 8f9229433a0730478bec37bebc27db27
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1481
 --- !u!114 &-7044470599915774366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,6 +1833,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-6558884274830923762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Footsteps/sfx_gp_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Footsteps/sfx_gp_footsteps
+  guid: f9ebe89f3108f440a5f087bfb3172340
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 312
 --- !u!114 &-6550988512475435721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,6 +2362,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-5665318417240456480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_opening
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_opening
+  guid: ca495cd74e3a2d49a792dbe6e22dc4e3
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &-5640713523278524707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2328,6 +2533,28 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-5534652885523497215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
   ID:
     data1: 0
     data2: 0
@@ -2796,6 +3023,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4862652904346427386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 3913052807
+    data2: 196353425
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-4710729957485070833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3127,6 +3376,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-4174321622964156281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_orb_fire
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_orb_fire
+  guid: 463feddaa8d7ed478bca57a7a1f223fc
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1995
 --- !u!114 &-4104629169391492323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3230,9 +3502,31 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637750266744653792
+  lastModified: 637809401000000000
   FileSizes: []
   Exists: 1
+--- !u!114 &-4034089120278935115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-3987551139408881488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4135,6 +4429,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-2785282458420281231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-2784897647244391388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,6 +4671,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &-2583306404980133610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Doors/sfx_key_pick_up
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Doors/sfx_key_pick_up
+  guid: 00ac25126a270d49ae0e74c6217d61ac
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
 --- !u!114 &-2540890007435175527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5082,6 +5421,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-1595034235735025797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-1592510261284657605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5229,10 +5590,10 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637750266744742645
+  lastModified: 637809401000000000
   FileSizes:
   - Name: 
-    Value: 1530
+    Value: 2142
   Exists: 1
 --- !u!114 &-1428251274825323055
 MonoBehaviour:
@@ -5608,6 +5969,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-939563887625429834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Death/sfx_gp_death_note
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Death/sfx_gp_death_note
+  guid: b6d356888e634f46acd616d9229efb14
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2167
 --- !u!114 &-860311485233760944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6071,6 +6455,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-190149357318169381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_handling_closed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_handling_closed
+  guid: 343c2a14d0b23a4c9521983565339a7a
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 281
 --- !u!114 &-165015632013121084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6197,21 +6604,30 @@ MonoBehaviour:
   - {fileID: -1459556230906246687}
   - {fileID: -4041703710173643855}
   EditorEvents:
-  - {fileID: 363307292941074415}
-  - {fileID: -518435607336847716}
-  - {fileID: -1850504414195871865}
-  - {fileID: 7500575035295994591}
-  - {fileID: -8691186481822903540}
-  - {fileID: -4362267849811559619}
-  - {fileID: -7044470599915774366}
-  - {fileID: 1563900436831721098}
-  - {fileID: 6318770583011870855}
+  - {fileID: -2583306404980133610}
+  - {fileID: 6272129313403119696}
+  - {fileID: 4568804504434438893}
+  - {fileID: -190149357318169381}
+  - {fileID: -4174321622964156281}
+  - {fileID: -8349459023666516832}
+  - {fileID: 9057851512374379573}
+  - {fileID: 3163450144481249982}
+  - {fileID: 1177773587256305801}
+  - {fileID: -7089528856414414775}
+  - {fileID: 4236053255308505281}
+  - {fileID: 8816544863467793696}
+  - {fileID: -939563887625429834}
+  - {fileID: -5665318417240456480}
+  - {fileID: 3485067368178086672}
+  - {fileID: -7960282455079317596}
+  - {fileID: -7883243636190298255}
+  - {fileID: -6558884274830923762}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4041703710173643855}
   StringsBanks:
   - {fileID: -1459556230906246687}
-  stringsBankWriteTime: 637750266744742645
+  stringsBankWriteTime: 637809401000000000
   cacheVersion: 8
 --- !u!114 &39085457722773018
 MonoBehaviour:
@@ -7248,6 +7664,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &1177773587256305801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_lowtone_layer
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_lowtone_layer
+  guid: 6aae49609e0c3841bf326c04325201d7
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 7500
 --- !u!114 &1191302862132504807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8569,6 +9008,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3163450144481249982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_orb_earth
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_orb_earth
+  guid: 69b91cbc0b6c164a887318f3b19b5cff
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1494
 --- !u!114 &3164437363062421012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8811,6 +9273,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &3485067368178086672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/sfx_ui_menu_transition
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/sfx_ui_menu_transition
+  guid: d4643ea2b4d56640b9bbe2c948792b18
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 429
 --- !u!114 &3527498937234872895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8849,6 +9334,28 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &3553055168036138890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
   ID:
     data1: 0
     data2: 0
@@ -9361,6 +9868,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4236053255308505281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/sfx_ui_menu_button_back
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/sfx_ui_menu_button_back
+  guid: 9b396e5c9a460c419e0a06c3590ae481
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 54
 --- !u!114 &4273636749937846409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9603,6 +10133,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4556366946509852763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &4562353155456639356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9647,6 +10199,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &4568804504434438893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_orb_electric
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_orb_electric
+  guid: 2e4984b782432f46b3bc793768862554
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1396
 --- !u!114 &4597531416172133895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10989,6 +11564,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6186562504090496653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &6188820342629357742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11011,6 +11608,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &6272129313403119696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Traps/VO
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Traps/VO
+  guid: 21e9ebbb1a88ad4693f64164a4b5409a
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 443
 --- !u!114 &6308752786248949974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11095,6 +11715,28 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &6449836988021693625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
   ID:
     data1: 0
     data2: 0
@@ -11315,6 +11957,28 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &6764984328155890267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
   ID:
     data1: 0
     data2: 0
@@ -12730,6 +13394,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &8816544863467793696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/GAMEPLAY/Orbs/sfx_orb_water
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/GAMEPLAY/Orbs/sfx_orb_water
+  guid: 9e6e46777058d040822cccc4d5fbc8c8
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1349
 --- !u!114 &8850487597079239707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12862,6 +13549,29 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &9057851512374379573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/sfx_ui_menu_button_hover
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/sfx_ui_menu_button_hover
+  guid: 5f1553695a9cc34d9bbcf450f9f02c36
+  Banks:
+  - {fileID: -4041703710173643855}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
 --- !u!114 &9097263015031723192
 MonoBehaviour:
   m_ObjectHideFlags: 0

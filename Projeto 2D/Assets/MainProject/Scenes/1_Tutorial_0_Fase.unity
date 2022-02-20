@@ -707,6 +707,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &441609209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6386678159611983102, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
+  m_PrefabInstance: {fileID: 2004854525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &441609217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441609209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: -1
+  OverrideMaxDistance: -1
 --- !u!1 &549794958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1149,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6386678159611983095, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
   m_PrefabInstance: {fileID: 2004854525}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 441609209}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f5fcb050ac44b9ba48cf8ed87984fee, type: 3}
@@ -5380,7 +5408,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8772173431751474044, guid: 37c0feaa9764d5742974b96b9522b3c7, type: 3}
   m_PrefabInstance: {fileID: 2004854525}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 441609209}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cff4094592dc72d45a85af8b7d225b05, type: 3}
