@@ -29177,6 +29177,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 7e696798b42b22c478129b9d405341c0, type: 2}
+    - target: {fileID: 8413404100808078506, guid: 8c026e809454d5944aa004b895856c1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8413404101045485470, guid: 8c026e809454d5944aa004b895856c1d, type: 3}
       propertyPath: m_RootOrder
       value: 1
