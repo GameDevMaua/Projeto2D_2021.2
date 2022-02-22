@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Folders.HaFolder;
 using UnityEngine;
+using Random = System.Random;
 
 namespace MainProject.Scripts.Trap
 {
     public class TrapScript : MonoBehaviour
     {
-        private FMOD.Studio.EventInstance sfxEvent;
+        public string sfxPath;
+        private FMOD.Studio.EventInstance sfxEventSuccess;
 
         /// <summary>
         /// Caso um GameObject que tenha o PlayerStatus passar pela trap, verifica-se se o elemento do PlayerStatus é o 
@@ -25,25 +27,8 @@ namespace MainProject.Scripts.Trap
                 playerStatus.setPlayerDead();
             }
             else{
-                switch (objectElement)
-                {
-                    case Enums.Element.GEO:
-                        sfxEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Traps/Positive/sfx_trap_positive_earth");
-                        sfxEvent.start();
-                        break;
-                    case Enums.Element.PYRO:
-                        sfxEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Traps/Positive/sfx_trap_positive_fire");
-                        sfxEvent.start();
-                        break;
-                    case Enums.Element.ELECTRO:
-                        sfxEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Traps/Positive/sfx_trap_positive_electric");
-                        sfxEvent.start();
-                        break;
-                    case Enums.Element.HYDRO:
-                        sfxEvent = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Traps/Positive/sfx_trap_positive_water");
-                        sfxEvent.start();
-                        break;
-                }
+                sfxEventSuccess = FMODUnity.RuntimeManager.CreateInstance(sfxPath);
+                sfxEventSuccess.start();
             }
         }
     }

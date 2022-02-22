@@ -5,6 +5,7 @@ using FMOD;
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
+using UnityEngine.UI;
 using Debug = UnityEngine.Debug;
 using STOP_MODE = FMOD.Studio.STOP_MODE;
 
@@ -15,6 +16,7 @@ namespace MainProject.Scripts.Player
         public GameObject player;
         private MainProject.Scripts.Player.PlayerStatus playerStatusRef;
         private FMOD.Studio.EventInstance sfxEvent;
+        private FMOD.Studio.EventInstance sfxEventDeath;
         private FMOD.Studio.Bus masterBus;
 
         public string footStepsPath;
@@ -25,6 +27,7 @@ namespace MainProject.Scripts.Player
         {
             playerStatusRef = player.GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             if (footStepsPath.Equals("")) footStepsPath = "event:/SFX/GAMEPLAY/Footsteps/sfx_gp_footsteps";
+            sfxEventDeath = RuntimeManager.CreateInstance("event:/SFX/GAMEPLAY/Death/sfx_gp_death_note");
             sfxEvent = FMODUnity.RuntimeManager.CreateInstance(footStepsPath);
             masterBus = FMODUnity.RuntimeManager.GetBus("Bus:/");
             isPlaying = false;
