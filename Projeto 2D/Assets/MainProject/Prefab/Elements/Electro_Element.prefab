@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 4215849561433316582}
   - component: {fileID: 4215849561433316583}
   - component: {fileID: 4215849561433316580}
-  - component: {fileID: -4996158769354028154}
   m_Layer: 0
   m_Name: Electro_Element
   m_TagString: Untagged
@@ -162,6 +161,7 @@ MonoBehaviour:
   higherLayer: 20
   lowerLayer: 1
   sfxPath: event:/SFX/GAMEPLAY/Orbs/sfx_orb_electric
+  sfxConstantPath: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_lowtone_layer
 --- !u!114 &4215849561433316580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,26 +176,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectElement: 3
   hasActivity: 1
---- !u!114 &-4996158769354028154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4215849561433316578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFX/GAMEPLAY/Orbs/sfx_gp_orb_lowtone_layer
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 10
