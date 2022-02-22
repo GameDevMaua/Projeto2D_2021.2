@@ -13,6 +13,7 @@ namespace MainProject.Scripts
         
         private bool isOpened;
         private GameObject playerRef;
+        public int i;
         private MainProject.Scripts.GameManager gameManager;
         
         private void Awake()
@@ -36,7 +37,10 @@ namespace MainProject.Scripts
             isOpened = true;
             // toca o som da porta abrindo
             gameObject.SetActive(false);
-            if (nextLevelOnOpen) gameManager.LoadNextLevel();
+            if (nextLevelOnOpen)
+            {
+                gameManager.LoadNextLevel();
+            }
         }
     }
 }

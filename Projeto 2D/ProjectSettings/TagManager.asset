@@ -14,6 +14,7 @@ TagManager:
   - MapElemental
   - Clones
   - GameManager
+  - level
   layers:
   - Default
   - TransparentFX

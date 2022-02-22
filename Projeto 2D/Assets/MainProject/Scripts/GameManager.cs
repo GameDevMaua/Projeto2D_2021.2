@@ -30,7 +30,6 @@ namespace MainProject.Scripts
         private void Awake()
         {
             actualScene = SceneManager.GetActiveScene();
-            SaveGame();
             if (GameObject.FindWithTag("Player") == null)
             {
                 hasPlayer = false;
@@ -38,6 +37,7 @@ namespace MainProject.Scripts
             }
 
             hasPlayer = true;
+            SaveGame();
             playerStatus = GameObject.FindWithTag("Player").GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             playerSoundManager = GameObject.FindWithTag("Player")
                 .GetComponent<MainProject.Scripts.Player.PlayerSoundManager>();
@@ -73,7 +73,9 @@ namespace MainProject.Scripts
         {
             var data = new MainProject.Scripts.PlayerData(actualScene);
             MainProject.Scripts.SaveSystem.SaveGame(data);
+
         }
+        
 
         // Temporário para testes
         private void Update()

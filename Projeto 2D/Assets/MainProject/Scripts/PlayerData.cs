@@ -11,6 +11,7 @@ namespace MainProject.Scripts
     {
         // Atributos que serão salvos
         public string savedScene;
+        
         //public List<string> accessedScenes;
 
         /// <summary>

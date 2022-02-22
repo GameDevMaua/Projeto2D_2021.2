@@ -14,6 +14,7 @@ namespace MainProject.Scripts
         {
             var formatter = new BinaryFormatter();
             var path = Application.persistentDataPath + SavePath;
+            Debug.Log(path);
             var stream = new FileStream(path, FileMode.Create);
             formatter.Serialize(stream, data);
             stream.Close();
