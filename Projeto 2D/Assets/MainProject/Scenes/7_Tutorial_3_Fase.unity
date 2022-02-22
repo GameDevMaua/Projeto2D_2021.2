@@ -606,6 +606,7 @@ MonoBehaviour:
   - {fileID: 666300236}
   interactionKey: 0
   keyPositionForSprite: 0
+  sfxEffect: event:/SFX/GAMEPLAY/Doors/sfx_gp_lever
   interactionDistance: 5
   switchSprites:
   - {fileID: 1735771879735282622, guid: 0f56b5a8a8858c446b4cce17b9f7119d, type: 3}

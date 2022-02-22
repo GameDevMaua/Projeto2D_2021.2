@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using MainProject.Scripts.Exclusivos;
 using UnityEngine;
 
@@ -15,6 +16,8 @@ public class Tutorial7Specific : MonoBehaviour
            public List<GameObject> objectsSecondarySelection;
            public KeyCode interactionKey;
            public KeyPosition keyPositionForSprite;
+           public string sfxEffect;
+           
            [SerializeField]
            private double interactionDistance = 5f;
            [Header("Padrão dos sprites abaixo: Frente, Esquerda, Direita")]
@@ -46,9 +49,11 @@ public class Tutorial7Specific : MonoBehaviour
                    {
                        foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool); // Ativa todos os objetos
                    }
-   
+
                    if (objectsSecondarySelection.Count != 0)
+                   {
                        foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool); // Desativa todos os objetos
+                   }
                }
                if (interactionKey.Equals(KeyCode.None)) interactionKey = KeyCode.E;
                CheckSwitchSprite();
@@ -73,9 +78,10 @@ public class Tutorial7Specific : MonoBehaviour
            /// </summary>
            private void SwitchActiveObjects()
            {
-                   switchBool = !switchBool;
-                   switchSpriteState = !switchSpriteState;
-                   StartCoroutine(FadeOutLevel7(2));
+               RuntimeManager.CreateInstance(sfxEffect).start();
+               switchBool = !switchBool;
+               switchSpriteState = !switchSpriteState;
+               StartCoroutine(FadeOutLevel7(2));
            }
    
            /// <summary>

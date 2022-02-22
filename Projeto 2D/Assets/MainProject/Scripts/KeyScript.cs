@@ -1,3 +1,5 @@
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 
 namespace MainProject.Scripts
@@ -6,7 +8,8 @@ namespace MainProject.Scripts
     {
         public GameObject locker;
         public bool isCollected;
-
+        public string sfxPath;
+        
         private GameObject playerRef;
 
         private void Awake()
@@ -23,6 +26,7 @@ namespace MainProject.Scripts
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            RuntimeManager.CreateInstance(sfxPath).start();
             if (!other.gameObject.Equals(playerRef)) return;
             isCollected = true;
             gameObject.SetActive(false);

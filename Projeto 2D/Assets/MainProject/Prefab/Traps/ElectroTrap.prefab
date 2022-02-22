@@ -48,8 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128e6f2f448a479eae75e9b2b9b74efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sfxPath: event:/SFX/GAMEPLAY/Traps/VO
-  deathPath: event:/SFX/GAMEPLAY/Death/sfx_gp_death_note
+  sfxPathSuccess: event:/SFX/GAMEPLAY/Traps/VO
+  sfxPathFail: event:/SFX/GAMEPLAY/Death/sfx_gp_death_note
 --- !u!114 &1036854762318255225
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -9,8 +9,8 @@ namespace MainProject.Scripts.Trap
 {
     public class TrapScript : MonoBehaviour
     {
-        public string sfxPath;
-        private FMOD.Studio.EventInstance sfxEventSuccess;
+        public string sfxPathSuccess;
+        public string sfxPathFail;
 
         /// <summary>
         /// Caso um GameObject que tenha o PlayerStatus passar pela trap, verifica-se se o elemento do PlayerStatus é o 
@@ -25,10 +25,10 @@ namespace MainProject.Scripts.Trap
             if (playerStatus.getObjectElement() != objectElement)
             {
                 playerStatus.setPlayerDead();
+                FMODUnity.RuntimeManager.CreateInstance(sfxPathFail).start();
             }
             else{
-                sfxEventSuccess = FMODUnity.RuntimeManager.CreateInstance(sfxPath);
-                sfxEventSuccess.start();
+                FMODUnity.RuntimeManager.CreateInstance(sfxPathSuccess).start();
             }
         }
     }

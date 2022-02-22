@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 
@@ -15,6 +16,8 @@ namespace MainProject.Scripts
         public List<GameObject> objectsSecondarySelection;
         public KeyCode interactionKey;
         public KeyPosition keyPositionForSprite;
+        public string sfxEffect;
+        
         [SerializeField]
         private double interactionDistance = 5f;
         [Header("Padrão dos sprites abaixo: Frente, Esquerda, Direita")]
@@ -44,7 +47,9 @@ namespace MainProject.Scripts
                 }
 
                 if (objectsSecondarySelection.Count != 0)
+                {
                     foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool); // Desativa todos os objetos
+                }
             }
             if (interactionKey.Equals(KeyCode.None)) interactionKey = KeyCode.E;
             CheckSwitchSprite();
@@ -71,6 +76,7 @@ namespace MainProject.Scripts
         {
                 switchBool = !switchBool;
                 switchSpriteState = !switchSpriteState;
+                RuntimeManager.CreateInstance(sfxEffect).start();
             
                 foreach (var VARIABLE in objectsPrimarySelection) VARIABLE.SetActive(switchBool);
                 foreach (var VARIABLE in objectsSecondarySelection) VARIABLE.SetActive(!switchBool);

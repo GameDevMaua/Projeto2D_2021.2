@@ -15,7 +15,7 @@ namespace MainProject.Scripts.Player
     {
         public GameObject player;
         private MainProject.Scripts.Player.PlayerStatus playerStatusRef;
-        private FMOD.Studio.EventInstance sfxEvent;
+        public FMOD.Studio.EventInstance sfxEvent;
         private FMOD.Studio.EventInstance sfxEventDeath;
         private FMOD.Studio.Bus masterBus;
 
@@ -31,20 +31,22 @@ namespace MainProject.Scripts.Player
             sfxEvent = FMODUnity.RuntimeManager.CreateInstance(footStepsPath);
             masterBus = FMODUnity.RuntimeManager.GetBus("Bus:/");
             isPlaying = false;
-
         }
 
         private void Update()
         {
             //onElementChangeCorrectFootstep();
+            var isDead = playerStatusRef.isPlayerDead();
+            
             switch (playerStatusRef.isWalking)
             {
-                case true when !isPlaying:
+                case true when !isPlaying && !isDead:
+                    if (!playerStatusRef.isWalking) break;
                     playFootStep();
                     isPlaying = true;
                     break;
-                case false when isPlaying:
-                    sfxEvent.stop(STOP_MODE.ALLOWFADEOUT);
+                case false when isPlaying || isDead:
+                    sfxEvent.stop(STOP_MODE.IMMEDIATE);
                     isPlaying = false;
                     break;
             }

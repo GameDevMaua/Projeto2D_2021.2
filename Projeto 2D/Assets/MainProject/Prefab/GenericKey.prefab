@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locker: {fileID: 0}
   isCollected: 0
+  sfxPath: event:/SFX/GAMEPLAY/Doors/sfx_key_pick_up
 --- !u!95 &3437605128702054309
 Animator:
   serializedVersion: 3

@@ -1,4 +1,5 @@
 using System.Collections;
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -90,9 +91,10 @@ namespace MainProject.Scripts
         private IEnumerator nextLevelTransition(float delayTime)
         {
             playerMovement.canMovePlayer = false;
-            playerSoundManager.nextLevelSound();
+            playerSoundManager.sfxEvent.stop(STOP_MODE.IMMEDIATE);
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
+            playerSoundManager.nextLevelSound();
             SceneManager.LoadScene(nextLevel);
         }
         
@@ -100,9 +102,10 @@ namespace MainProject.Scripts
         private IEnumerator deathTransition(float delayTime)
         {
             playerMovement.canMovePlayer = false;
-            playerSoundManager.deathSoundReload();
+            playerSoundManager.sfxEvent.stop(STOP_MODE.IMMEDIATE);
             animator.SetTrigger("FadeOut");// inicia o fade out
             yield return new WaitForSeconds(delayTime);
+            playerSoundManager.deathSoundReload();
             SceneManager.LoadScene(actualScene.name);
         }
 

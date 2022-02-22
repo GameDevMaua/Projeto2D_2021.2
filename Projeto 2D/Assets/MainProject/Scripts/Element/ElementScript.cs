@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEditor;
 using UnityEngine;
 using Object = System.Object;
@@ -12,6 +14,7 @@ namespace MainProject.Scripts.Element
         public float delayTime = 3f;
         public int higherLayer = 5;
         public int lowerLayer;
+        public string sfxPath;
 
         private GameObject playerRef;
         private Animator animatorRef;
@@ -19,7 +22,7 @@ namespace MainProject.Scripts.Element
         private SpriteRenderer spriteRendererRef;
         private BoxCollider2D boxCollider2DRef;
         private bool alternator;
-        
+
         private void Awake()
         {
             playerRef = GameObject.FindWithTag("Player");
@@ -45,6 +48,7 @@ namespace MainProject.Scripts.Element
             var playerStatus = other.gameObject.GetComponent<MainProject.Scripts.Player.PlayerStatus>();
             if (playerStatus)
             {
+                RuntimeManager.CreateInstance(sfxPath).start();
                 var objectElement = gameObject.GetComponent<MainProject.Scripts.Element.ElementStatus>().getObjectElement();
                 playerStatus.setObjectElement(objectElement);
                 setObjectStatus(false);

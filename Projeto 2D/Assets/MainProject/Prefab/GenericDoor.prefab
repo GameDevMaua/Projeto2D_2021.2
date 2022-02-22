@@ -124,4 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keys:
   - {fileID: 0}
+  sfxPathOpening: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_opening
+  sfxPathLocked: event:/SFX/GAMEPLAY/Doors/sfx_gp_door_handling_closed
   nextLevelOnOpen: 1
+  i: 0

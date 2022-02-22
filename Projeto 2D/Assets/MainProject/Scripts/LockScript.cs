@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using FMODUnity;
 using UnityEngine;
 
 namespace MainProject.Scripts
@@ -7,7 +8,9 @@ namespace MainProject.Scripts
     public class LockScript : MonoBehaviour
     {
         public List<GameObject> keys;
-
+        public string sfxPathOpening;
+        public string sfxPathLocked;
+        
         [Header("Se abrir a porta passa o level ou não, por padrão sim")]
         public bool nextLevelOnOpen;
         
@@ -33,9 +36,13 @@ namespace MainProject.Scripts
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.gameObject.Equals(playerRef)) return;
-            if (keys.Any(VARIABLE => VARIABLE.GetComponent<MainProject.Scripts.KeyScript>().isCollected == false)) return;
+            if (keys.Any(VARIABLE => VARIABLE.GetComponent<MainProject.Scripts.KeyScript>().isCollected == false))
+            {
+                RuntimeManager.CreateInstance(sfxPathLocked).start();
+                return;
+            }
             isOpened = true;
-            // toca o som da porta abrindo
+            RuntimeManager.CreateInstance(sfxPathOpening).start();
             gameObject.SetActive(false);
             if (nextLevelOnOpen)
             {
