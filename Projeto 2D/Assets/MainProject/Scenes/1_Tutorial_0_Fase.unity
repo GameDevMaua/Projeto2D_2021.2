@@ -1359,6 +1359,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8413404101279521312, guid: 8c026e809454d5944aa004b895856c1d, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8413404101658215072, guid: 8c026e809454d5944aa004b895856c1d, type: 3}
       propertyPath: m_Color.a
       value: 0

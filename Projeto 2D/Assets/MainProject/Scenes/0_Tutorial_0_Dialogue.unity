@@ -379,6 +379,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 724.2571
+      objectReference: {fileID: 0}
+    - target: {fileID: 3977416874164031174, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 37.17563
+      objectReference: {fileID: 0}
     - target: {fileID: 7093138151151964313, guid: f4a0b90b33a65424cab950534e98bb66, type: 3}
       propertyPath: key
       value: 101
@@ -533,10 +557,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

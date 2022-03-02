@@ -16,6 +16,5 @@ MonoBehaviour:
   - characterprofile: {fileID: 11400000, guid: d91408feb7fb27a41aa72166f46b75fe, type: 2}
     sentences: 'There is a lever now... How did the wizard even used it?
 
-
       "Press
       ''E'' to continue or interact"'
