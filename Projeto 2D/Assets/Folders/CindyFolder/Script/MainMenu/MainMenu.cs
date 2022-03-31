@@ -1,3 +1,6 @@
+using System;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.EventSystems;
 //#if UNITY_EDITOR
@@ -19,6 +22,7 @@ public class MainMenu : MonoBehaviour
     public string scene;
 
     public Animator animator;
+    
 
     public void Start()
     {
@@ -39,6 +43,9 @@ public class MainMenu : MonoBehaviour
     // #endif
     public void fadeOutTrigger(string newScene)
         {
+            string path = "event:/SFX/UI/sfx_ui_menu_button_confirm";
+            EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+            soundInstance.start();
             scene = newScene;
             animator.SetTrigger("FadeOut");
         }
@@ -48,7 +55,9 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void Option()
     {
-        
+        string path = "event:/SFX/UI/sfx_ui_menu_button_confirm";
+        EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+        soundInstance.start();
         optionMenu.SetActive(true);
         mainMenu.SetActive(false);
         EventSystem.current.SetSelectedGameObject(firstOptionButton);
@@ -59,6 +68,9 @@ public class MainMenu : MonoBehaviour
     /// </summary>
     public void QuitGame()
     {
+        string path = "event:/SFX/UI/sfx_ui_menu_button_back";
+        EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+        soundInstance.start();
         Application.Quit();
         Debug.Log("QUIT");
     }
