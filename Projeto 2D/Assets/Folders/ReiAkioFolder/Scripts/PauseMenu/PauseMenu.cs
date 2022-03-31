@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
@@ -9,6 +10,7 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
     [SerializeField] public KeyCode openPMButton;
     public MainProject.Scripts.GameManager gameManager;
+    [SerializeField] private string soundPath;
     
     /// <summary>
     /// Quando chamado, ira ativar o painel do menuPause, e pausar o estado do jogo
@@ -44,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(openPMButton))
         {
+            RuntimeManager.CreateInstance(soundPath).start();
             if (isPaused)
             {
                 Resume();

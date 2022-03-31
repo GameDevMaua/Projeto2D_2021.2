@@ -6,6 +6,7 @@ using FMOD.Studio;
 using FMODUnity;
 using UnityEditor;
 using UnityEngine;
+using Debug = FMOD.Debug;
 using Object = System.Object;
 
 namespace MainProject.Scripts.Element
@@ -16,8 +17,6 @@ namespace MainProject.Scripts.Element
         public int higherLayer = 5;
         public int lowerLayer;
         public string sfxPath;
-        public string sfxConstantPath;
-        public EventInstance sfxInstance;
         private GameObject playerRef;
         private Animator animatorRef;
         private ElementAnimation elementAnimationRef;
@@ -33,8 +32,6 @@ namespace MainProject.Scripts.Element
             spriteRendererRef = gameObject.GetComponent<SpriteRenderer>();
             boxCollider2DRef = gameObject.GetComponent<BoxCollider2D>();
             alternator = false;
-            sfxInstance = RuntimeManager.CreateInstance(sfxConstantPath);
-            sfxInstance.set3DAttributes(new ATTRIBUTES_3D());
         }
 
         private void Update()

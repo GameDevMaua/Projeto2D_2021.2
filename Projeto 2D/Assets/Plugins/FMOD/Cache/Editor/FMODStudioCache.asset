@@ -15,11 +15,33 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637810770264310119
+  lastModified: 637809401000000000
   FileSizes:
   - Name: 
     Value: 2142
   Exists: 1
+--- !u!114 &-8758922118213083205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-8754168000122098780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +467,72 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 0
+--- !u!114 &-3385798892057376064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 3913052807
+    data2: 196353425
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-3337496654193298237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
+--- !u!114 &-2914289955424767810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-459418781609648324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +617,7 @@ MonoBehaviour:
   - {fileID: 7197843910448393479}
   StringsBanks:
   - {fileID: -9136752745228893789}
-  stringsBankWriteTime: 637810770264310119
+  stringsBankWriteTime: 637809401000000000
   cacheVersion: 8
 --- !u!114 &203511438023274167
 MonoBehaviour:
@@ -554,6 +642,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 300
+--- !u!114 &325084504507964776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &1055194005629531656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +843,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1349
+--- !u!114 &2256444386643409130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3747876192462684340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +910,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 281
+--- !u!114 &4305715440574665118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &4541938337501098684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,6 +977,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 68
+--- !u!114 &5279872953565856655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &5467288890091992211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +1081,7 @@ MonoBehaviour:
   Path: ../FMOD/Builds/Build/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637810770264300298
+  lastModified: 637809401000000000
   FileSizes: []
   Exists: 1
 --- !u!114 &7231487763475368969
@@ -930,6 +1106,28 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Exists: 1
+--- !u!114 &7652396970383385435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sfx_gp_orb_behavior/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &7751899258643815779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,7 +1193,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -5110120943230952119}
+  - {fileID: 325084504507964776}
   MinDistance: 0
   MaxDistance: 0
   Length: 16495
