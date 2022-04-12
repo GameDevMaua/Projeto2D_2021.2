@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using FMOD.Studio;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -64,6 +66,9 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void backButton ()
     {
+        string path = "event:/SFX/UI/sfx_ui_menu_button_back";
+        EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+        soundInstance.start();
         this.gameObject.SetActive(false);
         mainMenu.SetActive(true);
         EventSystem.current.SetSelectedGameObject(optionButton);
@@ -117,6 +122,9 @@ public class OptionMenu : MonoBehaviour
 
     public void Apply()
     {
+        string path = "event:/SFX/UI/sfx_ui_menu_button_confirm";
+        EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+        soundInstance.start();
         Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullScreenTog.isOn);
     }
      

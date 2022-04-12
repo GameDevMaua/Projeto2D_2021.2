@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001DA1B275CF8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001C4276FE618 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,3 +18,97 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 238592
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40128
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000002A0509F558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB6F4A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB6F4A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB6F4A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB6F4A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C39A2131C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_ui_page_turning', format=5, channels=2, frequency=48000, lengthbytes=4832, lengthpcm=20627, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.204260.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 238592
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40128
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000002A0509F558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB6F4A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB6F4A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB6F4A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB6F4A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C39A212778
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_ui_menubutton_hover_v2', format=5, channels=2, frequency=48000, lengthbytes=960, lengthpcm=3286, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.368605.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 238592
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40128
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000002A0509F558
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFB6F4A60E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFB6F4A60B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFB6F4A61B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFB6F4A6270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001C39A2131C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_ui_menubutton_back', format=5, channels=2, frequency=48000, lengthbytes=832, lengthpcm=2597, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.722912.
+[LOG] SoundI::release                          :  (000001C4293F3648)
+[LOG] SoundI::release                          :     sfx_gp_orb_lowtone_layer (000001C422B167D8)
+[LOG] SoundI::release                          :  (000001C4293F16A8)
+[LOG] SoundI::release                          :     sfx_ui_page_turning (000001C399FBDDF8)
+[LOG] SoundI::release                          :  (000001C4293ED8D8)
+[LOG] SoundI::release                          :     sfx_ui_menubutton_hover_v2 (000001C399FBDF98)
+[LOG] SoundI::release                          :  (000001C4293F2C38)
+[LOG] SoundI::release                          :     sfx_gp_death_note (000001C422B17CF8)
+[LOG] SoundI::release                          :  (000001C4293F3088)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(10) (000001C422B140D8)
+[LOG] SoundI::release                          :  (000001C4293F2508)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(11) (000001C422B18B98)
+[LOG] SoundI::release                          :  (000001C4293F2AC8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(12) (000001C422B174D8)
+[LOG] SoundI::release                          :  (000001C4293F34D8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(13) (000001C422B145B8)
+[LOG] SoundI::release                          :  (000001C4293F1DD8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(14) (000001C422B14278)
+[LOG] SoundI::release                          :  (000001C4293F31F8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(2) (000001C422B179B8)
+[LOG] SoundI::release                          :  (000001C4293F2398)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(3) (000001C422B17338)
+[LOG] SoundI::release                          :  (000001C4293F3C08)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(4) (000001C422B19078)
+[LOG] SoundI::release                          :  (000001C4293EF878)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(5) (000001C422B13718)
+[LOG] SoundI::release                          :  (000001C4293F3A98)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(6) (000001C422B15798)
+[LOG] SoundI::release                          :  (000001C4293EF9E8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(7) (000001C422B18518)
+[LOG] SoundI::release                          :  (000001C4293F20B8)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(8) (000001C422B16E58)
+[LOG] SoundI::release                          :  (000001C4293F0288)
+[LOG] SoundI::release                          :     SFX_Cloth, Movement, Shorts, Walk, Fast SND16773 1(9) (000001C422B18858)
+[LOG] SoundI::release                          :  (000001C4293F09B8)
+[LOG] SoundI::release                          :     sfx_ui_menubutton_back (000001C399FBD298)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.

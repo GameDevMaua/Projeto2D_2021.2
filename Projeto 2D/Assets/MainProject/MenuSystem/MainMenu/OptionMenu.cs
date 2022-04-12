@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using FMOD.Studio;
+using FMODUnity;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace MainProject.MenuSystem.MainMenu
@@ -27,6 +29,9 @@ namespace MainProject.MenuSystem.MainMenu
         /// </summary>
         public void backButton ()
         {
+            string path = "event:/SFX/UI/sfx_ui_menu_button_confirm";
+            EventInstance soundInstance = RuntimeManager.CreateInstance(path);
+            soundInstance.start();
             optionMenu.SetActive(false);
             mainMenu.SetActive(true);
             EventSystem.current.SetSelectedGameObject(optionButton);
